@@ -72,52 +72,58 @@ $(document).ready(function() {
 <!-- Main -->
 <div id="pages">
       <div id="home" class="page" data-page="home">
-          <!--<img src="Assets/BG_img.png" alt="Portfolio" />-->
-          <div class="bighead">
-          </div>
-          <div id="greet"><h1>Greetings!</h1></div>
-            <h1>I'm Aaron Chen</h1>
-            <p>A digital UX/UI designer who loves photography, video production, Star Wars and sea otters.</p>
+          <div class="hero"></div>
+            <div id="greet"><h1>Greetings!</h1></div>
+            <div id="name"><h1>I'm <br/>Aaron Chen</h1></div>
+            <div id="blurb"><h4>A digital UX/UI designer <br/>who loves photography, <br/>video production, Star Wars <br/>and sea otters.<br>And dabs.</h4></div>
             <ul id="headers" class="menu no-bullet" >
-                <li><a data-page="about" href="#about"><h2> About </h2> </a></li>
-                <li><a data-page="work" href="#work"><h2> Work </h2> </a></li>
-                <li><a data-page="contact" href="#contact"><h2> Contact Me </h2> </a></li>
+                <li><a id="about-header" data-page="about" href="#about"><h2> About </h2> </a></li>
+                <li><a id="work-header" data-page="work" href="#work"><h2> Work </h2> </a></li>
+                <li><a id="contact-header" data-page="contact" href="#contact"><h2> Contact <br/>Me </h2> </a></li>
             </ul>
       </div>
 
 <!-- About -->
-    <div id="about" class="page hide" data-page="about">
-        <ul class="container">
-          <li class="one-third">
-              <h2>About</h2>
-              <p>Me. Aaron Chen. What does that mean? Who am I as a person?
-              <br/>
-              <br/>I am a Star Wars geek. Growing up, I read almost every single Expanded Universe novel in the Star Wars collection. I both hate and love Disney for making new Star Wars films and destroying my childhood by saying the EU isn’t canon anymore.
-              <br/>
-              <br/>I am slightly  obsessed with sea otters. I think this started when I saw a video of them holding hands at the Vancouver Aquarium back in high school.
-              <br/>
-              <br/>I am a photographer. I am a videographer. I am a filmmaker. My camera has been my constant companion for over 8 years now. Recently I’ve been diving into old school film, and really enjoying it.
-              <br/>
-              <br/>I am a dancer. I started taking community classes from my college’s hip-hop dance crew while I was in college. A year later, I joined the team. I’ve been dancing ever since.
-              <br/>
-              <br/>I am a lover of the arts. Going to museums and galleries is one of my favorite activities to do as an adult.
-              <br/>
-              <br/>I am a designer. Putting together visually appealing and user friendly digital work has become both an engaging mental challenge and an appealing visual everyday stimulation that I’ve come to love.
-              <br/>
-              <br/>I am a creative.</p>
-          </li>
-          <a href="kcnc.html"><li class="two-third">
-            <img src="Assets/PassionProjects/KCNClogo.png" alt="Portfolio" />
-          </li></a>
-          <p>KODACHROME NC</p>
-          <a href="bb-8.html"><li class="two-third">
-            <img src="Assets/BB-8/BB-8logo.png" alt="Portfolio" />
-          </li></a>
-          <p>BB-8 Travels</p>
-          <a href="filmsnotdead.html"><li class="two-third">
-            <img src="Assets/PassionProjects/FilmsNotDeadlogo.png" alt="Portfolio" />
-          </li></a>
-          <p>#FilmsNotDead</p>
+      <div id="about" class="page hide" data-page="about">
+          <ul class="container">
+            <li class="one-third">
+              <ul class="about-label">   <h2>About</h2>   </ul>
+                <p>Me. Aaron Chen. What does that mean? Who am I as a person?
+                <br/>
+                <br/>I am a Star Wars geek. Growing up, I read almost every single Expanded Universe novel in the Star Wars collection. I both hate and love Disney for making new Star Wars films and destroying my childhood by saying the EU isn’t canon anymore.
+                <br/>
+                <br/>I am slightly  obsessed with sea otters. I think this started when I saw a video of them holding hands at the Vancouver Aquarium back in high school.
+                <br/>
+                <br/>I am a photographer. I am a videographer. I am a filmmaker. My camera has been my constant companion for over 8 years now. Recently I’ve been diving into old school film, and really enjoying it.
+                <br/>
+                <br/>I am a dancer. I started taking community classes from my college’s hip-hop dance crew while I was in college. A year later, I joined the team. I’ve been dancing ever since.
+                <br/>
+                <br/>I am a lover of the arts. Going to museums and galleries is one of my favorite activities to do as an adult.
+                <br/>
+                <br/>I am a designer. Putting together visually appealing and user friendly digital work has become both an engaging mental challenge and an appealing visual everyday stimulation that I’ve come to love.
+                <br/>
+                <br/>I am a creative.</p>
+            </li>
+          <ul class="passionprojects">
+            <a href="kcnc.html">
+              <li class="two-third">
+              <img src="Assets/PassionProjects/KCNClogo.png" alt="Portfolio" />
+              <p id="kcnc"> KODACHROME NC </p>
+              </li>
+            </a>
+            <ul class="pp2"><a href="bb-8.html">
+              <li class="two-third">
+              <img src="Assets/BB-8/BB-8logo.png" alt="Portfolio" />
+              <p id="bb8"> BB-8 </p>
+              </li>
+            </a></ul>
+            <a href="filmsnotdead.html">
+              <li class="two-third">
+              <img src="Assets/PassionProjects/FilmsNotDeadlogo.png" alt="Portfolio" />
+              <p id="film"> #FilmsNotDead </p>
+              </li>
+          </a>
+        </ul>
         </ul>
     </div>
 
@@ -125,14 +131,14 @@ $(document).ready(function() {
     <div id="work" class="page hide" data-page="work">
         <ul class="container">
           <li class="three-third">
-              <h2>Work</h2>
+              <ul class="work-label">   <h2>Work</h2>   </ul>
               <p>I have always been drawn to creative pursuits, so design was a natural evolution of my creative journey.
               <br/>
               <br/>I graduated from NCSU with a degree in Communication Media, with a very heavy focus on digital video and film production. I have always loved being behind the camera, to visually tell a compelling story. Being in North Carolina at the time, work was few and far between, I had to turn to retail management to get by.
               <br/>
               <br/>Fast forward a few years, and I continued to be creative even within my retail roles, doing photo shoots for Urban Outfitters for their local social media channels. It just wasn’t enough.  I needed  to jump back into something creative full time as a career. I was living in San Jose and had lots of friends in tech. They suggested looking into a bootcamp to see if I liked design work. That led me to Bloc, an amazing UI/UX bootcamp, which led me to where I am currently: doing incredibly creative work, and loving every second of it.</p>
           </li>
-          <a href="paycrave.html"><li class="four-third">
+          <ul class="workprojects"><a href="paycrave.html"><li class="four-third">
             <img src="Assets/Work/Paycrave.png" alt="Portfolio" />
           </li></a>
           <a href="knode.html"><li class="four-third">
@@ -142,39 +148,90 @@ $(document).ready(function() {
             <img src="Assets/Work/Project3.png" alt="Portfolio" />
           </li>
           </ul>
-      </div>
+        </ul>
+    </div>
 
 <!-- Contact Me -->
     <div id="contact" class="page hide" data-page="contact">
-          <h2>Contact Me!</h2>
-        <form action="https://formspree.io/contact.agchen@gmail.com"
+        <ul class="contact-label">  <h2>Contact <br/>Me!</h2>  </ul>
+        <form id="cntct" action="https://formspree.io/contact.agchen@gmail.com"
           method="POST">
-          <label>Name</label>
+          <label><p>Name</p></label>
           <input type="text" name="name">
-          <label>Your Email</lable>
+          <label><p>Your Email</p></lable>
           <input type="text" name="_replyto" placeholder="Your email" />
           <input type="hidden" name="_subject" value="New submission!" />
-          <label>Message</label>
+          <label><p>Message</p></label>
           <textarea name="message" placeholder="Your message"></textarea>
-          <label>Submit</label>
+          <label><p></p></label>
           <input type="submit" value="Send">
         </form>
+        <form action="..." method="POST">
+          <input type="hidden" name="_next" value="#contact" />
+        </form>
+    </div>
+    <!-- Hidden message to show if contact is successful. -->
+    <div id="submit-success" class="collapse">
+      Message received! I'll be in touch.
+    </div>
+    <!-- Hidden message to show if user encounters errors. -->
+    <div id="submit-errors" class="collapse">
+      It looks like there was an error submitting the form.
+      Please try again later.
     </div>
 </div>
-</main>
 
 <!-- Footer -->
 <footer>
     <div class="footer-nav-block">
-          <img class="logo" src="Assets/Logo3-sm.png" alt="Portfolio" />
-        <a href='#top' class="back">back to top</a>
-        <ul class="social_icons">
+        <div class="footer-left"><img class="logo" src="Assets/Logo3-sm.png" alt="Portfolio" /></div>
+        <div class="footer-mid">
+        <div class="music"><iframe src="https://open.spotify.com/embed/user/12101804363/playlist/6OquWn4ok5cqxcpBvJaFQr" width="250" height="80" frameborder="0" allowtransparency="true"></iframe></div>
+        <div class="back"><a href='#top' class="back">back to top</a></div>
+        </div>
+        <div class="footer-right>"<ul class="social_icons">
           <li class="social"><a href="http://instagram.com/ackeepitcool"><img class="social" src="Assets/Social/IG.png" alt="Portfolio" /></a></li>
           <li class="social"><a href="http://twitter.com/ackeepitcool"><img class="social" src="Assets/Social/twitter.png" alt="Portfolio" /></a></li>
           <li class="social"><a href="http://linkedin.com/agchen"><img class="social" src="Assets/Social/linkedin.png" alt="Portfolio" /></a></li>
           <li class="social"><a href="http://dribbble.com/ackeepitcool"><img class="social" src="Assets/Social/dribbble.png" alt="Portfolio" /></a></li>
         </ul>
+        </div>
     </div>
 </footer>
 </body>
 </html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+<script>
+$("#contact-form").validate({
+  submitHandler: function(form) {
+    $.ajax({
+      url: "//formspree.io/myemail@gmail.com",
+      method: "POST",
+      data: {
+        name: $(form).find("input[name='name']").val(),
+        _replyto: $(form).find("input[name='_replyto']").val(),
+        message: $(form).find("textarea[name='message']").val()
+      },
+      dataType: "json"
+    });
+  }
+});
+$("#contact-form").validate({
+  submitHandler: function(form) {
+    $.ajax({
+      ...
+      },
+      dataType: "json",
+      success: function() {
+        $("#submit-success").fadeIn();
+        $("#contact-form").fadeOut();
+      },
+      error: function() {
+        $("#submit-errors").fadeIn();
+      }
+    });
+  }
+});
+</script>
