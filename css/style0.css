@@ -1,21 +1,21 @@
 .hide
-{
+  {
     display: none;
-}
+  }
 body
-{
-  background: #FFFFFF url("../Assets/BG.png");
-  -webkit-font-smoothing: antialiased;
-}
+  {
+    background: #FFFFFF url("../Assets/BG.png");
+    -webkit-font-smoothing: antialiased;
+  }
 body a
-{
-  color: #333333
-}
+  {
+    color: #333333
+  }
 body a:hover
-{
-  text-decoration: none;
-  color: #CBDBF2
-}
+  {
+    text-decoration: none;
+    color: #CBDBF2
+  }
 html, body
   {
     overflow-x: hidden;
