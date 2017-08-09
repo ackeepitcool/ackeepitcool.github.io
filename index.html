@@ -10,7 +10,9 @@
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
 <!-- CSS -->
+<link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/style0.css">
+<link rel="stylesheet" href="css/dropit.css">
 
 <!-- JQuery -->
 <script src="js/jquery-3.2.1.min.js"></script>
@@ -28,6 +30,14 @@ $(document).ready(function() {
     });
 });
 </script>
+<script src="js/dropit.js"></script>
+ <script type="text/javascript">
+   $(".hamburger").dropit();
+   $( "#hamburger" ).click(function() {
+         $("#right-nav").toggleClass("open", 200);
+     });
+ </script>
+
 
 
 </head>
@@ -40,14 +50,18 @@ $(document).ready(function() {
           </a>
         </div>
         <div class="rt-half">
-          <ul id="hamburger" class="menu dropit" >
-            <a class="hamburger" href="#">
+          <ul id="hamburger" class="hamburger dropit" >
+            <li>
+              <a href="#" class="btn">
               <img src="Assets/Menu.png" alt="Portfolio" />
-            </a>
+              </a>
+            <ul>
               <li><a data-page="home" href="#home"><h3>Home</h3> </a></li>
               <li><a data-page="about" href="#about"><h3>About</h3> </a></li>
               <li><a data-page="work" href="#work"><h3>Work</h3> </a></li>
               <li><a data-page="contact" href="#contact"><h3>Contact Me</h3> </a></li>
+            </ul>
+            </li>
           </ul>
         </div>
         <a name="top"></a>

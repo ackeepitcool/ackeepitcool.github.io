@@ -116,7 +116,52 @@ header nav ul > li > a
     text-decoration: none;
   }
 
+
 /* MENU */
+.right-nav
+  {
+    height: 100vh;
+    height: 100%;
+    width:14.66666667%;
+    width:280px;
+    float:left;
+    position: fixed;
+    position:absolute;
+    display:block;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    transform: translate(-280px,0);
+      -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
+      -o-transform: translate(-280px,0); /** Opera **/
+      -moz-transform: translate(-280px,0); /** Firefox **/
+  }
+.right-nav.open
+  {
+    display:block;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    transform: translate(0,0);
+      -webkit-transform: translate(0,0); /** Chrome & Safari **/
+      -o-transform: translate(0,0); /** Opera **/
+      -moz-transform: translate(0,0); /** Firefox **/
+    z-index: 100;
+  }
+.hamburger
+  {
+    position:absolute;
+    z-index: 1000;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    left: 5px;
+    top: 15px;
+  }
+
 
 /* FOOTER */
 footer
@@ -157,8 +202,7 @@ ul.social_icons, li.social
     position: relative;
   }
 
-
-
+/* Media Queries */
 @media all (min-width: 768px)
   {
    .container hero
