@@ -91,6 +91,7 @@ img
     padding-left:12%;
   }
 
+
 /* HEADER */
 header
   {
@@ -155,6 +156,7 @@ ul.social_icons, li.social
     display:inline-block;
     position: relative;
   }
+
 
 
 @media all (min-width: 768px)
