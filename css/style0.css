@@ -118,7 +118,7 @@ header nav ul > li > a
 
 
 /* MENU */
-.right-nav
+/*.right-nav
   {
     height: 100vh;
     height: 100%;
@@ -133,9 +133,9 @@ header nav ul > li > a
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     transform: translate(-280px,0);
-      -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
-      -o-transform: translate(-280px,0); /** Opera **/
-      -moz-transform: translate(-280px,0); /** Firefox **/
+      -webkit-transform: translate(-280px,0);
+      -o-transform: translate(-280px,0);
+      -moz-transform: translate(-280px,0);
   }
 .right-nav.open
   {
@@ -145,11 +145,11 @@ header nav ul > li > a
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     transform: translate(0,0);
-      -webkit-transform: translate(0,0); /** Chrome & Safari **/
-      -o-transform: translate(0,0); /** Opera **/
-      -moz-transform: translate(0,0); /** Firefox **/
+      -webkit-transform: translate(0,0);
+      -o-transform: translate(0,0);
+      -moz-transform: translate(0,0);
     z-index: 100;
-  }
+  }*/
 .hamburger
   {
     position:absolute;
