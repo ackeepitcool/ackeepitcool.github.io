@@ -13,19 +13,17 @@
 <link rel="stylesheet" href="css/style0.css">
 
 <!-- JQuery -->
-<script src="Assets/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
 <script>
-$('#about').click(function() {
-  console.log(this);
-});
-
 $(document).ready(function() {
-    $("#menu li a").on('click', function(e) {
+    $(".menu li a").on('click', function(e) {
         e.preventDefault();
         var page = $(this).data('page');
+        console.log(page);
         $("#pages .page:not('.hide')").stop().fadeOut('fast', function() {
             $(this).addClass('hide');
-            $('#pages .page[data-page="'+page+'"]').fadeIn('slow').removeClass('hide');
+            var newpage = $('#pages .page[data-page="'+page+'"]')[0];
+            $(newpage).fadeIn('slow').removeClass('hide');
         });
     });
 });
@@ -42,8 +40,8 @@ $(document).ready(function() {
           </a>
         </div>
         <div class="rt-half">
-          <ul id="menu" class="menu-dropit" >
-            <a class="hamburger" id="menu" href="#">
+          <ul id="hamburger" class="menu dropit" >
+            <a class="hamburger" href="#">
               <img src="Assets/Menu.png" alt="Portfolio" />
             </a>
               <li><a data-page="home" href="#home"><h3>Home</h3> </a></li>
@@ -58,26 +56,21 @@ $(document).ready(function() {
 
 <main role="main">
 <!-- Main -->
+<img src="Assets/BG_img.png" alt="Portfolio" />
 <div id="pages">
       <div id="home" class="page" data-page="home">
-        <div class="row">
-        <div class="columns large-6">
           <h1>Greetings!</h1>
           <h1>I'm Aaron Chen</h1>
           <p>A digital UX/UI designer who loves photography, video production, Star Wars and sea otters.</p>
-          <ul id="menu" class="menu no-bullet" >
+          <ul id="headers" class="menu no-bullet" >
               <li><a data-page="about" href="#about"><h2> About </h2> </a></li>
               <li><a data-page="work" href="#work"><h2> Work </h2> </a></li>
               <li><a data-page="contact" href="#contact"><h2> Contact Me </h2> </a></li>
           </ul>
-        </div>
-        </div>
-      <div>
+      </div>
 
 <!-- About -->
     <div id="about" class="page hide" data-page="about">
-      <div class="row">
-      <div class="columns large-6">
         <ul class="container">
           <li class="one-third">
               <h2>About</h2>
@@ -110,14 +103,10 @@ $(document).ready(function() {
           </li></a>
           <p>Passion Project Three</p>
         </ul>
-      </div>
-      </div>
     </div>
 
 <!-- Work -->
     <div id="work" class="page hide" data-page="work">
-      <div class="row">
-      <div class="columns large-6">
         <ul class="container">
           <li class="three-third">
               <h2>Work</h2>
@@ -134,20 +123,14 @@ $(document).ready(function() {
             <img src="Assets/Work/Knode.png" alt="Portfolio" />
           </li></a>
           <li class="four-third">
-            <img src="Assets/Work/Project 3.png" alt="Portfolio" />
+            <img src="Assets/Work/Project3.png" alt="Portfolio" />
           </li>
           </ul>
-        </div>
-        </div>
       </div>
 
 <!-- Contact Me -->
     <div id="contact" class="page hide" data-page="contact">
-      <div class="row">
-      <div class="columns large-6">
-        <li class="one-third">
           <h2>Contact Me!</h2>
-        </li>
         <form action="https://formspree.io/contact.agchen@gmail.com"
           method="POST">
           <label>Name</label>
@@ -169,18 +152,18 @@ $(document).ready(function() {
 <!-- Footer -->
   <footer>
       <div class="container footer-nav-block">
-      <nav class="left-footer-block footer-third">
-        <ul>
-          <li><a href="http://instagram.com/ackeepitcool"><img class="social" src="Assets/Social/IG.png" alt="Portfolio" /></a></li>
-          <li><a href="http://twitter.com/ackeepitcool"><img class="social" src="Assets/Social/twitter.png" alt="Portfolio" /></a></li>
-          <li><a href="http://linkedin.com/agchen"><img class="social" src="Assets/Social/linkedin.png" alt="Portfolio" /></a></li>
-          <li><a href="http://dribbble.com/ackeepitcool"><img class="social" src="Assets/Social/dribbble.png" alt="Portfolio" /></a></li>
+      <div class="footer-right">
+        <ul class="social_icons">
+          <li class="social"><a href="http://instagram.com/ackeepitcool"><img class="social" src="Assets/Social/IG.png" alt="Portfolio" /></a></li>
+          <li class="social"><a href="http://twitter.com/ackeepitcool"><img class="social" src="Assets/Social/twitter.png" alt="Portfolio" /></a></li>
+          <li class="social"><a href="http://linkedin.com/agchen"><img class="social" src="Assets/Social/linkedin.png" alt="Portfolio" /></a></li>
+          <li class="social"><a href="http://dribbble.com/ackeepitcool"><img class="social" src="Assets/Social/dribbble.png" alt="Portfolio" /></a></li>
         </ul>
-      </nav>
-      <div class="link-block middle-footer-block footer-third">
+      </div>
+      <div class="footer-middle">
           <a href='#top'>back to top</a>
       </div>
-        <div class="right-footer-block footer-third">
+        <div class="footer-left">
           <img class="logo" src="Assets/Logo3.png" alt="Portfolio" />
         </div>
       </div>
