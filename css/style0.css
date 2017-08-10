@@ -142,8 +142,8 @@ header nav ul > li > a
   {
     z-index: 100;
     position:absolute;
-    top:51%;
-    left:33%;
+    top:55%;
+    left:25%;
     -ms-transform: rotate(-10deg); /* IE 9 */
     -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
     transform: rotate(-10deg);
@@ -153,7 +153,7 @@ header nav ul > li > a
     z-index: 100;
     position:absolute;
     top:42%;
-    right:13%;
+    right:5%;
     -ms-transform: rotate(10deg); /* IE 9 */
     -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
     transform: rotate(10deg);
@@ -163,7 +163,7 @@ header nav ul > li > a
     text-align:center;
     z-index: 100;
     position:absolute;
-    top:59%;
+    top:63%;
     right:5%;
     -ms-transform: rotate(-10deg); /* IE 9 */
     -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
@@ -324,57 +324,7 @@ ul.social_icons, li.social
 
 @media (min-width: 992px)
   {
-  .container
-  {
-    width: 970px;
-  }
-  .hero
-  {
-    width:29.33333%;
-  }
-  .one-third
-  {
-    width:29.33333%;
-    float:left;
-  }
-  .three-third
-  {
-    width:29.33333%;
-    float:right;
-    padding-right:15em;
-  }
-  .rt-half
-  {
-    float: right;
-    position:relative;
-    display:inline-block;
-    min-height: 1px;
-    margin:0 2% 20px;
-    padding-left:20%;
-  }
-  .two-third
-  {
-    float:left;
-    display:inline-block;
-    position:relative;
-    min-height: 1px;
-    margin:0 2% -36px;
-  }
-  .one-half
-  {
-    float:left;
-    display:inline-block;
-    position:relative;
-    min-height: 1px;
-    margin:0 2% 20px;
-  }
-  header nav ul
-  {
-    display:inline;
-    text-align: right;
-    float:right;
-    margin:0;
-  }
+
   }
 @media (min-width: 768px)
   {
