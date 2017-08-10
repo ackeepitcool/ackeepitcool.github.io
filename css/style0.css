@@ -24,8 +24,6 @@ body
   {
     font-family: "Lato", Helvetica, Arial, sans-serif;
     color:#333333;
-    font-weight: normal;
-    font-style: normal;
   }
 h1, h2
   {
@@ -45,13 +43,13 @@ h4
   {
     font-size:24px;
     line-height:20px;
-    font-weight:100;
+    font-weight:300;
   }
 p
   {
     font-size:16px;
     line-height:20px;
-    font-weight:100;
+    font-weight:300;
   }
 img
   {
@@ -115,40 +113,9 @@ header nav ul > li > a
 
 
 /* MENU */
-/*.right-nav
-  {
-    height: 100vh;
-    height: 100%;
-    width:14.66666667%;
-    width:280px;
-    float:left;
-    position: fixed;
-    position:absolute;
-    display:block;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    transform: translate(-280px,0);
-      -webkit-transform: translate(-280px,0);
-      -o-transform: translate(-280px,0);
-      -moz-transform: translate(-280px,0);
-  }
-.right-nav.open
-  {
-    display:block;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    transform: translate(0,0);
-      -webkit-transform: translate(0,0);
-      -o-transform: translate(0,0);
-      -moz-transform: translate(0,0);
-    z-index: 100;
-  }*/
 .hamburger
   {
+    display:hide;
     position:absolute;
     z-index: 1000;
     text-decoration: none;
@@ -169,8 +136,8 @@ header nav ul > li > a
   {
   	z-index: 100;
     position:absolute;
-    top:24em;
-    left:10em;
+    top:53%;
+    left:10%;
     -ms-transform: rotate(-5deg); /* IE 9 */
     -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
     transform: rotate(-5deg);
@@ -180,8 +147,8 @@ header nav ul > li > a
     text-align:center;
   	z-index: 100;
     position:absolute;
-    top:15em;
-    left:37em;
+    top:33%;
+    left:41%;
     -ms-transform: rotate(-5deg); /* IE 9 */
     -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
     transform: rotate(-5deg);
@@ -191,16 +158,18 @@ header nav ul > li > a
     text-align:right;
     z-index: 100;
     position:absolute;
-    top:36em;
-    left:21em;
+    border-radius: 10px;
+    top:80%;
+    left:22%;
+    background-color: rgba(255,255,255,0.6);
   }
 #about-header
   {
     list-style:none;
     z-index: 100;
     position:absolute;
-    top:70em;
-    left:33em;
+    top:150%;
+    left:36%;
     -ms-transform: rotate(-10deg); /* IE 9 */
     -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
     transform: rotate(-10deg);
@@ -210,8 +179,8 @@ header nav ul > li > a
     list-style:none;
     z-index: 100;
     position:absolute;
-    top:54em;
-    right:26em;
+    top:117%;
+    right:27%;
     -ms-transform: rotate(10deg); /* IE 9 */
     -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
     transform: rotate(10deg);
@@ -222,8 +191,8 @@ header nav ul > li > a
     list-style:none;
     z-index: 100;
     position:absolute;
-    top:80em;
-    right:22em;
+    top:171%;
+    right:25%;
     -ms-transform: rotate(-10deg); /* IE 9 */
     -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
     transform: rotate(-10deg);
@@ -243,6 +212,7 @@ header nav ul > li > a
     min-height: 1px;
     margin:0 2% 20px;
     list-style:none;
+    background-color: rgba(255,255,255,0.6);
   }
 #kcnc, #bb8, #film
   {
@@ -266,6 +236,10 @@ header nav ul > li > a
     -ms-transform: rotate(10deg); /* IE 9 */
     -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
     transform: rotate(10deg);
+  }
+.three-third
+  {
+    background-color: rgba(255,255,255,0.6);
   }
 .four-third, .three-third
   {
@@ -331,6 +305,7 @@ button, input, select, textarea
 footer
   {
     margin:auto;
+    padding-top:10px;
   }
 ul.social_icons, li.social
   {
@@ -350,6 +325,7 @@ ul.social_icons, li.social
     padding-bottom:.5em;
     display:flex;
     justify-content:space-between;
+    background-color: rgba(255,255,255,0.6);
   }
 .footer-left
   {
@@ -412,7 +388,15 @@ ul.social_icons, li.social
       margin:0 2% 20px;
       padding-left:20%;
     }
-    .one-half, .two-third
+    .two-third
+    {
+      float:left;
+      display:inline-block;
+      position:relative;
+      min-height: 1px;
+      margin:0 2% -36px;
+    }
+    .one-half
     {
       float:left;
       display:inline-block;
