@@ -29,6 +29,10 @@ $(document).ready(function() {
         });
     });
 });
+
+$('.mainMenu').children('li').on('click', function() {
+       $(this).children('ul').slideToggle('slow');
+});
 </script>
 
 
@@ -36,18 +40,18 @@ $(document).ready(function() {
   <body>
     <header>
       <nav class="container">
-        <div class="one-half">
+        <div class="header">
+          <ul class="header-logo">
           <a href="index.html" class ="site-logo">
             <img src="Assets/Logo3-med.png" alt="Portfolio" />
           </a>
-        </div>
-        <div class="rt-half">
-          <ul id="hamburger" class="menu dropit hamburger" >
+          </ul>
+          <ul class="mainMenu">
             <li>
               <a href="#" class="btn">
               <img src="Assets/Menu.png" alt="Portfolio" />
               </a>
-            <ul>
+            <ul id="hamburger" class="menu subMenu hamburger">
               <li><a data-page="home" href="#home"><h3>Home</h3> </a></li>
               <li><a data-page="about" href="#about"><h3>About</h3> </a></li>
               <li><a data-page="work" href="#work"><h3>Work</h3> </a></li>
@@ -66,7 +70,7 @@ $(document).ready(function() {
       <div id="home" class="page" data-page="home">
           <div class="hero"></div>
             <div id="greet"><h1>Greetings!</h1></div>
-            <div id="name"><h1>I'm <br/>Aaron Chen</h1></div>
+            <div id="name"><h1>I'm Aaron Chen</h1></div>
             <div id="blurb"><h4>A digital UX/UI designer <br/>who loves photography, <br/>video production, Star Wars <br/>and sea otters.<br>And dabs.</h4></div>
             <ul id="headers" class="menu no-bullet" >
                 <li><a id="about-header" data-page="about" href="#about"><h2> About </h2> </a></li>
@@ -99,46 +103,55 @@ $(document).ready(function() {
           <ul class="passionprojects">
             <a href="kcnc.html">
               <li class="two-third">
-              <img src="Assets/PassionProjects/KCNClogo.png" alt="Portfolio" />
-              <p id="kcnc"> KODACHROME NC </p>
+                <img src="Assets/PassionProjects/KCNClogo.png" alt="Portfolio" />
+                <p id="kcnc"> KODACHROME NC </p>
               </li>
             </a>
-            <ul class="pp2"><a href="bb-8.html">
+            <a id="pp2" href="bb-8.html">
               <li class="two-third">
-              <img src="Assets/BB-8/BB-8logo.png" alt="Portfolio" />
-              <p id="bb8"> BB-8 </p>
+                <img src="Assets/BB-8/BB-8logo.png" alt="Portfolio" />
+                <p id="bb8"> BB-8 </p>
               </li>
-            </a></ul>
+            </a>
             <a href="filmsnotdead.html">
               <li class="two-third">
-              <img src="Assets/PassionProjects/FilmsNotDeadlogo.png" alt="Portfolio" />
-              <p id="film"> #FilmsNotDead </p>
+                <img src="Assets/PassionProjects/FilmsNotDeadlogo.png" alt="Portfolio" />
+                <p id="film"> #FilmsNotDead </p>
               </li>
-          </a>
-        </ul>
+            </a>
+          </ul>
         </ul>
     </div>
 
 <!-- Work -->
     <div id="work" class="page hide" data-page="work">
         <ul class="container">
-          <li class="three-third">
-              <ul class="work-label">   <h2>Work</h2>   </ul>
-              <p>I have always been drawn to creative pursuits, so design was a natural evolution of my creative journey.
-              <br/>
-              <br/>I graduated from NCSU with a degree in Communication Media, with a very heavy focus on digital video and film production. I have always loved being behind the camera, to visually tell a compelling story. Being in North Carolina at the time, work was few and far between, I had to turn to retail management to get by.
-              <br/>
-              <br/>Fast forward a few years, and I continued to be creative even within my retail roles, doing photo shoots for Urban Outfitters for their local social media channels. It just wasn’t enough.  I needed  to jump back into something creative full time as a career. I was living in San Jose and had lots of friends in tech. They suggested looking into a bootcamp to see if I liked design work. That led me to Bloc, an amazing UI/UX bootcamp, which led me to where I am currently: doing incredibly creative work, and loving every second of it.</p>
-          </li>
-          <ul class="workprojects"><a href="paycrave.html"><li class="four-third">
-            <img src="Assets/Work/Paycrave.png" alt="Portfolio" />
-          </li></a>
-          <a href="knode.html"><li class="four-third">
-            <img src="Assets/Work/Knode.png" alt="Portfolio" />
-          </li></a>
-          <li class="four-third">
-            <img src="Assets/Work/Project3.png" alt="Portfolio" />
-          </li>
+            <li class="three-third">
+              <ul class="work-label">
+                <h2>Work</h2>
+              </ul>
+                <p>I have always been drawn to creative pursuits, so design was a natural evolution of my creative journey.
+                  <br/>
+                  <br/>I graduated from NCSU with a degree in Communication Media, with a very heavy focus on digital video and film production. I have always loved being behind the camera, to visually tell a compelling story. Being in North Carolina at the time, work was few and far between, I had to turn to retail management to get by.
+                  <br/>
+                  <br/>Fast forward a few years, and I continued to be creative even within my retail roles, doing photo shoots for Urban Outfitters for their local social media channels. It just wasn’t enough.  I needed  to jump back into something creative full time as a career. I was living in San Jose and had lots of friends in tech. They suggested looking into a bootcamp to see if I liked design work. That led me to Bloc, an amazing UI/UX bootcamp, which led me to where I am currently: doing incredibly creative work, and loving every second of it.</p>
+            </li>
+          <ul class="workprojects">
+            <a href="paycrave.html">
+              <li class="four-third">
+                <img src="Assets/Work/Paycrave.png" alt="Portfolio" />
+              </li>
+            </a>
+            <a href="knode.html">
+              <li class="four-third">
+                <img src="Assets/Work/Knode.png" alt="Portfolio" />
+              </li>
+            </a>
+            <a href="#">
+              <li class="four-third">
+                <img src="Assets/Work/Project3.png" alt="Portfolio" />
+              </li>
+            </a>
           </ul>
         </ul>
     </div>
@@ -178,7 +191,6 @@ $(document).ready(function() {
     <div class="footer-nav-block">
         <div class="footer-left"><img class="logo" src="Assets/Logo3-sm.png" alt="Portfolio" /></div>
         <div class="footer-mid">
-        <div class="music"><iframe src="https://open.spotify.com/embed/user/12101804363/playlist/6OquWn4ok5cqxcpBvJaFQr" width="250" height="80" frameborder="0" allowtransparency="true"></iframe></div>
         <div class="back"><a href='#top' class="back">back to top</a></div>
         </div>
         <div class="footer-right>"<ul class="social_icons">
