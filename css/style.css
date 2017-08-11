@@ -54,10 +54,6 @@ p
 
 
 /* HEADER */
-header
-  {
-    margin-bottom: 5%;
-  }
 header nav ul > li
   {
     list-style-type: none;
@@ -96,12 +92,13 @@ header nav ul > li > a
     display:none;
   }
 
+
 /* Hero */
 .hero
   {
 	  content: url("../Assets/BG_img.png");
   	z-index: 1;
-    max-width:100%;
+    width:400px;
   }
 #headers
   {
@@ -110,8 +107,8 @@ header nav ul > li > a
 #greet
   {
   	z-index: 100;
-    position:absolute;
-    top:10%;
+    position:fixed;
+    top:8%;
     left:25%;
     -ms-transform: rotate(-5deg); /* IE 9 */
     -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
@@ -121,29 +118,33 @@ header nav ul > li > a
   {
     text-align:center;
   	z-index: 100;
-    position:absolute;
-    top:16%;
+    position:fixed;
+    top:14%;
     left:5%;
     -ms-transform: rotate(-5deg); /* IE 9 */
     -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
     transform: rotate(-5deg);
   }
+#name br
+  {
+    display:none;
+  }
 #blurb
   {
     text-align:right;
     z-index: 100;
-    position:absolute;
+    position:fixed;
     border-radius: 10px;
-    top:32%;
+    top:30%;
     left:1%;
     background-color: rgba(255,255,255,0.6);
   }
 #about-header
   {
     z-index: 100;
-    position:absolute;
-    top:55%;
-    left:25%;
+    position:fixed;
+    top:49%;
+    left:33%;
     -ms-transform: rotate(-10deg); /* IE 9 */
     -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
     transform: rotate(-10deg);
@@ -151,9 +152,9 @@ header nav ul > li > a
 #work-header
   {
     z-index: 100;
-    position:absolute;
-    top:42%;
-    right:5%;
+    position:fixed;
+    top:40%;
+    right:13%;
     -ms-transform: rotate(10deg); /* IE 9 */
     -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
     transform: rotate(10deg);
@@ -162,8 +163,8 @@ header nav ul > li > a
   {
     text-align:center;
     z-index: 100;
-    position:absolute;
-    top:63%;
+    position:fixed;
+    top:57%;
     right:5%;
     -ms-transform: rotate(-10deg); /* IE 9 */
     -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
@@ -230,8 +231,8 @@ header nav ul > li > a
 /* Contact */
 .contact-label
   {
-    padding-top:10%;
     padding-right:35%;
+    padding-bottom:2%;
     text-align:center;
     -ms-transform: rotate(-10deg); /* IE 9 */
     -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
@@ -240,8 +241,8 @@ header nav ul > li > a
 input[type=text], select, textarea
   {
     width: 100%;
-    padding-top: 1%;
-    padding-left: 5%;
+    padding-top: 2px;
+    padding-left: 5px;
     border: 1px solid #333333;
     border-radius: 10px;
     box-sizing: border-box;
@@ -320,16 +321,253 @@ ul.social_icons, li.social
   }
 
 
-/* Media Queries */
+/* -------------       Media Queries       ------------- */
 
-@media (min-width: 992px)
-  {
 
-  }
-@media (min-width: 768px)
+
+/* iPad Portrait and Landscape */
+@media only screen
+  and (min-width: 768px)
+  and (-webkit-min-device-pixel-ratio: 1)
+{
+  h2
   {
-    .back
-      {
-        display:flex;
-      }
+    font-size:32px;
   }
+  p
+  {
+    font-size:16px;
+  }
+  .hero
+  {
+    width:768px;
+  }
+  #greet
+  {
+    position:absolute;
+    top:31%;
+    left:10%;
+  }
+  #name
+  {
+    position:absolute;
+    top:20%;
+    left:40%;
+  }
+  #name br
+  {
+    display:inline;
+  }
+  #blurb
+  {
+    position:absolute;
+    top:50%;
+    left:20%;
+  }
+  #about-header
+  {
+    position:absolute;
+    top:90%;
+    left:39%;
+  }
+  #work-header
+  {
+    position:absolute;
+    top:71%;
+    right:15%;
+  }
+  #contact-header
+  {
+    position:absolute;
+    top:103%;
+    right:10%;
+  }
+  .about-label
+  {
+    padding-bottom: 5em;
+  }
+  .workprojects
+  {
+    padding-left:23%;
+  }
+  .footer-nav-block
+  {
+    margin: 0.5em 20% 2em 22%;
+  }
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+  and (min-width: 992px)
+  and (-webkit-min-device-pixel-ratio: 1)
+{
+  .hero
+  {
+    width:992px;
+  }
+  #greet
+  {
+    position:absolute;
+    top:40%;
+    left:12%;
+  }
+  #name
+  {
+    position:absolute;
+    top:25%;
+    left:47%;
+  }
+  #blurb
+  {
+    position:absolute;
+    top:63%;
+    left:26%;
+  }
+  #about-header
+  {
+    position:absolute;
+    top:115%;
+    left:41%;
+  }
+  #work-header
+  {
+    position:absolute;
+    top:91%;
+    right:18%;
+  }
+  #contact-header
+  {
+    position:absolute;
+    top:132%;
+    right:14%;
+  }
+  .container:before,
+  .container:after
+  {
+    content: " ";
+    display: table;
+  }
+  .container:after
+  {
+    clear: both;
+  }
+  .one-third
+  {
+    width:33%;
+    float:left;
+    padding-left:10%;
+  }
+  .two-third
+  {
+    float:left;
+    display:inline-block;
+    position:relative;
+    min-height: 1px;
+    margin:0 2% -4em;
+    padding-top:20%;
+  }
+  #pp2
+  {
+    padding-top:15%;
+    padding-left: 80%;
+  }
+  .three-third
+  {
+    width:33%;
+    float:right;
+    padding-right:10%;
+  }
+  .workprojects
+  {
+    padding:0;
+  }
+  .four-third
+  {
+    padding-right:10%;
+    padding-top:12%;
+  }
+  input[type=text], select, textarea
+  {
+    width:75%;
+  }
+  #cntct
+  {
+    padding-left:25%;
+  }
+  input[type=submit]
+  {
+    margin-left:50%;
+  }
+  .back
+  {
+    display:flex;
+  }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen
+  and (min-width: 1200px)
+  and (-webkit-min-device-pixel-ratio: 2)
+{
+  h1
+  {
+    font-size:56px;
+  }
+  h2
+  {
+    font-size:48px;
+  }
+  h4
+  {
+    font-size:24px;
+  }
+  p
+  {
+    font-size:18px;
+  }
+  .hero
+  {
+    width:1200px;
+  }
+  #greet
+  {
+    position:absolute;
+    top:45%;
+    left:10%;
+  }
+  #name
+  {
+    position:absolute;
+    top:25%;
+    left:43%;
+  }
+  #blurb
+  {
+    position:absolute;
+    top:75%;
+    left:24%;
+  }
+  #about-header
+  {
+    position:absolute;
+    top:137%;
+    left:39%;
+  }
+  #work-header
+  {
+    position:absolute;
+    top:107%;
+    right:17%;
+  }
+  #contact-header
+  {
+    position:absolute;
+    top:157%;
+    right:12%;
+  }
+  .two-third
+  {
+    margin:0 2% -7em;
+  }
+
+}
