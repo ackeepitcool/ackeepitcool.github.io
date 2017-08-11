@@ -107,9 +107,9 @@ header nav ul > li > a
 #greet
   {
   	z-index: 100;
-    position:fixed;
-    top:8%;
-    left:25%;
+    position:absolute;
+    top:60px;
+    left:100px;
     -ms-transform: rotate(-5deg); /* IE 9 */
     -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
     transform: rotate(-5deg);
@@ -118,9 +118,9 @@ header nav ul > li > a
   {
     text-align:center;
   	z-index: 100;
-    position:fixed;
-    top:14%;
-    left:5%;
+    position:absolute;
+    top:100px;
+    left:30px;
     -ms-transform: rotate(-5deg); /* IE 9 */
     -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
     transform: rotate(-5deg);
@@ -133,16 +133,16 @@ header nav ul > li > a
   {
     text-align:right;
     z-index: 100;
-    position:fixed;
+    position:absolute;
     border-radius: 10px;
-    top:30%;
-    left:1%;
+    top:220px;
+    left:10px;
     background-color: rgba(255,255,255,0.6);
   }
 #about-header
   {
     z-index: 100;
-    position:fixed;
+    position:absolute;
     top:49%;
     left:33%;
     -ms-transform: rotate(-10deg); /* IE 9 */
@@ -152,7 +152,7 @@ header nav ul > li > a
 #work-header
   {
     z-index: 100;
-    position:fixed;
+    position:absolute;
     top:40%;
     right:13%;
     -ms-transform: rotate(10deg); /* IE 9 */
@@ -163,7 +163,7 @@ header nav ul > li > a
   {
     text-align:center;
     z-index: 100;
-    position:fixed;
+    position:absolute;
     top:57%;
     right:5%;
     -ms-transform: rotate(-10deg); /* IE 9 */
@@ -174,6 +174,7 @@ header nav ul > li > a
 /* About */
 .about-label
   {
+    z-index:100;
     padding-bottom:2em;
     -ms-transform: rotate(-10deg); /* IE 9 */
     -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
