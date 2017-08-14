@@ -39,6 +39,11 @@ h2
     font-weight: normal;
     margin-bottom: 5px;
   }
+h3
+  {
+    font-size:24px;
+    font-weight: 600;
+  }
 h4
   {
     font-size:18px;
@@ -73,19 +78,26 @@ header nav ul > li > a
     display:flex;
     justify-content: space-between;
   }
-.mainMenu
-  {
-    padding-top: 1em;
-    padding-right: 2em;
-  }
 
 
 /* MENU */
+.mainMenu
+  {
+    padding-top: 2em;
+    padding-right: 2em;
+  }
 .hamburger
   {
+    font-style:
+    float:left;
+    line-height: 20px;
+    padding:1em;
+    margin-top: -1em;
+    margin-left: -2em;
     background-color: rgba(255,255,255,0.6);
-    padding: 1em 1em;
     border-radius: 10px;
+    z-index:1000;
+    position:absolute;
   }
 .subMenu
   {
@@ -98,11 +110,12 @@ header nav ul > li > a
   {
 	  content: url("../Assets/BG_img.png");
   	z-index: 1;
-    width:400px;
+    width:100%;
   }
 #headers
   {
     list-style-type: none;
+    display:none;
   }
 #greet
   {
@@ -133,9 +146,10 @@ header nav ul > li > a
   {
     text-align:right;
     z-index: 100;
+    padding-right:10px;
     position:absolute;
     border-radius: 10px;
-    top:220px;
+    top:260px;
     left:10px;
     background-color: rgba(255,255,255,0.6);
   }
@@ -143,8 +157,8 @@ header nav ul > li > a
   {
     z-index: 100;
     position:absolute;
-    top:49%;
-    left:33%;
+    top:360px;
+    left:140px;
     -ms-transform: rotate(-10deg); /* IE 9 */
     -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
     transform: rotate(-10deg);
@@ -153,8 +167,8 @@ header nav ul > li > a
   {
     z-index: 100;
     position:absolute;
-    top:40%;
-    right:13%;
+    top:290px;
+    left:320px;
     -ms-transform: rotate(10deg); /* IE 9 */
     -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
     transform: rotate(10deg);
@@ -164,8 +178,8 @@ header nav ul > li > a
     text-align:center;
     z-index: 100;
     position:absolute;
-    top:57%;
-    right:5%;
+    top:420px;
+    left:300px;
     -ms-transform: rotate(-10deg); /* IE 9 */
     -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
     transform: rotate(-10deg);
@@ -191,7 +205,7 @@ header nav ul > li > a
 
 .passionprojects
   {
-    padding-right:20%;
+    padding-right:15%;
     list-style-type:none;
     text-align:center;
     display:flex;
@@ -284,7 +298,6 @@ button, input, select, textarea
 footer
   {
     margin:auto;
-    padding-top:5%;
   }
 ul.social_icons, li.social
   {
@@ -312,12 +325,8 @@ ul.social_icons, li.social
 .footer-mid
   {
 	  padding-top:1em;
-    padding-left:10%;
 	  text-decoration: none;
     text-align:center;
-  }
-.back
-  {
     display:none;
   }
 
@@ -343,17 +352,21 @@ ul.social_icons, li.social
   {
     width:768px;
   }
+  #headers
+  {
+    display:block;
+  }
   #greet
   {
     position:absolute;
-    top:31%;
-    left:10%;
+    top:230px;
+    left:75px;
   }
   #name
   {
     position:absolute;
-    top:20%;
-    left:40%;
+    top:150px;
+    left:310px;
   }
   #name br
   {
@@ -362,38 +375,41 @@ ul.social_icons, li.social
   #blurb
   {
     position:absolute;
-    top:50%;
-    left:20%;
+    top:375px;
+    left:130px;
   }
   #about-header
   {
     position:absolute;
-    top:90%;
-    left:39%;
+    top:665px;
+    left:290px;
   }
   #work-header
   {
     position:absolute;
-    top:71%;
-    right:15%;
+    top:525px;
+    left:570px;
   }
   #contact-header
   {
     position:absolute;
-    top:103%;
-    right:10%;
+    top:767px;
+    left:570px;
   }
+/* About Page */
   .about-label
   {
     padding-bottom: 5em;
   }
+/* Work Page */
   .workprojects
   {
     padding-left:23%;
   }
+/* Footer */
   .footer-nav-block
   {
-    margin: 0.5em 20% 2em 22%;
+    margin: 0.5em 22% 2em 22%;
   }
 }
 
@@ -402,6 +418,7 @@ ul.social_icons, li.social
   and (min-width: 992px)
   and (-webkit-min-device-pixel-ratio: 1)
 {
+/* Main Page */
   .hero
   {
     width:992px;
@@ -409,38 +426,43 @@ ul.social_icons, li.social
   #greet
   {
     position:absolute;
-    top:40%;
-    left:12%;
+    top:310px;
+    left:110px;
   }
   #name
   {
     position:absolute;
-    top:25%;
-    left:47%;
+    top:200px;
+    left:460px;
   }
   #blurb
   {
     position:absolute;
-    top:63%;
-    left:26%;
+    top:475px;
+    left:250px;
   }
   #about-header
   {
     position:absolute;
-    top:115%;
-    left:41%;
+    top:855px;
+    left:400px;
   }
   #work-header
   {
     position:absolute;
-    top:91%;
-    right:18%;
+    top:670px;
+    left:730px;
   }
   #contact-header
   {
     position:absolute;
-    top:132%;
-    right:14%;
+    top:985px;
+    left:740px;
+  }
+/* About Page */
+  #about
+  {
+    padding-bottom: 5em;
   }
   .container:before,
   .container:after
@@ -464,14 +486,16 @@ ul.social_icons, li.social
     display:inline-block;
     position:relative;
     min-height: 1px;
-    margin:0 2% -4em;
-    padding-top:20%;
+    margin:0 2% -6em;
+    padding-top:25%;
   }
   #pp2
   {
     padding-top:15%;
-    padding-left: 80%;
+    padding-left: 40%;
+    padding-bottom:4%;
   }
+/* Work Page */
   .three-third
   {
     width:33%;
@@ -487,6 +511,7 @@ ul.social_icons, li.social
     padding-right:10%;
     padding-top:12%;
   }
+/* Contact Page */
   input[type=text], select, textarea
   {
     width:75%;
@@ -499,9 +524,19 @@ ul.social_icons, li.social
   {
     margin-left:50%;
   }
-  .back
+/* Footer */
+  .footer-nav-block
+  {
+    margin: 0.5em 20% 2em 20%;
+  }
+  .footer-mid
   {
     display:flex;
+  }
+  .back
+  {
+    padding-left:2em;
+    padding-right:2em;
   }
 }
 
@@ -533,42 +568,37 @@ ul.social_icons, li.social
   #greet
   {
     position:absolute;
-    top:45%;
-    left:10%;
+    top:340px;
+    left:110px;
   }
   #name
   {
     position:absolute;
-    top:25%;
-    left:43%;
+    top:200px;
+    left:510px;
   }
   #blurb
   {
     position:absolute;
-    top:75%;
-    left:24%;
+    top:555px;
+    left:270px;
   }
   #about-header
   {
     position:absolute;
-    top:137%;
-    left:39%;
+    top:1010px;
+    left:460px;
   }
   #work-header
   {
     position:absolute;
-    top:107%;
-    right:17%;
+    top:800px;
+    left:900px;
   }
   #contact-header
   {
     position:absolute;
-    top:157%;
-    right:12%;
+    top:1170px;
+    left:890px;
   }
-  .two-third
-  {
-    margin:0 2% -7em;
-  }
-
 }

@@ -29,9 +29,8 @@ $(document).ready(function() {
         });
     });
 });
-
-$('.mainMenu').children('li').on('click', function() {
-       $(this).children('ul').slideToggle('slow');
+$(document).on('click', function(){
+    $(window).scrollTop('#top');
 });
 </script>
 
@@ -47,8 +46,7 @@ $('.mainMenu').children('li').on('click', function() {
             <img src="Assets/Logo3-med.png" alt="Portfolio" />
           </a>
           </ul>
-          <ul class="mainMenu">
-            <li>
+          <div class="mainMenu">
               <a href="#" class="btn">
               <img src="Assets/Menu.png" alt="Portfolio" />
               </a>
@@ -56,10 +54,9 @@ $('.mainMenu').children('li').on('click', function() {
               <li><a data-page="home" href="#home"><h3>Home</h3> </a></li>
               <li><a data-page="about" href="#about"><h3>About</h3> </a></li>
               <li><a data-page="work" href="#work"><h3>Work</h3> </a></li>
-              <li><a data-page="contact" href="#contact"><h3>Contact Me</h3> </a></li>
+              <li><a data-page="contact" href="#contact"><h3>Contact</h3> </a></li>
             </ul>
-            </li>
-          </ul>
+          </div>
         </div>
       </nav>
       </header>
@@ -100,7 +97,6 @@ $('.mainMenu').children('li').on('click', function() {
                 <br/>
                 <br/>I am a creative.</p>
             </li>
-          </ul>
           <ul class="passionprojects">
             <a href="kcnc.html">
               <li class="two-third">
@@ -114,7 +110,7 @@ $('.mainMenu').children('li').on('click', function() {
                 <p id="bb8"> BB-8 </p>
               </li>
             </a>
-            <a href="filmsnotdead.html">
+            <a id="pp3" href="filmsnotdead.html">
               <li class="two-third">
                 <img src="Assets/PassionProjects/FilmsNotDeadlogo.png" alt="Portfolio" />
                 <p id="film"> #FilmsNotDead </p>
@@ -212,21 +208,12 @@ $('.mainMenu').children('li').on('click', function() {
 $("#contact-form").validate({
   submitHandler: function(form) {
     $.ajax({
-      url: "//formspree.io/myemail@gmail.com",
+      url: "//formspree.io/contact.agchen@gmail.com",
       method: "POST",
       data: {
         name: $(form).find("input[name='name']").val(),
         _replyto: $(form).find("input[name='_replyto']").val(),
         message: $(form).find("textarea[name='message']").val()
-      },
-      dataType: "json"
-    });
-  }
-});
-$("#contact-form").validate({
-  submitHandler: function(form) {
-    $.ajax({
-      ...
       },
       dataType: "json",
       success: function() {
@@ -239,4 +226,9 @@ $("#contact-form").validate({
     });
   }
 });
+
+$('.mainMenu a.btn').on('click', function() {
+    $("ul#hamburger").slideToggle('slow');
+});
+
 </script>
