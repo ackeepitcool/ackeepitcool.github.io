@@ -9,75 +9,116 @@
 <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
+<!-- CSS -->
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style_kcnc.css">
+
+<!-- JQuery -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script>
+$(document).ready(function() {
+    $(".menu li a").on('click', function(e) {
+        e.preventDefault();
+        var page = $(this).data('page');
+        console.log(page);
+        $("#pages .page:not('.hide')").stop().fadeOut('fast', function() {
+            $(this).addClass('hide');
+            $('body').removeClass();
+            var newpage = $('#pages .page[data-page="'+page+'"]')[0];
+            $(newpage).fadeIn('slow').removeClass('hide');
+            $('body').addClass(page + '-img');
+        });
+        $("ul#hamburger").slideUp('slow');
+    });
+});
+$(document).on('click', function(){
+    $(window).scrollTop('#top');
+});
+</script>
+
 </head>
+
+
 <body>
-    <header>
-      <nav class="container">
-        <div class="one-half">
-          <a href="index.html" class ="site-logo">
-            <img src="Assets/Logo3.png" alt="Portfolio" />
-          </a>
-        </div>
-        <div class="rt-half">
-          <ul>
-            <a class="hamburger" id="menu" href="#">&#9776;</a>
-            <li>
-              <a href="#about">About</a>
-              <a href="#work">Work</a>
-              <a href="#contact">Contact Me</a>
-            </li>
+<!-- Header -->
+  <header>
+    <nav class="container">
+      <a name="top"></a>
+      <div class="header">
+        <ul class="header-logo">
+        <a href="index.html" class ="site-logo">
+          <img src="Assets/Logo3-med.png" alt="Portfolio" />
+        </a>
+        </ul>
+        <div class="mainMenu">
+            <a href="#" class="btn">
+            <img src="Assets/Menu.png" alt="Portfolio" />
+            </a>
+          <ul id="hamburger" class="menu subMenu hamburger">
+            <li><a data-page="home" href="#home"><h3>Home</h3> </a></li>
+            <li><a data-page="about" href="#about"><h3>About</h3> </a></li>
+            <li><a data-page="work" href="#work"><h3>Work</h3> </a></li>
+            <li><a data-page="contact" href="#contact"><h3>Contact</h3> </a></li>
           </ul>
         </div>
-        <a name="top"></a>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-  <main role="main">
-    <section class="case-study">
+<main role="main">
+  <section class="case-study">
       <ul class="container">
-        <li class="right-third">
+        <li class="title_righthalf">
             <h1>KODACHROME NC</h1>
         </li>
-        <li class="left-third">
+        <li class="title_lefthalf">
           <img src="Assets/KCNC/KCNClogo.png" alt="Portfolio" />
         </li>
-        <li class="left-third">
+        <li class="body_lefthalf">
             <p>For a couple of years, I was able to put two of my greatest passions together: Video production and dance. I was lucky enough to work with an amazing organization called KODACHROME NC as their videographer and  visual consultant. Being able to mix two things that made up a huge part of my college pursuits was a blessing. The work helped define me as a person and has led to many rewarding personal and professional relationships.</p>
         </li>
-        <li class="right-third">
+        <li class="body_righthalf">
           <img src="Assets/KCNC/exposedance.png" alt="Portfolio" />
         </li>
-        <li class="right-third">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/LmCRR8w5QFY" frameborder="0" allowfullscreen></iframe>
-        </li>
-        <li class="right-third">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/jsn8zdFshvk" frameborder="0" allowfullscreen></iframe>
-        </li>
-        <li class="left-third">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/RVFGbsBIoGk" frameborder="0" allowfullscreen></iframe>
+        <ul class="vid">
+          <li class="vid_left">
+            <a href="https://www.youtube.com/watch?v=LmCRR8w5QFY">
+              <img src="Assets/KCNC/Leesa.png" alt="Portfolio" />
+            </a>
+          </li>
+          <li class="vid_right">
+            <a href="https://www.youtube.com/watch?v=RVFGbsBIoGk">
+              <img src="Assets/KCNC/Preston.png" alt="Portfolio" />
+            </a>
+          </li>
+          <li class="vid_left">
+            <a href="https://www.youtube.com/watch?v=jsn8zdFshvk&t">
+              <img src="Assets/KCNC/Jay.png" alt="Portfolio" />
+            </a>
+          </li>
+        </ul>
+        <li class="conclusion">
+            <p>To view more work, please visit the <a href="https://www.youtube.com/user/kodachrometv/videos">KODACHROME NC channel</a>.</p>
         </li>
       </ul>
-    </section>
-  </main>
+  </section>
+</main>
 
 <!-- Footer -->
-  <footer>
-      <div class="container footer-nav-block">
-      <nav class="left-footer-block footer-third">
-        <ul>
-          <li><a href="http://instagram.com/ackeepitcool"><img class="social" src="Assets/Social/IG.png" alt="Portfolio" /></a></li>
-          <li><a href="http://twitter.com/ackeepitcool"><img class="social" src="Assets/Social/twitter.png" alt="Portfolio" /></a></li>
-          <li><a href="http://linkedin.com/agchen"><img class="social" src="Assets/Social/linkedin.png" alt="Portfolio" /></a></li>
-          <li><a href="http://dribbble.com/ackeepitcool"><img class="social" src="Assets/Social/dribbble.png" alt="Portfolio" /></a></li>
-        </ul>
-      </nav>
-      <div class="link-block middle-footer-block footer-third">
-          <a href='#top'>back to top</a>
-      </div>
-        <div class="right-footer-block footer-third">
-          <img class="logo" src="Assets/Logo3.png" alt="Portfolio" />
+<footer>
+    <div class="footer-nav-block">
+        <div class="footer-left"><a href="index.html"><img class="logo" src="Assets/Logo3-sm.png" alt="Portfolio" /></a></div>
+        <div class="footer-mid">
+        <div class="back"><a href='javascript:history.back()' class="back">go back</a></div>
         </div>
-      </div>
-    </footer>
+        <div class="footer-right>"<ul class="social_icons">
+          <li class="social"><a href="http://instagram.com/ackeepitcool"><img class="social" src="Assets/Social/IG.png" alt="Portfolio" /></a></li>
+          <li class="social"><a href="http://twitter.com/ackeepitcool"><img class="social" src="Assets/Social/twitter.png" alt="Portfolio" /></a></li>
+          <li class="social"><a href="http://linkedin.com/agchen"><img class="social" src="Assets/Social/linkedin.png" alt="Portfolio" /></a></li>
+          <li class="social"><a href="http://dribbble.com/ackeepitcool"><img class="social" src="Assets/Social/dribbble.png" alt="Portfolio" /></a></li>
+        </ul>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

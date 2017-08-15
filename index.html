@@ -12,7 +12,6 @@
 <!-- CSS -->
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/style.css">
-<!--link rel="stylesheet" href="css/dropit.css"-->
 
 <!-- JQuery -->
 <script src="js/jquery-3.2.1.min.js"></script>
@@ -37,32 +36,34 @@ $(document).on('click', function(){
 });
 </script>
 
-
 </head>
-  <body>
-    <header>
-      <nav class="container">
-        <a name="top"></a>
-        <div class="header">
-          <ul class="header-logo">
-          <a href="index.html" class ="site-logo">
-            <img src="Assets/Logo3-med.png" alt="Portfolio" />
-          </a>
+
+
+<body>
+<!-- Header -->
+  <header>
+    <nav class="container">
+      <a name="top"></a>
+      <div class="header">
+        <ul class="header-logo">
+        <a href="index.html" class ="site-logo">
+          <img src="Assets/Logo3-med.png" alt="Portfolio" />
+        </a>
+        </ul>
+        <div class="mainMenu">
+            <a href="#" class="btn">
+            <img src="Assets/Menu.png" alt="Portfolio" />
+            </a>
+          <ul id="hamburger" class="menu subMenu hamburger">
+            <li><a data-page="home" href="#home"><h3>Home</h3> </a></li>
+            <li><a data-page="about" href="#about"><h3>About</h3> </a></li>
+            <li><a data-page="work" href="#work"><h3>Work</h3> </a></li>
+            <li><a data-page="contact" href="#contact"><h3>Contact</h3> </a></li>
           </ul>
-          <div class="mainMenu">
-              <a href="#" class="btn">
-              <img src="Assets/Menu.png" alt="Portfolio" />
-              </a>
-            <ul id="hamburger" class="menu subMenu hamburger">
-              <li><a data-page="home" href="#home"><h3>Home</h3> </a></li>
-              <li><a data-page="about" href="#about"><h3>About</h3> </a></li>
-              <li><a data-page="work" href="#work"><h3>Work</h3> </a></li>
-              <li><a data-page="contact" href="#contact"><h3>Contact</h3> </a></li>
-            </ul>
-          </div>
         </div>
-      </nav>
-      </header>
+      </div>
+    </nav>
+  </header>
 
 <main role="main">
 <!-- Main -->
@@ -189,7 +190,7 @@ $(document).on('click', function(){
 <!-- Footer -->
 <footer>
     <div class="footer-nav-block">
-        <div class="footer-left"><img class="logo" src="Assets/Logo3-sm.png" alt="Portfolio" /></div>
+        <div class="footer-left"><a href="index.html"><img class="logo" src="Assets/Logo3-sm.png" alt="Portfolio" /></a></div>
         <div class="footer-mid">
         <div class="back"><a href='#top' class="back">back to top</a></div>
         </div>

@@ -129,6 +129,7 @@ header nav ul > li > a
 	  content: url("../Assets/BG_img.png");
   	z-index: 1;
     width:100%;
+    margin-top:2em;
   }
 #headers
   {
@@ -139,8 +140,8 @@ header nav ul > li > a
   {
   	z-index: 100;
     position:absolute;
-    top:60px;
-    left:100px;
+    top:80px;
+    left:80px;
     -ms-transform: rotate(-5deg); /* IE 9 */
     -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
     transform: rotate(-5deg);
@@ -150,8 +151,8 @@ header nav ul > li > a
     text-align:center;
   	z-index: 100;
     position:absolute;
-    top:100px;
-    left:30px;
+    top:120px;
+    left:10px;
     -ms-transform: rotate(-5deg); /* IE 9 */
     -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
     transform: rotate(-5deg);
@@ -167,7 +168,7 @@ header nav ul > li > a
     padding-right:10px;
     position:absolute;
     border-radius: 10px;
-    top:260px;
+    top:275px;
     left:10px;
     background-color: rgba(255,255,255,0.6);
   }
@@ -322,6 +323,7 @@ button, input, select, textarea
 footer
   {
     margin:auto;
+    padding-top:2em;
   }
 ul.social_icons, li.social
   {
@@ -375,6 +377,7 @@ ul.social_icons, li.social
   .hero
   {
     width:768px;
+    margin-top:0;
   }
   #headers
   {
@@ -449,6 +452,10 @@ ul.social_icons, li.social
   and (-webkit-min-device-pixel-ratio: 1)
 {
 /* Main Page */
+  p
+  {
+    line-height:25px;
+  }
   .hero
   {
     width:992px;
@@ -601,6 +608,7 @@ ul.social_icons, li.social
   p
   {
     font-size:18px;
+    line-height:30px;
   }
   .hero
   {
@@ -645,5 +653,9 @@ ul.social_icons, li.social
   .contact-label
   {
     margin-left: 2em;
+  }
+  #cntct
+  {
+    margin-bottom:-5em;
   }
 }
