@@ -73,6 +73,7 @@ p
     font-size:12px;
     line-height:20px;
     font-weight:300;
+    background-color: rgba(255,255,255,0.6);
   }
 
 
@@ -106,7 +107,6 @@ header nav ul > li > a
   }
 .hamburger
   {
-    font-style:
     float:left;
     line-height: 20px;
     padding:1em;
@@ -127,37 +127,41 @@ header nav ul > li > a
   {
     list-style-type:none;
   }
-.title_lefthalf img
+main
   {
-    width:30%;
+    list-style-type:none;
+    padding-left:2%;
+    padding-right:2%;
+  }
+.title img
+  {
+    max-width:250px;
+    width:100%;
     display:none;
   }
-.title_righthalf
+.title-right
   {
-    margin-top:-2em;
-    margin-bottom:-2em;
     padding:1em;
   }
-.body_righthalf img
+.body img
   {
-    width:50%;
+    width:100%;
     display:none;
   }
-.body_lefthalf
+.body_left
   {
     padding:1em;
   }
 .vid
   {
-    padding:1em;
-    list-style-type:none;
     display:flex;
-    justify-content:flex-end;
+    justify-content:center;
     flex-direction:column;
+    padding:1em;
   }
 .vid_left, .vid_right
   {
-    padding:1em;
+    padding-top:1em;
   }
 .vid img
   {
@@ -165,19 +169,9 @@ header nav ul > li > a
   }
 .conclusion
   {
-    height: 2;
-    position: relative
+    padding-top:1em;
   }
-.conclusion p
-  {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    padding-right:1em;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-  }
+
 
 
 /* FOOTER */
@@ -221,7 +215,6 @@ ul.social_icons, li.social
 /* -------------       Media Queries       ------------- */
 
 
-
 /* iPad Portrait and Landscape */
 @media only screen
   and (min-width: 768px)
@@ -236,51 +229,35 @@ ul.social_icons, li.social
     font-size:16px;
     line-height:30px;
   }
-  .title_lefthalf img
+  main
   {
-    width:90%;
-    display:inline-block;
+    padding-left:10%;
+    padding-right:10%;
   }
-  .title_lefthalf
+  .title img
   {
-    float:left;
-    margin-top:-20em;
-    margin-bottom:1em;
-    margin-left:0;
-    margin-right:5em;
-    padding-left:15%;
+    display:block;
   }
-  .title_righthalf
+  .title, .body
   {
-    margin-top:3em;
-    margin-bottom:10em;
-    padding-left:50%;
-    float:left;
-    display:inline-block;
+    display:flex;
+    justify-content:center;
   }
-  .body_righthalf img
+  .title-right
   {
-    width:90%;
-    display:inline-block;
+    padding-top:5em;
   }
-  .body_lefthalf
+  .vid
   {
-    margin-right:50%;
-    margin-top:-5em;
-    padding:1em;
-    float:left;
-    display:inline-block;
-  }
-  .body_righthalf
-  {
-    float:left;
-    margin-top:-18em;
-    margin-left:50%;
+    padding-left:8%;
   }
   .vid img
   {
     width:500px;
-    padding-left:10%;
+  }
+  .conclusion
+  {
+    padding-left:8%;
   }
 
 /* Footer */
@@ -306,15 +283,37 @@ ul.social_icons, li.social
   {
     clear: both;
   }
-  .vid img
+  .title img
   {
-    width:500px;
-    padding-left:5%;
+    padding-right:5em;
+  }
+  .body img
+  {
+    display:block;
+    padding-top:3em;
+    width:400px;
+  }
+  .body_left
+  {
+    padding-right:2em;
+  }
+  .vid
+  {
+    padding-left:0;
+  }
+  .vid-left img
+  {
+    width:70%;
   }
   .vid_right
   {
-    padding-left:40%;
+    padding-left:30%;
   }
+  .conclusion
+  {
+    padding-left:15%;
+  }
+
 
 /* Footer */
   .footer-nav-block
@@ -352,5 +351,10 @@ ul.social_icons, li.social
   p
   {
     font-size:18px;
+  }
+  main
+  {
+    padding-left:15%;
+    padding-right:15%;
   }
 }

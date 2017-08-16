@@ -127,20 +127,41 @@ header nav ul > li > a
   {
     list-style-type:none;
   }
-main img
-  {
-    width:300px;
-  }
-main
-  {
-    padding-right:2em;
-    padding-left:.5em;
-    padding-top:1em;
-    }
-.center-text img
+.title img
   {
     width:100%;
   }
+.research img
+  {
+    width:100%;
+  }
+.market-analysis img
+  {
+    width:200px;
+    padding-left:15%;
+    padding-top:1em;
+  }
+main
+  {
+    padding-right:5%;
+    padding-left:5%;
+    padding-top:1em;
+  }
+.center-text img
+  {
+    padding-top:1em;
+    width:100%;
+  }
+.approach-left, .approach-right
+  {
+    display:none;
+  }
+.wireframes img
+  {
+    padding-top:1em;
+    width:100%;
+  }
+
 
 
 /* FOOTER */
@@ -211,46 +232,61 @@ ul.social_icons, li.social
     font-size:16px;
     line-height:30px;
   }
-  .intro, .process, .mockups, .foodtruck, .discover, .account, .order
+  .approach-left, .approach-right
+  {
+    display:block;
+  }
+  .title, .market-analysis, .research, .approach, .wireframes
   {
     display:flex;
     justify-content: center;
   }
-  .intro-right
+  .title-right
   {
-    padding-left: 3em;
-    padding-top:5em;
+    padding-right:1em;
   }
-  #blurb
+  .title-left
   {
-    padding-top:2em;
+    padding-top:2.5em;
+    padding-right:7em;
   }
-  #process-left, #mockup-left, #discover-left, #order-left
+  .market-left, .market-right
+  {
+    padding:1em;
+  }
+  .market-right
+  {
+    padding-top:1.4em;
+  }
+  .research-left
   {
     padding-right:2em;
   }
-  #ft-right, #account-right
+  .research-right img
   {
-    padding-left:2em;
+    padding-top:2%;
+    width:400px;
   }
-  #process-right_img
+  .approach
   {
-    padding-top:6em;
+    padding-top:1em;
   }
-  .mockups img
+  .wireframes
   {
-    margin-top:-5em;
+    padding:1em;
   }
-  .discover h3
+  .left-third
   {
-    padding-right:2em;
+    padding-right:1em;
   }
-  .account img
+  .right-third
   {
-    padding-top:1.5em;
+    padding-left:1em;
   }
   .center-text img
   {
+    margin-top:1em;
+    padding:2%;
     max-width:768px;
   }
 
@@ -279,10 +315,6 @@ ul.social_icons, li.social
     padding-left:10%;
     padding-right:10%;
   }
-  .center-img img
-  {
-    padding-left:5%;
-  }
 
 /* Footer */
   .footer-nav-block
@@ -297,6 +329,10 @@ ul.social_icons, li.social
   {
     padding-left:2em;
     padding-right:2em;
+  }
+  .center-text img
+  {
+    margin-left:5%;
   }
 }
 
@@ -326,13 +362,9 @@ ul.social_icons, li.social
     padding-left:15%;
     padding-right:15%;
   }
-  #mockup-left, #ft-right, #account-right, #order-left
+  .center-text img
   {
-    padding-top:2em;
-  }
-  .foodtruck, .discover, .account, .order
-  {
-    padding-top:2em;
+    margin-left:7%;
   }
 
 }

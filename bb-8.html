@@ -1,129 +1,131 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="UTF-8">
-  <title>BB-8 Passion Project</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>BB-8 Passion Project</title>
 
-  <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style_bb8.css">
+<!-- CSS -->
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style_bb8.css">
 
-  <!-- JQuery -->
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script>
-  $(document).ready(function() {
-      $(".menu li a").on('click', function(e) {
-          e.preventDefault();
-          var page = $(this).data('page');
-          console.log(page);
-          $("index.html#pages .page:not('.hide')").stop().fadeOut('fast', function() {
-              $(this).addClass('hide');
-              $('body').removeClass();
-              var newpage = $('#pages .page[data-page="'+page+'"]')[0];
-              $(newpage).fadeIn('slow').removeClass('hide');
-              $('body').addClass(page + '-img');
-          });
-          $("ul#hamburger").slideToggle('slow');
-      });
-  });
-  </script>
+<!-- JQuery -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script>
+$(document).ready(function() {
+    $(".menu li a").on('click', function(e) {
+        e.preventDefault();
+        var page = $(this).data('page');
+        console.log(page);
+        $("index.html#pages .page:not('.hide')").stop().fadeOut('fast', function() {
+            $(this).addClass('hide');
+            $('body').removeClass();
+            var newpage = $('#pages .page[data-page="'+page+'"]')[0];
+            $(newpage).fadeIn('slow').removeClass('hide');
+            $('body').addClass(page + '-img');
+        });
+        $("ul#hamburger").slideToggle('slow');
+    });
+});
+</script>
 
-  </head>
+</head>
 
 
-  <body>
-  <!-- Header -->
-    <header>
-      <nav class="container">
-        <a name="top"></a>
-        <div class="header">
-          <ul class="header-logo">
-          <a href="index.html" class ="site-logo">
-            <img src="Assets/Logo3-med.png" alt="Portfolio" />
-          </a>
+<body>
+<!-- Header -->
+  <header>
+    <nav class="container">
+      <a name="top"></a>
+      <div class="header">
+        <ul class="header-logo">
+        <a href="index.html" class ="site-logo">
+          <img src="Assets/Logo3-med.png" alt="Portfolio" />
+        </a>
+        </ul>
+        <div class="mainMenu">
+            <a href="#" class="btn">
+            <img src="Assets/Menu.png" alt="Portfolio" />
+            </a>
+          <ul id="hamburger" class="menu subMenu hamburger">
+            <li><a data-page="home" href="index.html#home"><h3>Home</h3> </a></li>
+            <li><a data-page="about" href="index.html#about"><h3>About</h3> </a></li>
+            <li><a data-page="work" href="index.html#work"><h3>Work</h3> </a></li>
+            <li><a data-page="contact" href="index.html#contact"><h3>Contact</h3> </a></li>
           </ul>
-          <div class="mainMenu">
-              <a href="#" class="btn">
-              <img src="Assets/Menu.png" alt="Portfolio" />
-              </a>
-            <ul id="hamburger" class="menu subMenu hamburger">
-              <li><a data-page="home" href="index.html#home"><h3>Home</h3> </a></li>
-              <li><a data-page="about" href="index.html#about"><h3>About</h3> </a></li>
-              <li><a data-page="work" href="index.html#work"><h3>Work</h3> </a></li>
-              <li><a data-page="contact" href="index.html#contact"><h3>Contact</h3> </a></li>
-            </ul>
-          </div>
         </div>
-      </nav>
-    </header>
-
-  <main role="main">
-    <section class="case-study">
-      <ul class="container">
-        <li class="title">
-            <h1>BB-8</h1>
-        </li>
-        <li class="body_left">
-          <img src="Assets/BB-8/bb8.png" alt="Portfolio" />
-        </li>
-        <li class="body_right">
-            <p>When I moved out to California, I didn’t have many friends when I first arrived, so I searched for ways to keep myself busy.  I turned to the one thing I knew I could always rely on: my camera. I started a photo project documenting one of my gadgets: a BB-8 droid from Sphero. My goal was to shoot a different shot of BB-8 every day for a year; admittedly, I did not reach that goal. What I did find though, was a way for me to focus my creative mind, to think differently on which shots I would take everyday, and to throw caution to the wind and just take random journeys to fulfill this need I had. I traveled to remarkable places while doing this photo project, and I am so immensely satisfied with my personal growth during this project. To this day, BB-8 still goes with me whenever I travel.</p>
-        </li>
-      <div class="content">
-        <div class="left-column">
-          <li class="left-third">
-            <img src="Assets/BB-8/IMG_7811.png" alt="Portfolio" />
-          </li>
-          <li class="left-third">
-            <img src="Assets/BB-8/IMG_7313.png" alt="Portfolio" />
-          </li>
-        </div>
-        <div class="right-column">
-          <li class="right-third1">
-            <img src="Assets/BB-8/IMG_7626.png" alt="Portfolio" />
-          </li>
-          <li class="right-third2">
-            <img src="Assets/BB-8/IMG_0198.png" alt="Portfolio" />
-          </li>
-          <li class="right-third2">
-            <img src="Assets/BB-8/IMG_5182.png" alt="Portfolio" />
-          </li>
-        </div>
-        <li class="center">
-          <img src="Assets/BB-8/IMG_7225.png" alt="Portfolio" />
-        </li>
-      </div>  
-        <li class="conclusion">
-            <p>See the full photo collection on Instagram (Link in Footer)
-            or on <a href="https://goo.gl/scMiwE">Google Photos</a>.</p>
-        </li>
-      </ul>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-      <div class="footer-nav-block">
-          <div class="footer-left"><a href="index.html"><img class="logo" src="Assets/Logo3-sm.png" alt="Portfolio" /></a></div>
-          <div class="footer-mid">
-          <div class="back"><a href='javascript:history.back()' class="back">go back</a></div>
-          </div>
-          <div class="footer-right>"<ul class="social_icons">
-            <li class="social"><a href="http://instagram.com/ackeepitcool"><img class="social" src="Assets/Social/IG.png" alt="Portfolio" /></a></li>
-            <li class="social"><a href="http://twitter.com/ackeepitcool"><img class="social" src="Assets/Social/twitter.png" alt="Portfolio" /></a></li>
-            <li class="social"><a href="http://linkedin.com/agchen"><img class="social" src="Assets/Social/linkedin.png" alt="Portfolio" /></a></li>
-            <li class="social"><a href="http://dribbble.com/ackeepitcool"><img class="social" src="Assets/Social/dribbble.png" alt="Portfolio" /></a></li>
-          </ul>
-          </div>
       </div>
-  </footer>
-  </body>
-  </html>
+    </nav>
+  </header>
+
+<main role="main">
+  <section class="case-study">
+    <ul class="container">
+      <li class="title">
+          <h1>BB-8</h1>
+      </li>
+    <div class="body">
+      <li class="body_left">
+        <img src="Assets/BB-8/bb8.png" alt="Portfolio" />
+      </li>
+      <li class="body_right">
+          <p>When I moved out to California, I didn’t have many friends when I first arrived, so I searched for ways to keep myself busy.  I turned to the one thing I knew I could always rely on: my camera. I started a photo project documenting one of my gadgets: a BB-8 droid from Sphero. My goal was to shoot a different shot of BB-8 every day for a year; admittedly, I did not reach that goal. What I did find though, was a way for me to focus my creative mind, to think differently on which shots I would take everyday, and to throw caution to the wind and just take random journeys to fulfill this need I had. I traveled to remarkable places while doing this photo project, and I am so immensely satisfied with my personal growth during this project. To this day, BB-8 still goes with me whenever I travel.</p>
+      </li>
+    </div>
+    <div class="content">
+      <div class="row1">
+        <li class="left-third">
+          <img src="Assets/BB-8/IMG_7811.png" alt="Portfolio" />
+        </li>
+        <li class="right-third1">
+          <img src="Assets/BB-8/IMG_7626.png" alt="Portfolio" />
+        </li>
+      </div>
+      <div class="row2">
+        <li class="left-third">
+          <img src="Assets/BB-8/IMG_7313.png" alt="Portfolio" />
+        </li>
+        <div><li class="right-third2">
+          <img src="Assets/BB-8/IMG_0198.png" alt="Portfolio" />
+        </li>
+        <li class="right-third2">
+          <img src="Assets/BB-8/IMG_5182.png" alt="Portfolio" />
+        </li></div>
+      </div>
+    </div>
+      <li class="center">
+        <img src="Assets/BB-8/IMG_7225.png" alt="Portfolio" />
+      </li>
+      <li class="conclusion">
+          <p>See the full photo collection on Instagram (Link in Footer)
+          or on <a href="https://goo.gl/scMiwE">Google Photos</a>.</p>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-nav-block">
+        <div class="footer-left"><a href="index.html"><img class="logo" src="Assets/Logo3-sm.png" alt="Portfolio" /></a></div>
+        <div class="footer-mid">
+        <div class="back"><a href='javascript:history.back()' class="back">go back</a></div>
+        </div>
+        <div class="footer-right>"<ul class="social_icons">
+          <li class="social"><a href="http://instagram.com/ackeepitcool"><img class="social" src="Assets/Social/IG.png" alt="Portfolio" /></a></li>
+          <li class="social"><a href="http://twitter.com/ackeepitcool"><img class="social" src="Assets/Social/twitter.png" alt="Portfolio" /></a></li>
+          <li class="social"><a href="http://linkedin.com/agchen"><img class="social" src="Assets/Social/linkedin.png" alt="Portfolio" /></a></li>
+          <li class="social"><a href="http://dribbble.com/ackeepitcool"><img class="social" src="Assets/Social/dribbble.png" alt="Portfolio" /></a></li>
+        </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
 
 <script>
 $('.mainMenu a.btn').on('click', function() {
