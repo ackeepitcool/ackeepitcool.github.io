@@ -31,9 +31,6 @@ $(document).ready(function() {
         $("ul#hamburger").slideUp('slow');
     });
 });
-$(document).on('click', function(){
-    $(window).scrollTop('#top');
-});
 </script>
 
 </head>
@@ -233,6 +230,10 @@ $("#contact-form").validate({
 
 $('.mainMenu a.btn').on('click', function() {
     $("ul#hamburger").slideToggle('slow');
+});
+
+$(document).on('click', function(){
+    $(window).scrollTop('#top');
 });
 
 </script>

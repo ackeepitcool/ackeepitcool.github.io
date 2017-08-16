@@ -21,18 +21,15 @@
           e.preventDefault();
           var page = $(this).data('page');
           console.log(page);
-          $("#pages .page:not('.hide')").stop().fadeOut('fast', function() {
+          $("index.html#pages .page:not('.hide')").stop().fadeOut('fast', function() {
               $(this).addClass('hide');
               $('body').removeClass();
               var newpage = $('#pages .page[data-page="'+page+'"]')[0];
               $(newpage).fadeIn('slow').removeClass('hide');
               $('body').addClass(page + '-img');
           });
-          $("ul#hamburger").slideUp('slow');
+          $("ul#hamburger").slideToggle('slow');
       });
-  });
-  $(document).on('click', function(){
-      $(window).scrollTop('#top');
   });
   </script>
 
@@ -55,10 +52,10 @@
               <img src="Assets/Menu.png" alt="Portfolio" />
               </a>
             <ul id="hamburger" class="menu subMenu hamburger">
-              <li><a data-page="home" href="#home"><h3>Home</h3> </a></li>
-              <li><a data-page="about" href="#about"><h3>About</h3> </a></li>
-              <li><a data-page="work" href="#work"><h3>Work</h3> </a></li>
-              <li><a data-page="contact" href="#contact"><h3>Contact</h3> </a></li>
+              <li><a data-page="home" href="index.html#home"><h3>Home</h3> </a></li>
+              <li><a data-page="about" href="index.html#about"><h3>About</h3> </a></li>
+              <li><a data-page="work" href="index.html#work"><h3>Work</h3> </a></li>
+              <li><a data-page="contact" href="index.html#contact"><h3>Contact</h3> </a></li>
             </ul>
           </div>
         </div>
@@ -100,7 +97,7 @@
         <li class="center">
           <img src="Assets/BB-8/IMG_7225.png" alt="Portfolio" />
         </li>
-      </ul>
+      </div>  
         <li class="conclusion">
             <p>See the full photo collection on Instagram (Link in Footer)
             or on <a href="https://goo.gl/scMiwE">Google Photos</a>.</p>
@@ -127,3 +124,14 @@
   </footer>
   </body>
   </html>
+
+<script>
+$('.mainMenu a.btn').on('click', function() {
+    $("ul#hamburger").slideToggle('slow');
+});
+
+$(document).on('click', function(){
+    $(window).scrollTop('#top');
+});
+
+</script>

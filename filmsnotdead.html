@@ -11,7 +11,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style_kcnc.css">
+  <link rel="stylesheet" href="css/style_filmsnotdead.css">
 
   <!-- JQuery -->
   <script src="js/jquery-3.2.1.min.js"></script>
@@ -30,9 +30,6 @@
           });
           $("ul#hamburger").slideUp('slow');
       });
-  });
-  $(document).on('click', function(){
-      $(window).scrollTop('#top');
   });
   </script>
 
@@ -68,41 +65,47 @@
   <main role="main">
     <section class="case-study">
       <ul class="container">
-        <li class="right-third">
+        <li class="title">
             <h1>#FilmsNotDead</h1>
         </li>
-        <li class="left-third">
-          <img src="Assets/FilmsNotDead/6.png" alt="Portfolio" />
-        </li>
-        <li class="right-third">
+        <div class="content">
+        <li class="body_right1">
             <p>Having moved coast-to-coast twice now (North Carolina to California, California to New York), and having driven both times, I have seen more of the United States by road than most people see in their lifetime. As such, I wanted a way to make my journey impactful. I had my digital SLR, sure, but I decided to start another personal project to help myself grow as a creative: I wanted to capture my journey through film. Film is an unforgiving medium. You have one shot to make it count. As such, I decided I was going to take this time to document my life in film, to see it as it is: you only get one shot at life. Make it count.</p>
         </li>
-        <li class="right-third">
+        <li class="body_right2">
           <img src="Assets/FilmsNotDead/39.png" alt="Portfolio" />
         </li>
+        <li class="body_left">
+          <img src="Assets/FilmsNotDead/6.png" alt="Portfolio" />
+        </li>
+        <div class="left-column">
         <li class="left-third">
           <img src="Assets/FilmsNotDead/60.png" alt="Portfolio" />
-        </li>
-        <li class="right-third">
-          <img src="Assets/FilmsNotDead/151.png" alt="Portfolio" />
         </li>
         <li class="left-third">
           <img src="Assets/FilmsNotDead/136.png" alt="Portfolio" />
         </li>
+        <li class="left-third1">
+          <img src="Assets/FilmsNotDead/96.png" alt="Portfolio" />
+        </li>
+        </div>
+        <div class="right-column">
+        <li class="right-third">
+          <img src="Assets/FilmsNotDead/151.png" alt="Portfolio" />
+        </li>
         <li class="right-third">
           <img src="Assets/FilmsNotDead/154.png" alt="Portfolio" />
         </li>
-        <li class="center-text">
-          <img src="Assets/FilmsNotDead/9.png" alt="Portfolio" />
-        </li>
-        <li class="left-third">
-          <img src="Assets/FilmsNotDead/96.png" alt="Portfolio" />
-        </li>
-        <li class="right-third">
+        <li class="right-third1">
           <img src="Assets/FilmsNotDead/166.png" alt="Portfolio" />
         </li>
-        <li class="center-text">
-            <p>See the full photo collection on Google Photos: https://goo.gl/P4VE9R</p>
+        </div>
+        <li class="center">
+          <img src="Assets/FilmsNotDead/9.png" alt="Portfolio" />
+        </li>
+      </div>
+        <li class="conclusion">
+            <p>See the full photo collection on <a href="https://goo.gl/P4VE9R">Google Photos</a>.</p>
         </li>
       </ul>
     </section>
@@ -126,3 +129,14 @@
   </footer>
   </body>
   </html>
+
+  <script>
+  $('.mainMenu a.btn').on('click', function() {
+      $("ul#hamburger").slideToggle('slow');
+  });
+
+  $(document).on('click', function(){
+      $(window).scrollTop('#top');
+  });
+
+  </script>
