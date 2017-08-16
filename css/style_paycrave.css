@@ -137,6 +137,10 @@ main
   padding-left:.5em;
   padding-top:1em;
 }
+.center-text img
+{
+  width:100%;
+}
 
 
 /* FOOTER */
@@ -186,61 +190,70 @@ ul.social_icons, li.social
   and (min-width: 768px)
   and (-webkit-min-device-pixel-ratio: 1)
 {
+  h1
+  {
+    font-size:48px;
+  }
   h2
   {
-    font-size:32px;
+    font-size:36px;
+  }
+  h3
+  {
+    font-size:24px;
+  }
+  h4
+  {
+    font-size:22px;
   }
   p
   {
     font-size:16px;
     line-height:30px;
   }
-  .title_lefthalf img
+  .intro, .process, .mockups, .foodtruck, .discover, .account, .order
   {
-    width:90%;
-    display:inline-block;
+    display:flex;
+    justify-content: center;
   }
-  .title_lefthalf
+  .intro-right
   {
-    float:left;
-    margin-top:-20em;
-    margin-bottom:1em;
-    margin-left:0;
-    margin-right:5em;
-    padding-left:15%;
+    padding-left: 3em;
+    padding-top:5em;
   }
-  .title_righthalf
+  #blurb
   {
-    margin-top:3em;
-    margin-bottom:10em;
-    padding-left:50%;
-    float:left;
-    display:inline-block;
+    padding-top:2em;
   }
-  .body_righthalf img
+  #process-left, #mockup-left, #discover-left, #order-left
   {
-    width:90%;
-    display:inline-block;
+    padding-right:2em;
   }
-  .body_lefthalf
+  #ft-right, #account-right
   {
-    margin-right:50%;
+    padding-left:2em;
+  }
+  #process-right_img
+  {
+    padding-top:6em;
+  }
+  .mockups img
+  {
     margin-top:-5em;
-    padding:1em;
-    float:left;
-    display:inline-block;
   }
-  .body_righthalf
+  .discover h3
   {
-    float:left;
-    margin-top:-18em;
-    margin-left:50%;
+    padding-right:2em;
   }
-  .vid img
+  .account img
   {
-    width:500px;
-    padding-left:10%;
+    padding-top:1.5em;
   }
+  .center-text img
+  {
+    max-width:768px;
+  }
+
 
 /* Footer */
   .footer-nav-block
@@ -261,18 +274,10 @@ ul.social_icons, li.social
     content: " ";
     display: table;
   }
-  .container:after
+  main
   {
-    clear: both;
-  }
-  .vid img
-  {
-    width:500px;
-    padding-left:5%;
-  }
-  .vid_right
-  {
-    padding-left:40%;
+    padding-left:10%;
+    padding-right:10%;
   }
 
 /* Footer */
@@ -312,4 +317,18 @@ ul.social_icons, li.social
   {
     font-size:18px;
   }
+  main
+  {
+    padding-left:15%;
+    padding-right:15%;
+  }
+  #mockup-left, #ft-right, #account-right, #order-left
+  {
+    padding-top:2em;
+  }
+  .foodtruck, .discover, .account, .order
+  {
+    padding-top:2em;
+  }
+
 }
