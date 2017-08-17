@@ -17,19 +17,34 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script>
 $(document).ready(function() {
-    $(".menu li a").on('click', function(e) {
-        e.preventDefault();
-        var page = $(this).data('page');
-        console.log(page);
-        $("#pages .page:not('.hide')").stop().fadeOut('fast', function() {
-            $(this).addClass('hide');
-            $('body').removeClass();
-            var newpage = $('#pages .page[data-page="'+page+'"]')[0];
-            $(newpage).fadeIn('slow').removeClass('hide');
-            $('body').addClass(page + '-img');
-        });
-        $("ul#hamburger").slideUp('slow');
-    });
+  if(window.location.hash) {
+         var page = window.location.hash;
+         page = page.slice(1);
+         console.log(page);
+         $("#pages .page:not('.hide')").stop().fadeOut('fast', function() {
+             $(this).addClass('hide');
+             $('body').removeClass();
+             var newpage = $('#pages .page[data-page="'+page+'"]')[0];
+             $(newpage).fadeIn('slow').removeClass('hide');
+             $('body').addClass(page + '-img');
+         });
+   }
+
+   $(".menu li a").on('click', function(e) {
+       e.preventDefault();
+       var page = $(this).data('page');
+       console.log(page);
+       $("#pages .page:not('.hide')").stop().fadeOut('fast', function() {
+           $(this).addClass('hide');
+           $('body').removeClass();
+           var newpage = $('#pages .page[data-page="'+page+'"]')[0];
+           $(newpage).fadeIn('slow').removeClass('hide');
+           $('body').addClass(page + '-img');
+           $(window).scrollTop('#top');
+       });
+       $("ul#hamburger").slideUp('slow');
+   });
+
 });
 </script>
 
@@ -145,9 +160,9 @@ $(document).ready(function() {
                 <img src="Assets/Work/Knode.png" alt="Portfolio" />
               </li>
             </a>
-            <a href="#">
+            <a href="blocbox.html">
               <li class="four-third">
-                <img src="Assets/Work/Project3.png" alt="Portfolio" />
+                <img src="Assets/Work/Blocbox.png" alt="Portfolio" />
               </li>
             </a>
           </ul>
@@ -159,12 +174,12 @@ $(document).ready(function() {
         <ul class="contact-label">  <h2>Contact <br/>Me!</h2>  </ul>
         <form id="cntct" action="https://formspree.io/contact.agchen@gmail.com"
           method="POST">
-          <label><p>Name</p></label>
-          <input type="text" name="name">
-          <label><p>Your Email</p></lable>
+          <label><h4>Name</h4></label>
+          <input type="text" name="name" placeholder="Your name">
+          <label><h4>Email</h4></lable>
           <input type="text" name="_replyto" placeholder="Your email" />
           <input type="hidden" name="_subject" value="New submission!" />
-          <label><p>Message</p></label>
+          <label><h4>Message</h4></label>
           <textarea name="message" placeholder="Your message"></textarea>
           <label><p></p></label>
           <input type="submit" value="Send">
@@ -230,10 +245,6 @@ $("#contact-form").validate({
 
 $('.mainMenu a.btn').on('click', function() {
     $("ul#hamburger").slideToggle('slow');
-});
-
-$(document).on('click', function(){
-    $(window).scrollTop('#top');
 });
 
 </script>

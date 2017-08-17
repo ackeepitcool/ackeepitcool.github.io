@@ -67,12 +67,18 @@ h4
     font-size:18px;
     line-height:20px;
     font-weight:300;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 10px;
+    padding:10px;
   }
 p
   {
     font-size:12px;
     line-height:20px;
     font-weight:300;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 10px;
+    padding:1em;
   }
 
 
@@ -164,12 +170,9 @@ header nav ul > li > a
   {
     text-align:right;
     z-index: 100;
-    padding-right:10px;
     position:absolute;
-    border-radius: 10px;
     top:275px;
     left:10px;
-    background-color: rgba(255,255,255,0.6);
   }
 #about-header
   {
@@ -217,8 +220,8 @@ header nav ul > li > a
     position:relative;
     min-height: 1px;
     margin:0 2% 20px;
+    padding:1em;
     list-style:none;
-    background-color: rgba(255,255,255,0.6);
   }
 
 .passionprojects
@@ -245,21 +248,21 @@ header nav ul > li > a
     position:relative;
     min-height: 1px;
     margin:0 2% 20px;
+    padding:1em;
     list-style:none;
-    background-color: rgba(255,255,255,0.6);
   }
 .workprojects
   {
     list-style-type:none;
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
     flex-direction:column;
     padding-right:23%;
   }
 .workprojects img
   {
     max-width:100%;
-    padding: 5%;
+    padding: 2%;
   }
 
 /* Contact */
@@ -656,5 +659,9 @@ ul.social_icons, li.social
   #cntct
   {
     margin-bottom:-5em;
+  }
+  .three-third p
+  {
+    padding-top:1em;
   }
 }

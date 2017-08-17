@@ -169,6 +169,7 @@ main
   }
 .conclusion
   {
+    text-align:center;
     padding-top:1em;
   }
 
@@ -255,10 +256,7 @@ ul.social_icons, li.social
   {
     width:500px;
   }
-  .conclusion
-  {
-    padding-left:8%;
-  }
+
 
 /* Footer */
   .footer-nav-block
@@ -309,10 +307,7 @@ ul.social_icons, li.social
   {
     padding-left:30%;
   }
-  .conclusion
-  {
-    padding-left:15%;
-  }
+
 
 
 /* Footer */
@@ -344,9 +339,13 @@ ul.social_icons, li.social
   {
     font-size:48px;
   }
+  h3
+  {
+    font-size:28px
+  }
   h4
   {
-    font-size:24px;
+    font-size:22px;
   }
   p
   {

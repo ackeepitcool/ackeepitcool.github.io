@@ -15,23 +15,6 @@
 
 <!-- JQuery -->
 <script src="js/jquery-3.2.1.min.js"></script>
-<script>
-$(document).ready(function() {
-    $(".menu li a").on('click', function(e) {
-        e.preventDefault();
-        var page = $(this).data('page');
-        console.log(page);
-        $("#pages .page:not('.hide')").stop().fadeOut('fast', function() {
-            $(this).addClass('hide');
-            $('body').removeClass();
-            var newpage = $('#pages .page[data-page="'+page+'"]')[0];
-            $(newpage).fadeIn('slow').removeClass('hide');
-            $('body').addClass(page + '-img');
-        });
-        $("ul#hamburger").slideUp('slow');
-    });
-});
-</script>
 
 </head>
 
@@ -52,10 +35,10 @@ $(document).ready(function() {
             <img src="Assets/Menu.png" alt="Portfolio" />
             </a>
           <ul id="hamburger" class="menu subMenu hamburger">
-            <li><a data-page="home" href="#home"><h3>Home</h3> </a></li>
-            <li><a data-page="about" href="#about"><h3>About</h3> </a></li>
-            <li><a data-page="work" href="#work"><h3>Work</h3> </a></li>
-            <li><a data-page="contact" href="#contact"><h3>Contact</h3> </a></li>
+            <li><a data-page="home" href="index.html#home"><h3>Home</h3> </a></li>
+            <li><a data-page="about" href="index.html#about"><h3>About</h3> </a></li>
+            <li><a data-page="work" href="index.html#work"><h3>Work</h3> </a></li>
+            <li><a data-page="contact" href="index.html#contact"><h3>Contact</h3> </a></li>
           </ul>
         </div>
       </div>
@@ -120,7 +103,7 @@ $(document).ready(function() {
     <div class="footer-nav-block">
         <div class="footer-left"><a href="index.html"><img class="logo" src="Assets/Logo3-sm.png" alt="Portfolio" /></a></div>
         <div class="footer-mid">
-        <div class="back"><a href='javascript:history.back()' class="back">go back</a></div>
+        <div class="back"><a href='#top' class="back">back to top</a></div>
         </div>
         <div class="footer-right>"<ul class="social_icons">
           <li class="social"><a href="http://instagram.com/ackeepitcool"><img class="social" src="Assets/Social/IG.png" alt="Portfolio" /></a></li>
@@ -138,9 +121,4 @@ $(document).ready(function() {
 $('.mainMenu a.btn').on('click', function() {
     $("ul#hamburger").slideToggle('slow');
 });
-
-$(document).on('click', function(){
-    $(window).scrollTop('#top');
-});
-
 </script>

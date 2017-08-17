@@ -163,11 +163,17 @@ main
     width:100%;
     max-width:500px;
   }
-
 .center img
   {
     width:100%;
     max-width:500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.conclusion p
+  {
+    text-align:center;
   }
 
 
@@ -332,9 +338,13 @@ ul.social_icons, li.social
   {
     font-size:48px;
   }
+  h3
+  {
+    font-size:28px;
+  }
   h4
   {
-    font-size:24px;
+    font-size:22px;
   }
   p
   {
