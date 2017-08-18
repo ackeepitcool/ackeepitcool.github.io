@@ -1,8 +1,3 @@
-# ackeepitcool.github.io
-Portfolio for personal website
+Personal Portfolio for Aaron Chen
 
-Two files to work with:
-index.html
-style0.css
-
-Hi-Fi Mockups: https://drive.google.com/open?id=0B4aHEpPZdTEwaExyME81UEQwa1k
+Coded from scratch using HTML5, CSS3 & Jquery
