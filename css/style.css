@@ -43,13 +43,18 @@ body
     font-family: "Lato", Helvetica, Arial, sans-serif;
     color:#333333;
   }
+main
+  {
+    margin-left:auto;
+    margin-right:auto;
+  }
 h1, h2
   {
     font-family: "Lobster", Helvetica, Arial, sans-serif;
   }
 h1
   {
-    font-size:36px;
+    font-size:32px;
   }
 h2
   {
@@ -64,7 +69,7 @@ h3
   }
 h4
   {
-    font-size:18px;
+    font-size:16px;
     line-height:20px;
     font-weight:300;
     background-color: rgba(255,255,255,0.6);
@@ -102,6 +107,10 @@ header nav ul > li > a
     display:flex;
     justify-content: space-between;
   }
+header
+  {
+    padding-bottom:2em;
+  }
 
 
 /* MENU */
@@ -131,22 +140,22 @@ header nav ul > li > a
 /* Hero */
 .hero
   {
-	  content: url("../Assets/BG_img.png");
+	  content: url("../Assets/HeroImage1.png");
   	z-index: 1;
-    width:100%;
+    width:400px;
     margin-top:2em;
   }
 #headers
   {
     list-style-type: none;
-    display:none;
+    /*display:none;*/
   }
 #greet
   {
   	z-index: 100;
     position:absolute;
-    top:80px;
-    left:80px;
+    top:130px;
+    left:40px;
     -ms-transform: rotate(-5deg); /* IE 9 */
     -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
     transform: rotate(-5deg);
@@ -156,64 +165,64 @@ header nav ul > li > a
     text-align:center;
   	z-index: 100;
     position:absolute;
-    top:120px;
-    left:10px;
+    top:80px;
+    left:260px;
     -ms-transform: rotate(-5deg); /* IE 9 */
     -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
     transform: rotate(-5deg);
-  }
-#name br
-  {
-    display:none;
   }
 #blurb
   {
     text-align:right;
     z-index: 100;
     position:absolute;
-    top:275px;
-    left:10px;
+    top:290px;
+    left:200px;
+  }
+#blurb br
+  {
+    display:none;
   }
 #about-header
   {
     z-index: 100;
     position:absolute;
-    top:360px;
-    left:140px;
-    -ms-transform: rotate(-10deg); /* IE 9 */
-    -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
-    transform: rotate(-10deg);
+    top:380px;
+    left:70px;
+    -ms-transform: rotate(-35deg); /* IE 9 */
+    -webkit-transform: rotate(-35deg); /* Chrome, Safari, Opera */
+    transform: rotate(-35deg);
   }
 #work-header
   {
     z-index: 100;
     position:absolute;
-    top:290px;
+    top:410px;
     left:320px;
-    -ms-transform: rotate(10deg); /* IE 9 */
-    -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
-    transform: rotate(10deg);
+    -ms-transform: rotate(40deg); /* IE 9 */
+    -webkit-transform: rotate(40deg); /* Chrome, Safari, Opera */
+    transform: rotate(40deg);
   }
 #contact-header
   {
     text-align:center;
     z-index: 100;
     position:absolute;
-    top:420px;
-    left:300px;
-    -ms-transform: rotate(-10deg); /* IE 9 */
-    -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
-    transform: rotate(-10deg);
+    top:470px;
+    left:160px;
+    -ms-transform: rotate(15deg); /* IE 9 */
+    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+    transform: rotate(15deg);
   }
 
 /* About */
 .about-label
   {
     z-index:100;
-    padding-bottom:2em;
-    -ms-transform: rotate(-10deg); /* IE 9 */
-    -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
-    transform: rotate(-10deg);
+    padding-bottom:5em;
+    -ms-transform: rotate(-35deg); /* IE 9 */
+    -webkit-transform: rotate(-35deg); /* Chrome, Safari, Opera */
+    transform: rotate(-35deg);
   }
 .one-third
   {
@@ -239,9 +248,9 @@ header nav ul > li > a
   {
     padding-top:10%;
     margin-left:15%;
-    -ms-transform: rotate(10deg); /* IE 9 */
-    -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
-    transform: rotate(10deg);
+    -ms-transform: rotate(40deg); /* IE 9 */
+    -webkit-transform: rotate(40deg); /* Chrome, Safari, Opera */
+    transform: rotate(40deg);
   }
 .three-third
   {
@@ -271,9 +280,9 @@ header nav ul > li > a
     padding-right:35%;
     padding-bottom:2%;
     text-align:center;
-    -ms-transform: rotate(-10deg); /* IE 9 */
-    -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
-    transform: rotate(-10deg);
+    -ms-transform: rotate(15deg); /* IE 9 */
+    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+    transform: rotate(15deg);
   }
 input[type=text], select, textarea
   {
@@ -368,10 +377,22 @@ ul.social_icons, li.social
   and (min-width: 768px)
   and (-webkit-min-device-pixel-ratio: 1)
 {
+  h1
+  {
+    font-size:36px;
+  }
   h2
   {
     font-size:32px;
   }
+  h3
+    {
+      font-size:24px;
+    }
+  h4
+    {
+      font-size:18px;
+    }
   p
   {
     font-size:16px;
@@ -388,47 +409,52 @@ ul.social_icons, li.social
   #greet
   {
     position:absolute;
-    top:230px;
+    top:260px;
     left:75px;
   }
   #name
   {
     position:absolute;
-    top:150px;
-    left:310px;
-  }
-  #name br
-  {
-    display:inline;
+    top:210px;
+    left:480px;
   }
   #blurb
   {
     position:absolute;
-    top:375px;
-    left:130px;
+    top:475px;
+    left:480px;
+  }
+  #blurb br
+  {
+    display:inline;
   }
   #about-header
   {
     position:absolute;
-    top:665px;
-    left:290px;
+    top:620px;
+    left:150px;
   }
   #work-header
   {
     position:absolute;
-    top:525px;
-    left:570px;
+    top:665px;
+    left:610px;
   }
   #contact-header
   {
     position:absolute;
-    top:767px;
-    left:570px;
+    top:760px;
+    left:360px;
   }
 /* About Page */
   .about-label
   {
-    padding-bottom: 5em;
+    margin-top:-10em;
+    padding-bottom:5em;
+  }
+  .one-third p
+  {
+    margin-top:10em;
   }
 /* Work Page */
   .work-label
@@ -465,38 +491,38 @@ ul.social_icons, li.social
   #greet
   {
     position:absolute;
-    top:310px;
-    left:110px;
+    top:330px;
+    left:130px;
   }
   #name
   {
     position:absolute;
-    top:200px;
-    left:460px;
+    top:270px;
+    left:620px;
   }
   #blurb
   {
     position:absolute;
-    top:475px;
-    left:250px;
+    top:590px;
+    left:610px;
   }
   #about-header
   {
     position:absolute;
-    top:855px;
-    left:400px;
+    top:790px;
+    left:210px;
   }
   #work-header
   {
     position:absolute;
-    top:670px;
-    left:730px;
+    top:830px;
+    left:770px;
   }
   #contact-header
   {
     position:absolute;
-    top:985px;
-    left:740px;
+    top:965px;
+    left:485px;
   }
 /* About Page */
   #about
@@ -550,7 +576,7 @@ ul.social_icons, li.social
   {
     padding-left:0em;
     margin-left:-8em;
-    margin-top:-2em;
+    margin-top:2em;
   }
   .workprojects
   {
@@ -619,38 +645,38 @@ ul.social_icons, li.social
   #greet
   {
     position:absolute;
-    top:340px;
-    left:110px;
+    top:360px;
+    left:120px;
   }
   #name
   {
     position:absolute;
-    top:200px;
-    left:510px;
+    top:280px;
+    left:750px;
   }
   #blurb
   {
     position:absolute;
-    top:555px;
-    left:270px;
+    top:675px;
+    left:730px;
   }
   #about-header
   {
     position:absolute;
-    top:1010px;
-    left:460px;
+    top:920px;
+    left:240px;
   }
   #work-header
   {
     position:absolute;
-    top:800px;
-    left:900px;
+    top:990px;
+    left:960px;
   }
   #contact-header
   {
     position:absolute;
-    top:1170px;
-    left:890px;
+    top:1150px;
+    left:550px;
   }
   .contact-label
   {
