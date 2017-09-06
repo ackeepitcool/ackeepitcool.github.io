@@ -4,30 +4,12 @@
   }
 body
   {
-    background: #FFFFFF url("../Assets/BG.png");
+    background: #869BAE;
     -webkit-font-smoothing: antialiased;
-  }
-body.about-img
-  {
-    background: url("../Assets/BG_about.png") no-repeat,
-    url("../Assets/BG.png");
-    background-size:contain;
-  }
-body.work-img
-  {
-    background: url("../Assets/BG_work.png") no-repeat,
-    url("../Assets/BG.png");
-    background-size:contain;
-  }
-body.contact-img
-  {
-    background: url("../Assets/BG_contact.png") no-repeat,
-    url("../Assets/BG.png");
-    background-size:contain;
   }
 body a
   {
-    color: #333333
+    color: #FFFFFF
   }
 body a:hover
   {
@@ -41,7 +23,7 @@ html, body
 body
   {
     font-family: "Lato", Helvetica, Arial, sans-serif;
-    color:#333333;
+    color:#FFFFFF;
   }
 main
   {
@@ -50,42 +32,67 @@ main
   }
 h1, h2
   {
-    font-family: "Lobster", Helvetica, Arial, sans-serif;
+    font-family: "Avenir Next", Helvetica, Arial, sans-serif;
   }
 h1
   {
-    font-size:32px;
+    font-size:48px;
+    font-weight:500;
   }
 h2
   {
-    font-size:24px;
-    font-weight: normal;
-    margin-bottom: 5px;
+    font-size:36px;
+    font-weight:500;
   }
 h3
   {
-    font-size:24px;
-    font-weight: 600;
+    font-size:28px;
+    font-weight:300;
   }
 h4
   {
-    font-size:16px;
-    line-height:20px;
+    font-size:22px;
     font-weight:300;
-    background-color: rgba(255,255,255,0.6);
-    border-radius: 10px;
-    padding:10px;
+  }
+h5
+  {
+    font-size:12px;
+    color:#FFFFFF;
   }
 p
   {
-    font-size:12px;
-    line-height:20px;
+    font-size:18px;
     font-weight:300;
-    background-color: rgba(255,255,255,0.6);
-    border-radius: 10px;
     padding:1em;
   }
-
+hr
+  {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 3px solid #CBDBF2;
+    margin: 1em 0;
+    padding: 0;
+  }
+.btn
+  {
+    border-radius: 4px;
+    color:#333333;
+    font-weight: 400;
+    text-decoration: none;
+    padding:10px;
+    margin-left:auto;
+    margin-right:auto;
+    background: #CBDBF2;
+    border: 2px solid #CBDBF2;
+    box-shadow: 0px 2px 0px 0px #CBDBF2;
+    z-index:100;
+    position:relative;
+    }
+header, .hero, .workprojects, .workheading, .recommendation, .closingstatement, .heading, .aboutme, .projects, .designjourney, #contact
+    {
+      list-style-type:none;
+    }
 
 /* HEADER */
 header nav ul > li
@@ -94,197 +101,198 @@ header nav ul > li
   }
 header nav ul > li > a
   {
-    color:#333333;
+    color:#CBDBF2;
     text-decoration: none;
-  }
-.header
-  {
-    width:100%;
-    height:60px;
-    line-height:60px;
-    padding:0 0 5% 0;
-    margin: auto;
-    display:flex;
-    justify-content: space-between;
-  }
-header
-  {
-    padding-bottom:1em;
-  }
-
-
-/* MENU */
-.mainMenu
-  {
-    padding-top: 2em;
-    padding-right: 2em;
-  }
-.hamburger
-  {
-    float:left;
-    line-height: 20px;
-    padding:1em;
-    margin-top: -1em;
-    margin-left: -2em;
-    background-color: rgba(255,255,255,0.6);
-    border-radius: 10px;
-    z-index:1000;
-    position:absolute;
-  }
-.subMenu
-  {
-    display:none;
-  }
-
-
-/* Hero */
-.hero
-  {
-	  content: url("../Assets/HeroImage.png");
-  	z-index: 1;
-    width:400px;
-    margin-top:2em;
   }
 #headers
   {
-    list-style-type: none;
-    display:none;
+    display: flex;
+    flex-direction:row;
   }
-#greet
+h5
   {
-  	z-index: 100;
-    position:absolute;
-    top:260px;
-    left:20px;
-    -ms-transform: rotate(-25deg); /* IE 9 */
-    -webkit-transform: rotate(-25deg); /* Chrome, Safari, Opera */
-    transform: rotate(-25deg);
+    padding-right:5em;
+    margin-bottom:-1em;
   }
-#name
+#headerline img
   {
-    text-align:center;
-  	z-index: 100;
-    position:absolute;
-    top:530px;
-    left:270px;
-    -ms-transform: rotate(5deg); /* IE 9 */
-    -webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
-    transform: rotate(5deg);
-  }
-#blurb
-  {
-    text-align:right;
-    z-index: 100;
-    position:absolute;
-    top:610px;
-    left:5px;
-  }
-#about-header
-  {
-    z-index: 100;
-    position:absolute;
-    top:490px;
-    left:120px;
-    -ms-transform: rotate(-30deg); /* IE 9 */
-    -webkit-transform: rotate(-30deg); /* Chrome, Safari, Opera */
-    transform: rotate(-30deg);
-  }
-#work-header
-  {
-    z-index: 100;
-    position:absolute;
-    top:520px;
-    left:270px;
-    -ms-transform: rotate(-15deg); /* IE 9 */
-    -webkit-transform: rotate(-15deg); /* Chrome, Safari, Opera */
-    transform: rotate(-15deg);
-  }
-#contact-header
-  {
-    text-align:center;
-    z-index: 100;
-    position:absolute;
-    top:790px;
-    left:210px;
-    -ms-transform: rotate(35deg); /* IE 9 */
-    -webkit-transform: rotate(35deg); /* Chrome, Safari, Opera */
-    transform: rotate(35deg);
+    width:75%;
   }
 
-/* About */
-.about-label
+/* Hero */
+.hero-left h1
   {
-    z-index:100;
-    padding-bottom:5em;
-    margin-top:-2em;
-    -ms-transform: rotate(-30deg); /* IE 9 */
-    -webkit-transform: rotate(-30deg); /* Chrome, Safari, Opera */
-    transform: rotate(-30deg);
+    padding-left:10px;
   }
-.one-third
+.hero-left h3
   {
-    position:relative;
-    min-height: 1px;
-    margin:0 2% 20px;
-    padding:1em;
-    list-style:none;
+    padding-left:10px;
   }
+#Logo img
+  {
+    padding-left:1em;
+    max-width:75%;
+  }
+#LogoLine
+  {
+    width:80%;
+    margin-left:-2em;
+    margin-top:-.5em;
 
-.passionprojects
-  {
-    padding-right:15%;
-    list-style-type:none;
-    text-align:center;
-    display:flex;
-    justify-content:flex-end;
-    flex-direction:column;
   }
 
 /* Work */
-.work-label
+#workheader
   {
-    margin-top:-2em;
-    margin-left:35%;
-    -ms-transform: rotate(-15deg); /* IE 9 */
-    -webkit-transform: rotate(-15deg); /* Chrome, Safari, Opera */
-    transform: rotate(-15deg);
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:.5em;
   }
-.three-third
+#top-halfline
   {
-    position:relative;
-    min-height: 1px;
-    margin:0 2% 20px;
-    padding:1em;
-    list-style:none;
-  }
-.three-third p
-  {
-    margin-top:4em;
-  }
-.workprojects
-  {
-    list-style-type:none;
-    display:flex;
-    justify-content:center;
-    flex-direction:column;
-    padding-right:23%;
+    width:75%;
   }
 .workprojects img
   {
     max-width:100%;
-    padding: 2%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:2em;
+  }
+.workprojects hr
+  {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #CBDBF2;
+    margin: 2em 0 0 0;
+    padding: 0;
+  }
+.paycrave, .blocbox, .knode
+  {
+    text-align:center;
+  }
+.paycrave p, .blocbox p, .knode p
+  {
+    padding-bottom:1em;
+  }
+
+/* Recommendation */
+.recommendation
+  {
+    text-align:center;
+  }
+#ZachLine img
+  {
+    width:50%;
+  }
+
+/* Closing */
+.closingstatement
+  {
+    text-align:center;
+  }
+#HomePageContactButtonLine img
+  {
+    width:75%;
+  }
+
+/* About */
+.heading
+  {
+    margin-top:-1.3em;
+  }
+.about-heading
+  {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-top:-1.25em;
+    margin-bottom:-1.2em;
+    padding-left:10px;
+    padding-right:10px;
+    color: #CBDBF2;
+  }
+.about-heading h3
+  {
+    font-weight:800;
+    letter-spacing: 3px;
+  }
+.about-left img
+  {
+    max-width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:2em;
+  }
+#headshotline img
+  {
+    margin-left:-2em;
+    width:90%;
+  }
+.about-right
+  {
+    padding:1em;
+  }
+.projects
+  {
+    text-align:center;
+  }
+.passionprojects img
+  {
+    padding:1em;
+  }
+.designheading
+  {
+    text-align:center;
+    display:flex;
+    justify-content:space-between;
+  }
+#designline1 img
+  {
+    width:90%;
+    padding-top:5em;
+  }
+#designline2 img
+  {
+    width:90%;
+    padding-top:5em;
+  }
+.designblurb
+  {
+    text-align:center;
+    padding:1em;
+  }
+.designblurb a
+  {
+    text-decoration:none;
+  }
+#tagline h3
+  {
+    color:#CBDBF2;
+    font-weight:600;
   }
 
 /* Contact */
-.contact-label
+.heading
   {
-    padding-right:35%;
-    padding-bottom:2%;
-    padding-top:2em;
-    text-align:center;
-    -ms-transform: rotate(35deg); /* IE 9 */
-    -webkit-transform: rotate(35deg); /* Chrome, Safari, Opera */
-    transform: rotate(35deg);
+    margin-top:-1.3em;
+  }
+.contact-heading
+  {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-top:-1.25em;
+    margin-bottom:-1.2em;
+    padding-left:10px;
+    padding-right:10px;
+    color: #CBDBF2;
+  }
+.contact-heading h3
+  {
+    font-weight:800;
+    letter-spacing: 3px;
   }
 input[type=text], select, textarea
   {
@@ -301,16 +309,18 @@ input[type=submit]
   {
     background-color: #CBDBF2;
     color: #333333;
-    padding: 1% 10%;
+    padding: 1em 4em 1em 4em;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    margin-left: 37%;
+    float:right;
   }
 input[type=submit]:hover
   {
     background-color: #333333;
     color: #FFFFFF;
+    position:relative;
+    z-index:1000;
   }
 #cntct
   {
@@ -331,12 +341,20 @@ button, input, select, textarea
     font-family : inherit;
     font-size   : 100%;
   }
+#submitline img
+  {
+    width: 100%;
+    margin-top:-1.5em;
+    margin-right:-2.5em;
+    float:right;
+  }
 
 /* FOOTER */
 footer
   {
     margin:auto;
-    padding-top:2em;
+    padding-top:1em;
+    margin:1em;
   }
 ul.social_icons, li.social
   {
@@ -349,13 +367,12 @@ ul.social_icons, li.social
 .footer-nav-block
   {
 	  margin: auto;
-	  border: 2px solid #dddddd;
+	  border: 2px solid #CBDBF2;
 	  border-radius: 10px;
     padding-top:.5em;
     padding-bottom:.5em;
     display:flex;
     justify-content:space-between;
-    background-color: rgba(255,255,255,0.6);
   }
 .footer-left
   {
@@ -368,11 +385,44 @@ ul.social_icons, li.social
     text-align:center;
     display:none;
   }
+.footer-right
+  {
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+/* Hidden for Mobile */
+.hero br
+  {
+    display:none;
+  }
+#paycrave-button-line, #blocbox-button-line, #knode-button-line
+  {
+    display:none;
+  }
+#headingpart2, #herologo, #herologoline
+  {
+    display:none;
+  }
+.footer-left
+  {
+    padding-left:.5em;
+    display:none;
+  }
+.footer-mid
+  {
+	  padding-top:1em;
+	  text-decoration: none;
+    text-align:center;
+    display:none;
+  }
+.blocbox-right2
+  {
+    display:none;
+  }
 
 
 /* -------------       Media Queries       ------------- */
-
-
 
 /* iPad Portrait and Landscape */
 @media only screen
@@ -381,100 +431,193 @@ ul.social_icons, li.social
 {
   h1
   {
-    font-size:36px;
+    font-size:56px;
   }
   h2
   {
-    font-size:32px;
+    font-size:48px;
   }
   h3
-    {
-      font-size:24px;
-    }
+  {
+    font-size:36px;
+  }
   h4
-    {
-      font-size:18px;
-    }
+  {
+    font-size:28px;
+  }
   p
   {
-    font-size:16px;
+    font-size:22px;
   }
-  .hero
-  {
-    width:768px;
-    margin-top:0;
-  }
-  #headers
+
+/* Hide/Unhide */
+  #paycrave-button-line, #blocbox-button-line, #knode-button-line, #herologo
   {
     display:block;
   }
-  #greet
+  #headingpart2, #herologoline
   {
-    position:absolute;
-    top:450px;
-    left:50px;
+    display:flex;
   }
-  #name
+  .footer-left, .footer-mid
   {
-    position:absolute;
-    top:560px;
-    left:600px;
+    display:flex;
   }
-  #blurb
+  .hero-right
   {
-    position:absolute;
-    top:640px;
-    left:40px;
+    display:none;
   }
-  #blurb br
+  .workprojects hr
   {
-    display:inline;
+    display:none;
   }
-  #about-header
-  {
-    position:absolute;
-    top:850px;
-    left:250px;
-  }
-  #work-header
-  {
-    position:absolute;
-    top:890px;
-    left:550px;
-  }
-  #contact-header
-  {
-    position:absolute;
-    top:1390px;
-    left:410px;
-  }
-/* About Page */
-  .about-label
-  {
-    margin-top:-10em;
-    padding-bottom:5em;
-  }
-  .one-third p
-  {
-    margin-top:10em;
-  }
-/* Work Page */
-  .work-label
-  {
-    padding-left:10em;
-    padding-top:1em;
 
-  }
-  .workprojects
+/* Header */
+  #headerline
   {
-    padding-left:23%;
+    margin-top:-.5em;
+    margin-bottom:-2em;
   }
+  #headerline img
+  {
+    width:50%;
+  }
+
+/* Hero */
+  #herologo
+  {
+    height:20px;
+    padding-left:30em;
+  }
+  #herologo img
+  {
+    width:250px;
+    padding-top:5.5em;
+  }
+  #herologoline img
+  {
+    padding-left:39em;
+    padding-top:9em;
+    margin-bottom:-9em;
+    width:100%;
+  }
+  .hero
+  {
+    display:flex;
+    justify-content:space-around;
+  }
+
+/* Work */
+  #workheader h2
+  {
+    font-size:28px;
+    text-align:center;
+  }
+  #paycrave-button-line img
+  {
+    margin-top:-2.5em;
+    margin-bottom:2.5em;
+    margin-right:-13em;
+    position:relative;
+    z-index:-3;
+  }
+  #blocbox-button-line img
+  {
+    margin-top:-2.5em;
+    margin-bottom:2.5em;
+    margin-left:-13em;
+    position:relative;
+    z-index:-3;
+  }
+  #knode-button-line img
+  {
+    margin-top:-2.5em;
+    margin-bottom:2.5em;
+    margin-right:-13em;
+    position:relative;
+    z-index:-3;
+  }
+  .paycrave-right, .knode-right, .blocbox-left
+  {
+    padding-top:2em;
+  }
+
+/* Closing */
+  #ContactLine img
+  {
+    margin-top:-2.5em;
+    margin-bottom:2.5em;
+    margin-right:-20em;
+    position:relative;
+    z-index:-3;
+  }
+
+/* About */
+  .heading
+  {
+    margin-top:1.6em;
+  }
+  .aboutme
+  {
+    display:flex;
+    justify-content:space-between;
+  }
+  #headshot img
+  {
+    width:1600px;
+    padding-top:16em;
+    margin-bottom:-1em;
+  }
+  #headshotline img
+  {
+    width:600px;
+  }
+  .designblurb
+  {
+    padding:0;
+    margin-top:-2em;
+  }
+  #tagline
+  {
+    margin-top:-4em;
+    margin-bottom:-2em;
+  }
+  #tagline-line img
+  {
+    width:700px;
+    margin-left:-10em;
+    padding-bottom:2em;
+  }
+
+/* Contact */
+  #submitline
+  {
+    margin-right:-5em;
+    position:relative;
+    z-index:-3;
+  }
+
 /* Footer */
   .footer-nav-block
   {
-    margin: 0.5em 22% 2em 22%;
+    margin: 0 2em 2em 2em;
+  }
+  .footer-right
+  {
+    margin-left:0;
+    margin-right:0;
+  }
+  .footer-mid
+  {
+    margin-top:1em;
+    margin-left:8em;
+  }
+  .footer-left
+  {
+    margin-top:1em;
   }
 }
+
 
 /* ----------- Non-Retina Screens ----------- */
 @media screen
@@ -482,145 +625,146 @@ ul.social_icons, li.social
   and (-webkit-min-device-pixel-ratio: 1)
 {
 /* Main Page */
-  p
+  h3
   {
-    line-height:25px;
+    font-size:28px;
   }
-  .hero
+  #workheader h2
   {
-    width:992px;
+    font-size:36px;
   }
-  #greet
+
+/* Hide/Unhide */
+  .hero-left br
   {
-    position:absolute;
-    top:580px;
-    left:80px;
+   display:block;
   }
-  #name
+  .blocbox-right1
   {
-    position:absolute;
-    top:730px;
-    left:770px;
+    display:none;
   }
-  #blurb
+  .blocbox-right2
   {
-    position:absolute;
-    top:810px;
-    left:120px;
+    display:block;
   }
-  #about-header
-  {
-    position:absolute;
-    top:1090px;
-    left:320px;
-  }
-  #work-header
-  {
-    position:absolute;
-    top:1140px;
-    left:740px;
-  }
-  #contact-header
-  {
-    position:absolute;
-    top:1790px;
-    left:550px;
-  }
-/* About Page */
-  #about
-  {
-    padding-bottom: 5em;
-  }
-  .container:before,
-  .container:after
-  {
-    content: " ";
-    display: table;
-  }
-  .container:after
-  {
-    clear: both;
-  }
-  .about-label
+
+/* Hero */
+  .hero-left
   {
     margin-top:-2em;
-    margin-left:-2em;
+    padding-right:30em;
   }
-  .one-third
+  #herologo img
   {
-    width:33%;
-    float:left;
-    padding-left:10%;
+    width:400px;
+    padding-left:5em;
+    padding-top:5em;
   }
-  .two-third
+  #herologoline img
   {
-    float:left;
     display:inline-block;
-    position:relative;
-    min-height: 1px;
-    margin:0 2% -6em;
-    padding-top:25%;
-  }
-  #pp2
-  {
-    padding-top:15%;
-    padding-left: 40%;
-    padding-bottom:4%;
-  }
-/* Work Page */
-  .three-third
-  {
-    width:33%;
-    float:right;
-    padding-right:10%;
-  }
-  .work-label
-  {
-    padding-left:2em;
-    margin-left:-2em;
-    margin-top:-6em;
-  }
-  .workprojects
-  {
-    padding:0;
-  }
-  .four-third
-  {
-    padding-right:10%;
-    padding-top:20%;
-  }
-/* Contact Page */
-  input[type=text], select, textarea
-  {
-    width:75%;
-  }
-  #cntct
-  {
-    padding-left:25%;
-  }
-  input[type=submit]
-  {
-    margin-left:50%;
-  }
-  .contact-label
-  {
+    width:100%;
+    padding-left:50em;
     margin-top:2em;
-    margin-bottom:-4em;
   }
-/* Footer */
-  .footer-nav-block
+/* Work */
+  #top-halfline img
   {
-    margin: 0.5em 20% 2em 20%;
+    width:70%;
   }
-  .footer-mid
+  .paycrave, .blocbox, .knode
   {
     display:flex;
+    justify-content:center;
+    padding:4em 2em 4em 2em;
   }
-  .back
+  #paycravescreens img, #blocboxhome img, #knode2 img
   {
-    padding-left:2em;
-    padding-right:2em;
+    width:2500px;
+    padding:1em;
   }
+  .blocbox-right2
+  {
+    padding-top:2em;
+  }
+  .paycrave p, .blocbox p, .knode p
+  {
+    text-align:left;
+    margin-top:-2em;
+    padding-left:2em;
+  }
+/* Recommendation */
+  #ZachLine img
+  {
+    width:300px;
+    float:left;
+    margin-left:-5em;
+    padding-top:2em;
+    margin-bottom:-2em;
+  }
+
+/* About */
+  .about-heading
+  {
+    padding-right:25em;
+  }
+  #headingpart1
+  {
+    margin-top:1em;
+  }
+  .about-left
+  {
+    margin-top:-6em;
+  }
+  #designline1 img
+  {
+    margin-top:-2em;
+    margin-left:-10em;
+  }
+  #designline2 img
+  {
+    margin-top:-2em;
+    margin-right:-10em;
+  }
+  .designblurb
+  {
+    padding-left:4em;
+    text-align:left;
+  }
+  #tagline
+  {
+    margin-top:-6em;
+    margin-bottom:-1.5em;
+    padding-left:1em;
+  }
+  #tagline-line img
+  {
+    width:60%;
+    margin-left:-8.5em;
+  }
+
+/* Contact Page */
+  .contact-heading
+  {
+    padding-right:20em;
+  }
+  #cntct textarea
+  {
+    min-height:20em;
+  }
+  #submitline img
+  {
+    width: 80%;
+    margin-right:-20em;
+    margin-top:1.5em;
+  }
+
+/* Footer */
+  footer
+  {
+    padding:0 6em 0 6em;
+  }
+
 }
 
 /* ----------- Retina Screens ----------- */
@@ -645,57 +789,108 @@ ul.social_icons, li.social
     font-size:18px;
     line-height:30px;
   }
-  .hero
+
+/* Hero */
+  .hero-left
   {
-    width:1200px;
+    padding-right:40em;
   }
-  #greet
+  #herologo img
   {
-    position:absolute;
-    top:660px;
-    left:70px;
+    margin-left:10em;
   }
-  #name
+  #herologoline img
   {
-    position:absolute;
-    top:840px;
-    left:930px;
+    padding-left:60em;
   }
-  #blurb
+
+/* Work */
+  .paycrave, .blocbox, .knode
   {
-    position:absolute;
-    top:970px;
-    left:120px;
+    padding:4em 6em 4em 6em;
   }
-  #about-header
+  .blocbox-right2
   {
-    position:absolute;
-    top:1290px;
-    left:380px;
+    padding-top:0em;
   }
-  #work-header
+  .paycrave-right, .knode-right
   {
-    position:absolute;
-    top:1360px;
-    left:860px;
-  }
-  #contact-header
-  {
-    position:absolute;
-    top:2150px;
-    left:650px;
-  }
-  .contact-label
-  {
-    margin-left: 2em;
     padding-top:6em;
+    padding-left:8em;
   }
-  #cntct
+  .blocbox-left
   {
-    margin-bottom:-5em;
+    padding-top:4em;
   }
-  .three-third p
+  #paycrave-button-line img, #blocbox-button-line img, #knode-button-line img
+  {
+    width:100%;
+  }
+  #ZachLine img
+  {
+    margin-left:0;
+    margin-right:-15em;
+  }
+  .recommendation h4
+  {
+    padding-bottom:2em;
+  }
+  .closingstatement h3
+  {
+    padding-top:2em;
+  }
+  #ContactLine
+  {
+    margin-right:-20em;
+  }
+
+/* About */
+  .about-heading, .contact-heading
+  {
+    padding-right: 40em;
+  }
+  #headingpart1
+  {
+    margin-top:.2em;
+  }
+  #headshot img
+  {
+    margin-top:-8em;
+  }
+  .about-right
   {
     padding-top:1em;
+    padding-bottom:3em;
   }
+  .passionprojects img
+  {
+    padding-right:4em;
+    padding-left:4em;
+  }
+  .designblurb
+  {
+    padding-left:8em;
+  }
+  #tagline
+  {
+    margin-top:-4em;
+  }
+  #tagline-line img
+  {
+    margin-left:-13em;
+  }
+
+/* Contact */
+  #submitline img
+  {
+    margin-right:-40em;
+    margin-top:1.5em;
+  }
+
+/* Footer */
+  footer
+  {
+    padding-top:2em;
+  }
+
 }
