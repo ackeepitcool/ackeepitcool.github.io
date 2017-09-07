@@ -9,12 +9,12 @@ body
   }
 body a
   {
-    color: #FFFFFF
+    color: #FFFFFF;
   }
 body a:hover
   {
     text-decoration: none;
-    color: #CBDBF2
+    color: #CBDBF2;
   }
 html, body
   {
@@ -415,7 +415,6 @@ ul.social_icons, li.social
 	  padding-top:1em;
 	  text-decoration: none;
     text-align:center;
-    display:none;
   }
 .footer-right
   {
@@ -434,14 +433,10 @@ ul.social_icons, li.social
   }
 .footer-left
   {
-    padding-left:.5em;
     display:none;
   }
 .footer-mid
   {
-	  padding-top:1em;
-	  text-decoration: none;
-    text-align:center;
     display:none;
   }
 .blocbox-right2
@@ -741,7 +736,11 @@ ul.social_icons, li.social
   }
   .blocbox-right2
   {
-    padding-top:2em;
+    padding-top:4em;
+  }
+  .paycrave-right, .blocbox-left, .knode-right
+  {
+    margin-top:-2em;
   }
   .paycrave p, .blocbox p, .knode p
   {
@@ -852,12 +851,12 @@ ul.social_icons, li.social
   }
   .paycrave-right, .knode-right
   {
-    padding-top:6em;
+    padding-top:3em;
     padding-left:8em;
   }
   .blocbox-left
   {
-    padding-top:4em;
+    padding-top:3em;
   }
   .recommendation h4
   {

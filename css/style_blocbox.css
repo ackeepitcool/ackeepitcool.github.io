@@ -1,38 +1,15 @@
-.hide
-  {
-    display: none;
-  }
 body
   {
-    background: #FFFFFF url("../Assets/BG.png");
     -webkit-font-smoothing: antialiased;
-  }
-body.about-img
-  {
-    background: url("../Assets/BG_about.png") no-repeat,
-    url("../Assets/BG.png");
-    background-size:contain;
-  }
-body.work-img
-  {
-    background: url("../Assets/BG_work.png") no-repeat,
-    url("../Assets/BG.png");
-    background-size:contain;
-  }
-body.contact-img
-  {
-    background: url("../Assets/BG_contact.png") no-repeat,
-    url("../Assets/BG.png");
-    background-size:contain;
   }
 body a
   {
-    color: #333333
+    color: #333333;
   }
 body a:hover
   {
     text-decoration: none;
-    color: #CBDBF2
+    color: #CBDBF2;
   }
 html, body
   {
@@ -43,40 +20,58 @@ body
     font-family: "Lato", Helvetica, Arial, sans-serif;
     color:#333333;
   }
+main
+  {
+    margin-left:auto;
+    margin-right:auto;
+  }
 h1, h2
   {
-    font-family: "Lobster", Helvetica, Arial, sans-serif;
+    font-family: "Avenir Next", Helvetica, Arial, sans-serif;
   }
 h1
   {
-    font-size:36px;
-    text-align:center;
+    font-size:48px;
+    font-weight:500;
   }
 h2
   {
-    font-size:24px;
-    font-weight: normal;
-    margin-bottom: 5px;
+    font-size:36px;
+    font-weight:500;
   }
 h3
   {
-    font-size:24px;
-    font-weight: 600;
+    font-size:28px;
+    font-weight:300;
   }
 h4
   {
-    font-size:18px;
-    line-height:20px;
+    font-size:22px;
     font-weight:300;
+  }
+h5
+  {
+    font-size:12px;
+    color:#333333;
   }
 p
   {
-    font-size:12px;
-    line-height:20px;
+    font-size:18px;
     font-weight:300;
-    background-color: rgba(255,255,255,0.6);
   }
-
+hr
+  {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 3px solid #F7931E;
+    margin: 1em 0;
+    padding: 0;
+  }
+#headerline
+  {
+    width:300px;
+  }
 
 /* HEADER */
 header nav ul > li
@@ -85,73 +80,80 @@ header nav ul > li
   }
 header nav ul > li > a
   {
-    color:#333333;
+    color:#CBDBF2;
     text-decoration: none;
   }
-.header
+#headers
   {
-    width:100%;
-    height:60px;
-    line-height:60px;
-    padding:0 0 5% 0;
-    margin: auto;
-    display:flex;
-    justify-content: space-between;
+    display: flex;
+    flex-direction:row;
   }
-
-
-/* MENU */
-.mainMenu
+h5
   {
-    padding-top: 2em;
-    padding-right: 2em;
-  }
-.hamburger
-  {
-    float:left;
-    line-height: 20px;
-    padding:1em;
-    margin-top: -1em;
-    margin-left: -2em;
-    background-color: rgba(255,255,255,0.6);
-    border-radius: 10px;
-    z-index:1000;
-    position:absolute;
-  }
-.subMenu
-  {
-    display:none;
+    padding-right:5em;
+    margin-bottom:-1em;
   }
 
 /* Main */
-.container
-  {
-    list-style-type:none;
-  }
 main img
   {
     width:100%;
     display: block;
     margin-left: auto;
-    margin-right: auto;;
+    margin-right: auto;
   }
 main
   {
-    padding-right:2em;
-    padding-left:.5em;
+    padding-right:5%;
+    padding-left:5%;
     padding-top:1em;
-    }
+    list-style-type:none;
+  }
 .center-text img
   {
     width:100%;
   }
-
+#process-right, #competitive-analysis, #mockup
+  {
+    background-color:#0071BC;
+    border-left: 60em solid #0071BC;
+    border-right: 60em solid #0071BC;
+    border-top: 1em solid #0071BC;
+    border-bottom: 1em solid #0071BC;
+    margin-right:-60em;
+    margin-left:-60em;
+  }
+#conclusion
+  {
+    background-color:#0071BC;
+    border-left: 60em solid #0071BC;
+    border-right: 60em solid #0071BC;
+    border-top: 1em solid #0071BC;
+    border-bottom: 10em solid #0071BC;
+    margin-bottom:-10em;
+    margin-right:-60em;
+    margin-left:-60em;
+  }
+#collaborators
+  {
+    padding-bottom:1em;
+  }
+.color
+  {
+    color:#FFFFFF;
+  }
+.color a
+  {
+    color: #FFFFFF;
+  }
 
 /* FOOTER */
 footer
   {
     margin:auto;
-    padding-top:2em;
+    padding-top:1em;
+    margin:1em;
+    background-color: #0071BC;
   }
 ul.social_icons, li.social
   {
@@ -164,17 +166,17 @@ ul.social_icons, li.social
 .footer-nav-block
   {
 	  margin: auto;
-	  border: 2px solid #dddddd;
-	  border-radius: 10px;
+	  border: 2px solid #F7931E;
+    border-radius: 10px;
     padding-top:.5em;
     padding-bottom:.5em;
     display:flex;
     justify-content:space-between;
-    background-color: rgba(255,255,255,0.6);
   }
 .footer-left
   {
     padding-left:.5em;
+    display:none;
   }
 .footer-mid
   {
@@ -182,6 +184,15 @@ ul.social_icons, li.social
 	  text-decoration: none;
     text-align:center;
     display:none;
+  }
+.footer-mid a
+  {
+    color:#FFFFFF;
+  }
+.footer-right
+  {
+    margin-left:auto;
+    margin-right:auto;
   }
 
 
@@ -194,6 +205,11 @@ ul.social_icons, li.social
   and (min-width: 768px)
   and (-webkit-min-device-pixel-ratio: 1)
 {
+  main
+  {
+    padding-right:10%;
+    padding-left:10%;
+  }
   h1
   {
     font-size:48px;
@@ -252,9 +268,27 @@ ul.social_icons, li.social
 
 
 /* Footer */
+  .footer-left, .footer-mid
+  {
+    display:flex;
+  }
   .footer-nav-block
   {
-    margin: 0.5em 22% 2em 22%;
+    margin: 0 2em 2em 2em;
+  }
+  .footer-right
+  {
+    margin-left:0;
+    margin-right:0;
+  }
+  .footer-mid
+  {
+    margin-top:1em;
+    margin-left:8em;
+  }
+  .footer-left
+  {
+    margin-top:1em;
   }
 }
 
@@ -264,12 +298,6 @@ ul.social_icons, li.social
   and (-webkit-min-device-pixel-ratio: 1)
 {
 /* Main Page */
-  .container:before,
-  .container:after
-  {
-    content: " ";
-    display: table;
-  }
   main
   {
     padding-left:10%;
@@ -277,25 +305,16 @@ ul.social_icons, li.social
   }
 
 /* Footer */
-  .footer-nav-block
+  footer
   {
-    margin: 0.5em 20% 2em 20%;
-  }
-  .footer-mid
-  {
-    display:flex;
-  }
-  .back
-  {
-    padding-left:2em;
-    padding-right:2em;
+    padding:0 6em 0 6em;
   }
 }
 
 /* ----------- Retina Screens ----------- */
 @media screen
   and (min-width: 1200px)
-  and (-webkit-min-device-pixel-ratio: 2)
+  and (-webkit-min-device-pixel-ratio: 1)
 {
   h1
   {
@@ -321,9 +340,5 @@ ul.social_icons, li.social
   {
     padding-left:15%;
     padding-right:15%;
-  }
-  .full
-  {
-    text-align:center;
   }
 }
