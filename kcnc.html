@@ -26,29 +26,16 @@
     <nav class="container">
       <a name="top"></a>
       <div class="header">
-        <ul class="header-logo">
-        <a href="index.html" class ="site-logo">
-          <img src="Assets/Logo3-med.png" alt="Portfolio" />
-        </a>
+        <ul id="headers" class="menu no-bullet" >
+          <li><a data-page="home" href="index.html"><h5>Back to Home</h5> </a></li>
         </ul>
-        <div class="mainMenu">
-            <a href="#" class="btn">
-            <img src="Assets/Menu.png" alt="Portfolio" />
-            </a>
-          <ul id="hamburger" class="menu subMenu hamburger">
-            <li><a data-page="home" href="index.html#home"><h3>Home</h3> </a></li>
-            <li><a data-page="about" href="index.html#about"><h3>About</h3> </a></li>
-            <li><a data-page="work" href="index.html#work"><h3>Work</h3> </a></li>
-            <li><a data-page="contact" href="index.html#contact"><h3>Contact</h3> </a></li>
-          </ul>
-        </div>
       </div>
+      <hr id="headerline"/>
     </nav>
   </header>
 
 <main role="main">
   <section class="case-study">
-      <ul class="container">
       <div class="title">
         <li class="title-left">
           <img src="Assets/KCNC/KCNClogo.png" alt="Portfolio" />
@@ -57,6 +44,7 @@
             <h1>KODACHROME NC</h1>
         </li>
       </div>
+      <hr id="TitleLine"/>
       <div class="body">
         <li class="body_left">
             <p>For a couple of years, I was able to put two of my greatest passions together: Video production and dance. I was lucky enough to work with an amazing organization called KODACHROME NC as their videographer and  visual consultant. Being able to mix two things that made up a huge part of my college pursuits was a blessing. The work helped define me as a person and has led to many rewarding personal and professional relationships.</p>
@@ -65,38 +53,41 @@
           <img src="Assets/KCNC/exposedance.png" alt="Portfolio" />
         </li>
       </div>
+      <hr id="MidLine"/>
       <div class="vid">
           <li class="vid_left">
             <a href="https://www.youtube.com/watch?v=LmCRR8w5QFY">
               <img src="Assets/KCNC/Leesa.png" alt="Portfolio" />
             </a>
+            <hr id="LeesaLine"/>
           </li>
           <li class="vid_right">
             <a href="https://www.youtube.com/watch?v=RVFGbsBIoGk">
               <img src="Assets/KCNC/Preston.png" alt="Portfolio" />
             </a>
+            <hr id="PrestonLine"/>
           </li>
           <li class="vid_left">
             <a href="https://www.youtube.com/watch?v=jsn8zdFshvk&t">
               <img src="Assets/KCNC/Jay.png" alt="Portfolio" />
             </a>
+            <hr id="JayLine"/>
           </li>
         </div>
         <li class="conclusion">
             <p>To view more work, please visit the <a href="https://www.youtube.com/user/kodachrometv/videos">KODACHROME NC channel</a>.</p>
         </li>
-      </ul>
   </section>
 </main>
 
 <!-- Footer -->
 <footer>
     <div class="footer-nav-block">
-        <div class="footer-left"><a href="index.html"><img class="logo" src="Assets/Logo3-sm.png" alt="Portfolio" /></a></div>
+        <div class="footer-left"><a href="index.html"><img class="logo" src="Assets/ACLogoWhite-SM.png" alt="Portfolio" /></a></div>
         <div class="footer-mid">
         <div class="back"><a href='#top' class="back">back to top</a></div>
         </div>
-        <div class="footer-right>"<ul class="social_icons">
+        <div class="footer-right"><ul class="social_icons">
           <li class="social"><a href="http://instagram.com/ackeepitcool"><img class="social" src="Assets/Social/IG.png" alt="Portfolio" /></a></li>
           <li class="social"><a href="http://twitter.com/ackeepitcool"><img class="social" src="Assets/Social/twitter.png" alt="Portfolio" /></a></li>
           <li class="social"><a href="http://linkedin.com/agchen"><img class="social" src="Assets/Social/linkedin.png" alt="Portfolio" /></a></li>
@@ -107,9 +98,3 @@
 </footer>
 </body>
 </html>
-
-<script>
-$('.mainMenu a.btn').on('click', function() {
-    $("ul#hamburger").slideToggle('slow');
-});
-</script>
