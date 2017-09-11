@@ -14,7 +14,7 @@ body a
 body a:hover
   {
     text-decoration: none;
-    color: #CBDBF2;
+    color: #FFFFFF;
   }
 html, body
   {
@@ -91,97 +91,119 @@ hr
     box-shadow: 0px 2px 0px 0px #CBDBF2;
     z-index:100;
     position:relative;
-    }
+  }
+.contactbtn:hover
+  {
+    color:#869BAE;
+  }
+.paycravebtn:hover
+  {
+    background:#FFA07A;
+    border: 2px solid #FFA07A;
+    box-shadow: 0px 2px 0px 0px #FFA07A;
+  }
+.blocboxbtn:hover
+  {
+    background:#0071BC;
+    border: 2px solid #0071BC;
+    box-shadow: 0px 2px 0px 0px #0071BC;
+  }
+.knodebtn:hover
+  {
+    background:#F15A57;
+    border: 2px solid #F15A57;
+    box-shadow: 0px 2px 0px 0px #F15A57;
+  }
 header, .hero, .workprojects, .workheading, .recommendation, .closingstatement, .heading, .aboutme, .projects, .designjourney, #contact
-    {
-      list-style-type:none;
-    }
+  {
+    list-style-type:none;
+  }
 
 /* Arrow */
 @-moz-keyframes bounce
+  {
+    0%, 20%, 50%, 80%, 100%
     {
-      0%, 20%, 50%, 80%, 100%
-      {
-        -moz-transform: translateY(0);
-        transform: translateY(0);
-      }
-      40%
-      {
-        -moz-transform: translateY(-30px);
-        transform: translateY(-30px);
-      }
-      60%
-      {
-        -moz-transform: translateY(-15px);
-        transform: translateY(-15px);
-      }
+      -moz-transform: translateY(0);
+      transform: translateY(0);
     }
+    40%
+    {
+      -moz-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60%
+    {
+      -moz-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
 @-webkit-keyframes bounce
+  {
+    0%, 20%, 50%, 80%, 100%
     {
-      0%, 20%, 50%, 80%, 100%
-      {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-      }
-      40%
-      {
-        -webkit-transform: translateY(-30px);
-        transform: translateY(-30px);
-      }
-      60%
-      {
-        -webkit-transform: translateY(-15px);
-        transform: translateY(-15px);
-      }
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
     }
+    40%
+    {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60%
+    {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
 @keyframes bounce
+  {
+    0%, 20%, 50%, 80%, 100%
     {
-      0%, 20%, 50%, 80%, 100%
-      {
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-      }
-      40%
-      {
-        -moz-transform: translateY(-30px);
-        -ms-transform: translateY(-30px);
-        -webkit-transform: translateY(-30px);
-        transform: translateY(-30px);
-      }
-      60%
-      {
-        -moz-transform: translateY(-15px);
-        -ms-transform: translateY(-15px);
-        -webkit-transform: translateY(-15px);
-        transform: translateY(-15px);
-      }
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
     }
+    40%
+    {
+      -moz-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60%
+    {
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
 .below
-    {
-      height: 0vh;
-    }
+  {
+    height: 0vh;
+  }
 i
-    {
-      display: block;
-      color: #fff;
-    }
+  {
+    display: block;
+    color: #fff;
+  }
 .arrow
-    {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      margin-left: -20px;
-      width: 40px;
-      height: 60px;
-    }
+  {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 60px;
+  }
 .bounce
-    {
-      -moz-animation: bounce 2s infinite;
-      -webkit-animation: bounce 2s infinite;
-      animation: bounce 2s infinite;
-    }
+  {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
 
 /* Lines */
 #headerline, #LogoLine, #top-halfline, #paycrave-button-line, #blocbox-button-line, #knode-button-line, #ZachLine, #ContactLine, #headshotline, #designline1, #designline2, #tagline-line, #submitline
@@ -444,8 +466,8 @@ input[type=submit]
   }
 input[type=submit]:hover
   {
-    background-color: #333333;
-    color: #FFFFFF;
+    background-color: #CBDBF2;
+    color: #869BAE;
     position:relative;
 
   }
