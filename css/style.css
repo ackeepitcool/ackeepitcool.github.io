@@ -118,6 +118,11 @@ header, .hero, .workprojects, .workheading, .recommendation, .closingstatement, 
   {
     list-style-type:none;
   }
+#headers
+  {
+    z-index:1000;
+    position:relative;
+  }
 
 /* Arrow */
 @-moz-keyframes bounce
