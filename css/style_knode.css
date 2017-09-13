@@ -9,7 +9,7 @@ body a
 body a:hover
   {
     text-decoration: none;
-    color: #CBDBF2;
+    color: #FFBB3B;
   }
 html, body
   {
@@ -237,6 +237,10 @@ ul.social_icons, li.social
   {
     margin-left:auto;
     margin-right:auto;
+  }
+footer a
+  {
+    color:#FFFFFF;
   }
 
 
