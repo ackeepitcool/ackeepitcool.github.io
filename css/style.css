@@ -118,10 +118,22 @@ header, .hero, .workprojects, .workheading, .recommendation, .closingstatement, 
   {
     list-style-type:none;
   }
+.passionprojects a, .footer-right a
+  {
+    text-decoration:none;
+  }
 #headers
   {
     z-index:1000;
     position:relative;
+  }
+.hideme
+  {
+    opacity:0;
+  }
+.hidden
+  {
+    display:none;
   }
 
 /* Arrow */
@@ -219,16 +231,8 @@ i
 #headerline
   {
     width:300px;
-  }
-#LogoLine
-  {
-    width:700px;
-    margin-left:12em;
-    top:-6.5em;
-  }
-#top-halfline
-  {
-    width:75%;
+    /*margin-left:6em;
+    margin-top:-2.5em;*/
   }
 #paycrave-button-line
   {
@@ -300,34 +304,46 @@ header nav ul > li > a
   {
     display: flex;
     flex-direction:row;
+    /*padding-left:8.5em;
+    margin-top:3em;
+    margin-bottom:-1.7em;*/
   }
 h5
   {
     padding-right:5em;
     margin-bottom:-1em;
   }
+img.headerlogo
+  {
+    float:right;
+    width:100px;
+    padding-right:1em;
+    margin-top:-2em;
+    padding-left:.5em;
+  }
 
 /* Hero */
+.hero
+  {
+    padding-top:1em;
+  }
 .hero-left h1
   {
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
     padding-left:10px;
+    margin-bottom:-.5em;
   }
 .hero-left h3
   {
+    text-align:center;
+    padding-top:2em;
     padding-left:10px;
   }
-#Logo img
+.workheading
   {
-    padding-left:1em;
-    max-width:75%;
-  }
-
-/* Work */
-#workheader
-  {
-    margin-left:auto;
-    margin-right:auto;
-    padding-left:.5em;
+    padding-top:2em;
   }
 .workprojects img
   {
@@ -367,25 +383,9 @@ h5
   }
 
 /* About */
-.heading
+.about-right h2
   {
-    padding-top:.5em;
-  }
-.about-heading
-  {
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    margin-top:-1.25em;
-    margin-bottom:-1.2em;
-    padding-left:10px;
-    padding-right:10px;
-    color: #CBDBF2;
-  }
-.about-heading h3
-  {
-    font-weight:800;
-    letter-spacing: 3px;
+    text-align:center;
   }
 .about-left img
   {
@@ -428,25 +428,9 @@ h5
   }
 
 /* Contact */
-.heading
+#contact h2
   {
-    margin-top:-1.3em;
-  }
-.contact-heading
-  {
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    margin-top:-1.25em;
-    margin-bottom:-1.2em;
-    padding-left:10px;
-    padding-right:10px;
-    color: #CBDBF2;
-  }
-.contact-heading h3
-  {
-    font-weight:800;
-    letter-spacing: 3px;
+    text-align:center;
   }
 input[type=text], select, textarea
   {
@@ -501,7 +485,6 @@ button, input, select, textarea
 footer
   {
     margin:auto;
-    padding-top:1em;
     margin:1em;
   }
 ul.social_icons, li.social
@@ -514,11 +497,6 @@ ul.social_icons, li.social
   }
 .footer-nav-block
   {
-	  margin: auto;
-	  border: 2px solid #CBDBF2;
-	  border-radius: 10px;
-    padding-top:.5em;
-    padding-bottom:.5em;
     display:flex;
     justify-content:space-between;
   }
@@ -539,7 +517,7 @@ ul.social_icons, li.social
   }
 
 /* Hidden for Mobile */
-.hero br
+.hero-left br
   {
     display:none;
   }
@@ -556,6 +534,10 @@ ul.social_icons, li.social
     display:none;
   }
 .blocbox-right2
+  {
+    display:none;
+  }
+img.headerlogo
   {
     display:none;
   }
@@ -598,25 +580,13 @@ ul.social_icons, li.social
   {
     display:flex;
   }
+  img.headerlogo
+  {
+    display:block;
+  }
 
 
 /* Lines */
-  #headerline
-  {
-    width:300px;
-    top:5px;
-  }
-  #LogoLine
-  {
-    display:block;
-    width:100%;
-    top:-16.2em;
-    margin-left:38em;
-  }
-  #top-halfline
-  {
-    width:50%;
-  }
   #paycrave-button-line
   {
     width:100%;
@@ -660,22 +630,21 @@ ul.social_icons, li.social
     margin-left:20em;
   }
 
-/* Hero */
-  #Logo
+/* Header */
+  #headerline
   {
-    padding-left:21em;
-    margin-top:-15em;
-    margin-bottom:8em;
+    top: 5px;
+    /*margin-left:6.5em;
+    margin-top:-2.5em;*/
   }
-  #Logo img
+  /*#headers
   {
-    width:250px;
+    padding-left:9em;
   }
-  .hero
+  img.headerlogo
   {
-    display:flex;
-    justify-content:space-between;
-  }
+    padding-left:1em;
+  }*/
 
 /* Work */
   #workheader h2
@@ -686,6 +655,13 @@ ul.social_icons, li.social
   .paycrave-right, .knode-right, .blocbox-left
   {
     padding-top:2em;
+  }
+
+/* Closing Statement */
+  .closingstatement
+  {
+    padding-top:1em;
+    padding-bottom:1em;
   }
 
 /* About */
@@ -711,23 +687,25 @@ ul.social_icons, li.social
   }
 
 /* Footer */
-  .footer-nav-block
+  footer
   {
-    margin: 0 2em 2em 2em;
+    margin-top:-1em;
   }
   .footer-right
   {
+    padding-top:.5em;
     margin-left:0;
-    margin-right:0;
+    margin-right:-10em;
   }
   .footer-mid
   {
     margin-top:1em;
-    margin-left:8em;
+    margin-left:2.5em;
   }
   .footer-left
   {
     margin-top:1em;
+    margin-left:0em;
   }
 }
 
@@ -762,16 +740,6 @@ ul.social_icons, li.social
   }
 
 /* Lines */
-  #headerline
-  {
-    width:300px;
-    top:5px;
-  }
-  #LogoLine
-  {
-    margin-left:45em;
-    top:-19.5em;
-  }
   #paycrave-button-line
   {
     width:100%;
@@ -820,23 +788,6 @@ ul.social_icons, li.social
   {
     margin-left:20em;
   }
-
-/* Hero */
-  .hero-left
-  {
-    padding-left:3em;
-  }
-  .hero-right
-  {
-    margin-right:-5em;
-    margin-left:5em;
-    margin-bottom:-6em;
-  }
-  #Logo img
-  {
-    width:100%;
-  }
-
 
 /* Work */
   .paycrave, .blocbox, .knode
@@ -908,12 +859,13 @@ ul.social_icons, li.social
   }
 
 /* Footer */
-  footer
+  .footer-right
   {
-    padding:0 6em 0 6em;
+    margin-right:-19em;
   }
 
 }
+
 
 /* ----------- Retina Screens ----------- */
 @media screen
@@ -938,24 +890,6 @@ ul.social_icons, li.social
     line-height:30px;
   }
 
-/* Hero */
-  .hero-right
-  {
-    margin-top:-22em;
-    margin-right:-15em;
-    margin-left:15em;
-  }
-  #LogoLine
-  {
-    margin-left:44em;
-    top:-19em;
-  }
-  #Logo img
-  {
-    width: 500px;
-  }
-
-
 /* Work */
   .paycrave, .blocbox, .knode
   {
@@ -972,15 +906,16 @@ ul.social_icons, li.social
   }
   .blocbox-left
   {
-    padding-top:3em;
+    padding-top:2em;
   }
   .recommendation h4
   {
     padding-bottom:2em;
   }
-  .closingstatement h3
+  .closingstatement
   {
-    padding-top:2em;
+    padding-top:3em;
+    padding-bottom:3em;
   }
 
 /* About */
@@ -1016,13 +951,30 @@ ul.social_icons, li.social
   }
   #tagline-line
   {
-    margin-left:-44em;
+    margin-left:-39em;
   }
 
 /* Footer */
-  footer
+  .footer-right
   {
-    padding-top:2em;
+    margin-right:-26em;
+  }
+}
+
+
+/* ----------- Retina Screens ----------- */
+@media screen
+  and (min-width: 1400px)
+  and (-webkit-min-device-pixel-ratio: 1)
+{
+  #tagline-line
+  {
+    margin-left:-53em;
+  }
+/* Footer */
+  .footer-right
+  {
+    margin-right:-31em;
   }
 
 }

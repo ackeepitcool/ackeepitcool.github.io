@@ -32,7 +32,24 @@ $(document).ready(function() {
     });
 });
 
+$('body').ready(function() {
+    /* Every time the window is scrolled ... */
+    $('body').scroll( function(){
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $('body').scrollTop() + $('body').height();
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'opacity':'1'},500);
+            }
+        });
+    });
+});
 
+$('body').ready(function () {
+    $('div.hidden').fadeIn(1500).removeClass('hidden');
+});
 
 </script>
 
@@ -50,67 +67,67 @@ $(document).ready(function() {
           <li><a data-page="about" href="#about"><h5>About</h5> </a></li>
           <li><a data-page="contact" href="#contact"><h5>Contact</h5> </a></li>
         </ul>
+        <div class=headerlogo>
+              <li id=headerlogo> <img class="headerlogo" src="Assets/ACLogoWhite.png" alt="Portfolio" /> </li>
+        </div>
       </div>
+      <hr id="headerline"/>
     </nav>
   </header>
 
 <main role="main">
 <!-- Main -->
 <div id="pages">
-      <div id="home" class="page" data-page="home">
-        <hr id="headerline"/>
+      <div id="home" class="page hidden" data-page="home">
           <div class="hero">
             <div class="hero-left">
               <h1>Greetings!</h1>
-              <h1>I'm Aaron Chen</h1>
-              <h3>A digital UX/UI designer based in NYC <br/>who loves photography, Star Wars and <br/>sea otters.</h3>
+              <h1>I'm Aaron Chen.</h1>
+              <h3>A digital UX/UI designer based in NYC </br>who loves photography, Star Wars and sea otters.
+                <br/>Please check out some of the things I’ve worked on below!</h3>
             </div>
           </div>
-            <div class="hero-right">
-              <p id="Logo"> <img src="Assets/ACLogoWhite.png" alt="Portfolio" /> </p>
-              <hr/ id="LogoLine">
-            </div>
 
-            <div class="container">
-              <div class="arrow bounce"><i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></div>
-            </div>
-            <div class="below"></div>
+          <div class="container">
+            <div class="arrow bounce"><i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></div>
+          </div>
+          <div class="below"></div>
 
 <!-- Work -->
           <div class="workheading">
             <hr/>
-            <li id="workheader"> <h2>Check out some of the things I’ve been working on!</h2> </li>
-            <hr id="top-halfline"/>
           </div>
           <div class="workprojects">
             <div class="paycrave">
-              <div class="paycrave-left">
+              <div class="paycrave-left hideme">
                 <p id="paycravescreens">
                   <img src="Assets/PayCrave.png" alt="Portfolio" />
                 </p>
               </div>
               <div class="paycrave-right">
-                  <h4>PAYCRAVE</h4>
-                  <p>PayCrave is an app I developed during my time at Bloc. Its aim is to give users an easy way to find, pay and eat at food trucks. An easy to navigate map browsing system paired with a comprehensive food truck card with an order-ahead system makes finding and ordering food much easier, reducing the time needed to wait for food.</p>
-                <a href="paycrave.html" class="btn paycravebtn">View Case Study</a>
-                <hr id="paycrave-button-line"/>
+                  <h3 class="hideme">PAYCRAVE</h3>
+                  <h4 class="hideme">Design, Development</h4>
+                  <p class="hideme">PayCrave is an app I developed during my time at Bloc. Its aim is to give users an easy way to find, pay and eat at food trucks. An easy to navigate map browsing system paired with a comprehensive food truck card with an order-ahead system makes finding and ordering food much easier, reducing the time needed to wait for food.</p>
+                <a href="paycrave.html" class="btn paycravebtn hideme">View Case Study</a>
+                <hr class="hideme" id="paycrave-button-line"/>
                 <br/>
                 <br/>
               </div>
             </div>
             <div class="blocbox">
-              <div class="blocbox-right1">
+              <div class="blocbox-right1 hideme">
                 <p id="blocboxhome">
                   <img src="Assets/BlocBoxHome.png" alt="Portfolio" />
                 </p>
               </div>
               <div class="blocbox-left">
-                <h4>BLOCBOX</h4>
-                <p>Blocbox is a website I developed at Bloc that aims to give users the ability to store notes, images and links directly onto the web for easy access. Blocbox is a simple to use product that aims for collaborative storage and multiple projects with Boxes.</p>
-              <a href="blocbox.html" class="btn blocboxbtn">View Case Study</a>
-              <hr id="blocbox-button-line"/>
+                <h3 class="hideme">BLOCBOX</h3>
+                <h4 class="hideme">Design, Development</h4>
+                <p class="hideme">Blocbox is a website I developed at Bloc that aims to give users the ability to store notes, images and links directly onto the web for easy access. Blocbox is a simple to use product that aims for collaborative storage and multiple projects with Boxes.</p>
+              <a href="blocbox.html" class="btn blocboxbtn hideme">View Case Study</a>
+              <hr class="hideme" id="blocbox-button-line"/>
               </div>
-              <div class="blocbox-right2">
+              <div class="blocbox-right2 hideme">
               <p id="blocboxhome">
                 <img src="Assets/BlocBoxHome.png" alt="Portfolio" />
               </p>
@@ -119,15 +136,16 @@ $(document).ready(function() {
               <br/>
             </div>
             <div class="knode">
-              <div class="knode-left">
+              <div class="knode-left hideme">
               <p id="knode2">
                 <img src="Assets/Knode2.png" alt="Portfolio" />
               </p>
               </div>
               <div class="knode-right">
-                <h4>KNODE</h4>
-                <p>Knode is a website I helped develop during a UX Hackathon event, hosted by Jet. It provides the job seeker with an interactive experience to find companies that align with their personal values in order to build long-term employee engagement.</p>
-              <a href="knode.html" class="btn knodebtn">View Case Study</a>
+                <h3 class="hideme">KNODE</h3>
+                <h4 class="hideme">User Research, Development</h4>
+                <p class="hideme">Knode is a website I helped develop during a UX Hackathon event, hosted by Jet. It provides the job seeker with an interactive experience to find companies that align with their personal values in order to build long-term employee engagement.</p>
+              <a href="knode.html" class="btn knodebtn hideme">View Case Study</a>
               <hr id="knode-button-line"/>
               <br/>
               <br/>
@@ -136,13 +154,13 @@ $(document).ready(function() {
             </div>
           </div>
           <hr/>
-          <div class="recommendation">
+          <div class="recommendation hideme">
               <p>line <br/>line <br/>line <br/>line <br/>line</p>
               <hr id="ZachLine"/>
               <h4>- Zach Lebar, Mentor for Designer Track at Bloc</h4>
           </div>
           <hr/>
-          <div class="closingstatement">
+          <div class="closingstatement hideme">
             <h3>Thanks for stopping by! <br/>Please feel free to send me a message anytime</h3>
             <a data-page="contact" href="mailto:contact.agchen@gmail.com" class="contactbtn btn">Contact Me!</a>
             <br/>
@@ -153,26 +171,14 @@ $(document).ready(function() {
 
 <!-- About -->
     <div id="about" class="page hide" data-page="about">
-          <div class="heading">
-            <hr/>
-            <div class="about-heading">
-              <li><h3 id="headingpart1">ABOUT</h3></li>
-              <li id="headingpart2">
-                <img src="Assets/Lines/HeadingSlash.png"/>
-                <h4>Who is Aaron Chen?</h4>
-              </li>
-            </div>
-          </div>
-            <hr/>
             <div class="aboutme">
             <div class="about-left">
               <p id="headshot"> <img src="Assets/Headshot - About.png" /> </p>
               <hr id="headshotline"/>
             </div>
             <div class="about-right">
-              <p>Thanks for stopping by! So as you’ve probably come to realize, I’m Aaron Chen.
-              <br/>
-              <br/>I am a Star Wars geek. Growing up, I read almost every single Expanded Universe novel in the Star Wars collection. I both hate and love Disney for making new Star Wars films and destroying my childhood by saying the EU isn’t canon anymore.
+              <h2>Who is Aaron Chen?</h2>
+              <p>I am a Star Wars geek. Growing up, I read almost every single Expanded Universe novel in the Star Wars collection. I both hate and love Disney for making new Star Wars films and destroying my childhood by saying the EU isn’t canon anymore.
               <br/>
               <br/>I am slightly  obsessed with sea otters. I think this started when I saw a video of them holding hands at the Vancouver Aquarium back in high school.
               <br/>
@@ -222,19 +228,10 @@ $(document).ready(function() {
 
 <!-- Contact Me -->
     <div id="contact" class="page hide" data-page="contact">
-        <div class="heading">
-          <hr/>
-          <div class="contact-heading">
-            <li><h3 id="headingpart1">CONTACT</h3></li>
-            <li id="headingpart2">
-              <img src="Assets/Lines/HeadingSlash.png"/>
-              <h4>Want to work together?</h4>
-            </li>
-          </div>
-        </div>
-          <hr/>
           <form id="cntct" action="https://formspree.io/contact.agchen@gmail.com"
             method="POST">
+            <br/>
+            <label><h2>Want to work together?</h2>
             <label><h4>Name</h4></label>
             <input type="text" name="name" placeholder="Your name">
             <label><h4>Email</h4></lable>
@@ -250,29 +247,21 @@ $(document).ready(function() {
             <input type="hidden" name="_next" value="#contact" />
           </form>
     </div>
-    <!-- Hidden message to show if contact is successful. -->
-    <div id="submit-success" class="collapse">
-      Message received! I'll be in touch.
-    </div>
-    <!-- Hidden message to show if user encounters errors. -->
-    <div id="submit-errors" class="collapse">
-      It looks like there was an error submitting the form.
-      Please try again later.
-    </div>
 </div>
 
 <!-- Footer -->
-<footer>
+<hr/>
+<footer class="hideme">
     <div class="footer-nav-block">
         <div class="footer-left"><a href="index.html"><img class="logo" src="Assets/ACLogoWhite-SM.png" alt="Portfolio" /></a></div>
         <div class="footer-mid">
         <div class="back"><a href='#top' class="back">back to top</a></div>
         </div>
         <div class="footer-right"><ul class="social_icons">
-          <li class="social"><a href="http://instagram.com/ackeepitcool"><img class="social" src="Assets/Social/IG-white.png" alt="Portfolio" /></a></li>
-          <li class="social"><a href="http://twitter.com/ackeepitcool"><img class="social" src="Assets/Social/twitter-white.png" alt="Portfolio" /></a></li>
-          <li class="social"><a href="http://linkedin.com/agchen"><img class="social" src="Assets/Social/linkedin-white.png" alt="Portfolio" /></a></li>
-          <li class="social"><a href="http://dribbble.com/ackeepitcool"><img class="social" src="Assets/Social/dribbble-white.png" alt="Portfolio" /></a></li>
+          <li class="social"><a href="http://instagram.com/ackeepitcool"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
+          <li class="social"><a href="http://twitter.com/ackeepitcool"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
+          <li class="social"><a href="http://linkedin.com/agchen"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></li>
+          <li class="social"><a href="http://dribbble.com/ackeepitcool"><i class="fa fa-dribbble fa-2x" aria-hidden="true"></i></li>
         </ul>
         </div>
     </div>
@@ -280,34 +269,12 @@ $(document).ready(function() {
 </body>
 </html>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
 <script>
-$("#contact-form").validate({
-  submitHandler: function(form) {
-    $.ajax({
-      url: "//formspree.io/contact.agchen@gmail.com",
-      method: "POST",
-      data: {
-        name: $(form).find("input[name='name']").val(),
-        _replyto: $(form).find("input[name='_replyto']").val(),
-        message: $(form).find("textarea[name='message']").val()
-      },
-      dataType: "json",
-      success: function() {
-        $("#submit-success").fadeIn();
-        $("#contact-form").fadeOut();
-      },
-      error: function() {
-        $("#submit-errors").fadeIn();
-      }
-    });
-  }
-});
-
 $('body').on('scroll', function(){
     $(".arrow").fadeOut();
 });
 
-
+$('body').on('click', function(){
+    $(".arrow").fadeIn();
+});
 </script>

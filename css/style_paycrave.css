@@ -9,7 +9,7 @@ body a
 body a:hover
   {
     text-decoration: none;
-    color: #EFB84D;
+    color: #EEB757;
   }
 html, body
   {
@@ -68,9 +68,38 @@ hr
     margin: 1em 0;
     padding: 0;
   }
+h1, h2, h3, h4
+  {
+    text-align:center;
+  }
 #headerline
   {
     width:300px;
+  }
+.btn
+  {
+    border-radius: 4px;
+    color:#333333;
+    font-weight: 400;
+    text-decoration: none;
+    padding:10px;
+    margin-left:auto;
+    margin-right:auto;
+    background: #AED3D1;
+    border: 2px solid #AED3D1;
+    box-shadow: 0px 2px 0px 0px #AED3D1;
+    z-index:100;
+    position:relative;
+  }
+.btn:hover
+  {
+    color:#FFFFFF;
+  }
+.prototype
+  {
+    padding-top:1em;
+    padding-bottom:1em;
+    text-align:center;
   }
 
 /* HEADER */
@@ -114,33 +143,81 @@ main
     margin-right:auto;
     margin-left:auto;
   }
-#process-right, #competitive-analysis, #final-step
+.conclusion
   {
-    background-color:#AED3D1;
-    border-left: 60em solid #AED3D1;
-    border-right: 60em solid #AED3D1;
-    border-top: 1em solid #AED3D1;
-    border-bottom: 1em solid #AED3D1;
-    margin-right:-60em;
-    margin-left:-60em;
+    padding-bottom:2em;
   }
-#mockup-left
+.intro-left, #process-right_img, #mockup-right_img, #discover-right, #mockup-left_img
   {
-    background-color:#AED3D1;
-    border-left: 60em solid #AED3D1;
-    border-right: 60em solid #AED3D1;
-    border-top: 4em solid #AED3D1;
-    border-bottom: 4em solid #AED3D1;
-    margin-right:-60em;
-    margin-left:-60em;
+    margin-left:7%;
   }
-
+#problemline1
+  {
+    position:relative;
+    width:1000px;
+    top:1em;
+    margin-left:-4em;
+    border-color:#AED3D1;
+  }
+#problemline2
+  {
+    position:relative;
+    width:1000px;
+    top:-1em;
+    margin-left:-4em;
+    border-color:#AED3D1;
+  }
+#approachline1
+  {
+    position:relative;
+    width:1000px;
+    top:1em;
+    margin-left:-4em;
+  }
+#approachline2
+  {
+    position:relative;
+    width:1000px;
+    top:-1em;
+    margin-left:-4em;
+  }
+#designline1
+  {
+    position:relative;
+    width:1000px;
+    top:1em;
+    margin-left:-4em;
+    border-color: #EEB757;
+  }
+#designline2
+  {
+    position:relative;
+    width:1000px;
+    top:-1em;
+    margin-left:-4em;
+    border-color: #EEB757;
+  }
+#conclusionline1
+  {
+    position:relative;
+    width:1000px;
+    top:1em;
+    margin-left:-4em;
+    border-color:#AED3D1;
+  }
+#conclusionline2
+  {
+    position:relative;
+    width:1000px;
+    top:-1em;
+    margin-left:-4em;
+    border-color:#AED3D1;
+  }
 
 /* FOOTER */
 footer
   {
     margin:auto;
-    padding-top:1em;
     margin:1em;
   }
 ul.social_icons, li.social
@@ -153,12 +230,6 @@ ul.social_icons, li.social
   }
 .footer-nav-block
   {
-	  margin: auto;
-	  border: 2px solid #FFA07A;
-    background-color: #FFA07A;
-    border-radius: 10px;
-    padding-top:.5em;
-    padding-bottom:.5em;
     display:flex;
     justify-content:space-between;
   }
@@ -179,9 +250,9 @@ ul.social_icons, li.social
     margin-left:auto;
     margin-right:auto;
   }
-footer a
+.footer-right a, .footer-mid a
   {
-    color: #FFFFFF;
+    text-decoration:none;
   }
 
 
@@ -217,7 +288,7 @@ footer a
   }
   p
   {
-    font-size:16px;
+    font-size:20px;
     line-height:30px;
   }
   .intro, .process, .mockups, .discover, .account
@@ -229,6 +300,10 @@ footer a
   {
     padding-left: 3em;
     padding-top:5em;
+  }
+  .intro-right p
+  {
+    margin-top:-2em;
   }
   .intro-left, .process
   {
@@ -253,6 +328,10 @@ footer a
   #process-right_img
   {
     padding-top:6em;
+  }
+  #mockup-left_img
+  {
+    padding-top:5em;
   }
   #order-summary img
   {
@@ -279,55 +358,128 @@ footer a
   {
     max-width:768px;
   }
-
+  .intro-left, #process-right_img, #mockup-right_img, #discover-right, #mockup-left_img
+  {
+    margin-left:0%;
+  }
+  #problemline1
+  {
+    width:600px;
+    top:3.5em;
+    margin-left:-27.5em;
+  }
+  #problemline2
+  {
+    width:2000px;
+    top:-3.2em;
+    margin-left:28em;
+  }
+  #approachline1
+  {
+    width:600px;
+    top:3.5em;
+    margin-left:-27.5em;
+  }
+  #approachline2
+  {
+    width:2000px;
+    top:-3.2em;
+    margin-left:28em;
+  }
+  #designline1
+  {
+    width:300px;
+    top:3.5em;
+    margin-left:-17em;
+  }
+  #designline2
+  {
+    width:2000px;
+    top:-5.6em;
+    margin-left:36.5em;
+  }
+  #conclusionline1
+  {
+    width:600px;
+    top:3.5em;
+    margin-left:-27.5em;
+  }
+  #conclusionline2
+  {
+    width:2000px;
+    top:-3.2em;
+    margin-left:28em;
+  }
 
 /* Footer */
   .footer-left, .footer-mid
   {
     display:flex;
   }
-  .footer-nav-block
+  footer
   {
-    margin: 0 2em 2em 2em;
+    margin-top:-1em;
   }
   .footer-right
   {
+    padding-top:.5em;
     margin-left:0;
-    margin-right:0;
+    margin-right:-10em;
   }
   .footer-mid
   {
     margin-top:1em;
-    margin-left:8em;
+    margin-left:2.5em;
   }
   .footer-left
   {
     margin-top:1em;
+    margin-left:0em;
   }
 }
+
 
 /* ----------- Non-Retina Screens ----------- */
 @media screen
   and (min-width: 992px)
   and (-webkit-min-device-pixel-ratio: 1)
 {
-/* Main Page */
+  h1
+  {
+    font-size:68px;
+  }
+  h2
+  {
+    font-size:56px;
+  }
+  h3
+  {
+    font-size:48px;
+  }
+  h4
+  {
+    font-size:36px;
+  }
+  p
+  {
+    font-size:24px;
+  }
   main
   {
-    padding-left:10%;
-    padding-right:10%;
-  }
-  .intro-right
-  {
-    padding-top:9em;
+    padding-left:15%;
+    padding-right:15%;
   }
   #process-right_img
   {
-    padding-top:1em;
+    padding-top:3em;
   }
   #mockup-right_img
   {
     margin-top:-.7em;
+  }
+  #mockup-left
+  {
+    padding-top:4em;
   }
   #discover-left
   {
@@ -337,16 +489,48 @@ footer a
   {
     padding-top:4em;
   }
-  #mockup-left
-    {
-      border-top: 5em solid #AED3D1;
-      border-bottom: 5em solid #AED3D1;
-    }
+  #problemline1
+  {
+    top:5em;
+  }
+  #problemline2
+  {
+    top:-5.2em;
+    margin-left:34.5em;
+  }
+  #approachline1
+  {
+    top:5em;
+  }
+  #approachline2
+  {
+    top:-5.2em;
+    margin-left:34.5em;
+  }
+  #designline1
+  {
+    top:5em;
+    margin-left:-19em;
+  }
+  #designline2
+  {
+    top:-9em;
+    margin-left:45em;
+  }
+  #conclusionline1
+  {
+    top:5em;
+  }
+  #conclusionline2
+  {
+    top:-5.2em;
+    margin-left:34.5em;
+  }
 
 /* Footer */
-  footer
+  .footer-right
   {
-    padding:0 6em 0 6em;
+    margin-right:-19em;
   }
 }
 
@@ -355,30 +539,50 @@ footer a
   and (min-width: 1200px)
   and (-webkit-min-device-pixel-ratio: 1)
 {
-  h1
-  {
-    font-size:56px;
-  }
-  h2
-  {
-    font-size:48px;
-  }
-  h3
-  {
-    font-size:28px;
-  }
-  h4
-  {
-    font-size:22px;
-  }
-  p
-  {
-    font-size:18px;
-  }
   main
   {
-    padding-left:15%;
-    padding-right:15%;
+    padding-left:20%;
+    padding-right:20%;
+  }
+  #problemline1
+  {
+    width:800px;
+    margin-left:-39em;
+  }
+  #problemline2
+  {
+    width:4000px;
+    margin-left:36.5em;
+  }
+  #approachline1
+  {
+    width:800px;
+    margin-left:-35em;
+  }
+  #approachline2
+  {
+    width:4000px;
+    margin-left:32.5em;
+  }
+  #designline1
+  {
+    width:800px;
+    margin-left:-50em;
+  }
+  #designline2
+  {
+    width:4000px;
+    margin-left:46.5em;
+  }
+  #conclusionline1
+  {
+    width:800px;
+    margin-left:-39em;
+  }
+  #conclusionline2
+  {
+    width:4000px;
+    margin-left:36em;
   }
   #account-right
   {
@@ -388,6 +592,11 @@ footer a
   {
     max-width:1000px;
   }
+/* Footer */
+  .footer-right
+  {
+    margin-right:-26em;
+  }
 
 }
 
@@ -396,13 +605,51 @@ footer a
   and (min-width: 1300px)
   and (-webkit-min-device-pixel-ratio: 2)
 {
+  main
+  {
+    padding-left:25%;
+    padding-right:25%;
+  }
   #mockup-left
   {
-    border-top: 8em solid #AED3D1;
-    border-bottom: 8em solid #AED3D1;
+    padding-top:10em;
   }
   #mockup-right_img
   {
     margin-top:2em;
+  }
+  #problemline1
+  {
+    margin-left:-41em;
+  }
+  #problemline2
+  {
+    margin-left:35em;
+  }
+  #approachline1
+  {
+    margin-left:-36em;
+  }
+  #approachline2
+  {
+    margin-left:30.5em;
+  }
+  #designline1
+  {
+    margin-left:-52em;
+  }
+  #conclusionline1
+  {
+    width:800px;
+    margin-left:-39em;
+  }
+  #conclusionline2
+  {
+    width:4000px;
+    margin-left:34em;
+  }
+  .footer-right
+  {
+    margin-right:-31em;
   }
 }
