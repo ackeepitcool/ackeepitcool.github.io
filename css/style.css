@@ -583,6 +583,7 @@ img.headerlogo
   img.headerlogo
   {
     display:block;
+    padding-right:5%;
   }
 
 
@@ -719,6 +720,10 @@ img.headerlogo
   h3
   {
     font-size:28px;
+  }
+  img.headerlogo
+  {
+    padding-right:3.5%;
   }
   #workheader h2
   {
@@ -859,6 +864,10 @@ img.headerlogo
   }
 
 /* Footer */
+  .footer-left
+  {
+    padding-left:1%;
+  }
   .footer-right
   {
     margin-right:-19em;
@@ -888,6 +897,10 @@ img.headerlogo
   {
     font-size:18px;
     line-height:30px;
+  }
+  img.headerlogo
+  {
+    padding-right:3%;
   }
 
 /* Work */
@@ -970,6 +983,10 @@ img.headerlogo
   #tagline-line
   {
     margin-left:-53em;
+  }
+  img.headerlogo
+  {
+    padding-right:2.5%;
   }
 /* Footer */
   .footer-right

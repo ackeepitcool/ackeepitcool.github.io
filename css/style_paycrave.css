@@ -22,8 +22,10 @@ body
   }
 main
   {
-    margin-left:auto;
-    margin-right:auto;
+    padding-right:5%;
+    padding-left:5%;
+    padding-top:1em;
+    list-style-type:none;
   }
 h1, h2
   {
@@ -130,13 +132,6 @@ main img
     padding-top:1em;
     padding-bottom:1em;
   }
-main
-  {
-    padding-right:5%;
-    padding-left:5%;
-    padding-top:1em;
-    list-style-type:none;
-  }
 .center-text img
   {
     width:100%;
@@ -147,6 +142,12 @@ main
   {
     padding-bottom:2em;
   }
+.designheading
+  {
+    text-align:center;
+    display:flex;
+    justify-content:space-between;
+  }
 .intro-left, #process-right_img, #mockup-right_img, #discover-right, #mockup-left_img
   {
     margin-left:7%;
@@ -154,65 +155,66 @@ main
 #problemline1
   {
     position:relative;
-    width:1000px;
-    top:1em;
-    margin-left:-4em;
+    width:10%;
+    top:2em;
+    margin-left:-6%;
     border-color:#AED3D1;
   }
 #problemline2
   {
     position:relative;
-    width:1000px;
-    top:-1em;
-    margin-left:-4em;
+    width:10%;
+    top:2em;
+    margin-right:-6%;
     border-color:#AED3D1;
   }
 #approachline1
   {
     position:relative;
-    width:1000px;
-    top:1em;
-    margin-left:-4em;
+    width:10%;
+    top:2em;
+    margin-left:-6%;
   }
 #approachline2
   {
     position:relative;
-    width:1000px;
-    top:-1em;
-    margin-left:-4em;
+    width:10%;
+    top:2em;
+    margin-right:-6%;
   }
 #designline1
   {
     position:relative;
-    width:1000px;
-    top:1em;
-    margin-left:-4em;
+    width:10%;
+    top:2em;
+    margin-left:-6%;
     border-color: #EEB757;
   }
 #designline2
   {
     position:relative;
-    width:1000px;
-    top:-1em;
-    margin-left:-4em;
+    width:10%;
+    top:2em;
+    margin-right:-6%;
     border-color: #EEB757;
   }
 #conclusionline1
   {
     position:relative;
-    width:1000px;
-    top:1em;
-    margin-left:-4em;
+    width:10%;
+    top:2em;
+    margin-left:-6%;
     border-color:#AED3D1;
   }
 #conclusionline2
   {
     position:relative;
-    width:1000px;
-    top:-1em;
-    margin-left:-4em;
+    width:10%;
+    top:2em;
+    margin-right:-6%;
     border-color:#AED3D1;
   }
+
 
 /* FOOTER */
 footer
@@ -364,51 +366,53 @@ ul.social_icons, li.social
   }
   #problemline1
   {
-    width:600px;
-    top:3.5em;
-    margin-left:-27.5em;
+    width:30%;
+    top:2.5em;
+    margin-left:-13%;
   }
   #problemline2
   {
-    width:2000px;
-    top:-3.2em;
-    margin-left:28em;
+    width:30%;
+    top:2.5em;
+    margin-right:-13%;
   }
   #approachline1
   {
-    width:600px;
-    top:3.5em;
-    margin-left:-27.5em;
+    width:40%;
+    top:2.5em;
+    margin-left:-13%;
   }
   #approachline2
   {
-    width:2000px;
-    top:-3.2em;
-    margin-left:28em;
+    width:40%;
+    top:2.5em;
+    margin-right:-13%;
   }
   #designline1
   {
-    width:300px;
-    top:3.5em;
-    margin-left:-17em;
+    width:10%;
+    top:2.5em;
+    padding-right:1em;
+    margin-left:-13%;
   }
   #designline2
   {
-    width:2000px;
-    top:-5.6em;
-    margin-left:36.5em;
+    width:10%;
+    top:2.5em;
+    padding-left:1em;
+    margin-right:-13%;
   }
   #conclusionline1
   {
-    width:600px;
-    top:3.5em;
-    margin-left:-27.5em;
+    width:40%;
+    top:2.5em;
+    margin-left:-13%;
   }
   #conclusionline2
   {
-    width:2000px;
-    top:-3.2em;
-    margin-left:28em;
+    width:40%;
+    top:2.5em;
+    margin-right:-13%;
   }
 
 /* Footer */
@@ -491,40 +495,51 @@ ul.social_icons, li.social
   }
   #problemline1
   {
-    top:5em;
+    width:40%;
+    top:4em;
+    margin-left:-22%;
   }
   #problemline2
   {
-    top:-5.2em;
-    margin-left:34.5em;
+    width:40%;
+    top:4em;
+    margin-right:-22%;
   }
   #approachline1
   {
-    top:5em;
+    width:45%;
+    top:4em;
+    margin-left:-22%;
   }
   #approachline2
   {
-    top:-5.2em;
-    margin-left:34.5em;
+    width:45%;
+    top:4em;
+    margin-right:-22%;
   }
   #designline1
   {
-    top:5em;
-    margin-left:-19em;
+    width:15%;
+    top:4em;
+    margin-left:-22%;
   }
   #designline2
   {
-    top:-9em;
-    margin-left:45em;
+    width:15%;
+    top:4em;
+    margin-right:-22%;
   }
   #conclusionline1
   {
-    top:5em;
+    width:45%;
+    top:4em;
+    margin-left:-22%;
   }
   #conclusionline2
   {
-    top:-5.2em;
-    margin-left:34.5em;
+    width:45%;
+    top:4em;
+    margin-right:-22%;
   }
 
 /* Footer */
@@ -544,46 +559,6 @@ ul.social_icons, li.social
     padding-left:20%;
     padding-right:20%;
   }
-  #problemline1
-  {
-    width:800px;
-    margin-left:-39em;
-  }
-  #problemline2
-  {
-    width:4000px;
-    margin-left:36.5em;
-  }
-  #approachline1
-  {
-    width:800px;
-    margin-left:-35em;
-  }
-  #approachline2
-  {
-    width:4000px;
-    margin-left:32.5em;
-  }
-  #designline1
-  {
-    width:800px;
-    margin-left:-50em;
-  }
-  #designline2
-  {
-    width:4000px;
-    margin-left:46.5em;
-  }
-  #conclusionline1
-  {
-    width:800px;
-    margin-left:-39em;
-  }
-  #conclusionline2
-  {
-    width:4000px;
-    margin-left:36em;
-  }
   #account-right
   {
     padding-top:3em;
@@ -592,6 +567,47 @@ ul.social_icons, li.social
   {
     max-width:1000px;
   }
+  #problemline1
+  {
+    width:50%;
+    margin-left:-35%;
+  }
+  #problemline2
+  {
+    width:50%;
+    margin-right:-35%;
+  }
+  #approachline1
+  {
+    width:60%;
+    margin-left:-35%;
+  }
+  #approachline2
+  {
+    width:60%;
+    margin-right:-35%;
+  }
+  #designline1
+  {
+    margin-right:3em;
+    margin-left:-35%;
+  }
+  #designline2
+  {
+    margin-left:3em;
+    margin-right:-35%;
+  }
+  #conclusionline1
+  {
+    width:60%;
+    margin-left:-35%;
+  }
+  #conclusionline2
+  {
+    width:60%;
+    margin-right:-35%;
+  }
+
 /* Footer */
   .footer-right
   {
@@ -620,33 +636,43 @@ ul.social_icons, li.social
   }
   #problemline1
   {
-    margin-left:-41em;
+    width:60%;
+    margin-left:-50%;
   }
   #problemline2
   {
-    margin-left:35em;
+    width:60%;
+    margin-right:-50%;
   }
   #approachline1
   {
-    margin-left:-36em;
+    width:70%;
+    margin-left:-50%;
   }
   #approachline2
   {
-    margin-left:30.5em;
+    width:70%;
+    margin-right:-50%;
   }
   #designline1
   {
-    margin-left:-52em;
+    margin-right:6em;
+    margin-left:-50%;
+  }
+  #designline2
+  {
+    margin-left:6em;
+    margin-right:-50%;
   }
   #conclusionline1
   {
-    width:800px;
-    margin-left:-39em;
+    width:70%;
+    margin-left:-50%;
   }
   #conclusionline2
   {
-    width:4000px;
-    margin-left:34em;
+    width:70%;
+    margin-right:-50%;
   }
   .footer-right
   {
