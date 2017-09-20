@@ -127,14 +127,14 @@ header, .hero, .workprojects, .workheading, .recommendation, .closingstatement, 
     z-index:1000;
     position:relative;
   }
-.hideme
+/*.hideme
   {
     opacity:0;
   }
 .hidden
   {
     display:none;
-  }
+  }*/
 
 /* Arrow */
 @-moz-keyframes bounce

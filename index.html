@@ -44,6 +44,7 @@ $(document).ready(function() {
              $(newpage).fadeIn('slow').removeClass('hide');
              $('body').addClass(page + '-img');
           });
+
     }
 
     $(".menu li a").on('click', function(e) {
@@ -61,24 +62,24 @@ $(document).ready(function() {
     });
 });
 
-$('body').ready(function() {
-    /* Every time the window is scrolled ... */
-    $('body').scroll( function(){
-        /* Check the location of each desired element */
-        $('.hideme').each( function(i){
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $('body').scrollTop() + $('body').height();
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-                $(this).animate({'opacity':'1'},500);
-            }
-        });
-    });
-});
-
-$('body').ready(function () {
-    $('div.hidden').fadeIn(1500).removeClass('hidden');
-});
+// $('body').ready(function() {
+//     /* Every time the window is scrolled ... */
+//     $('body').scroll( function(){
+//         /* Check the location of each desired element */
+//         $('.hideme').each( function(i){
+//             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+//             var bottom_of_window = $('body').scrollTop() + $('body').height();
+//             /* If the object is completely visible in the window, fade it it */
+//             if( bottom_of_window > bottom_of_object ){
+//                 $(this).animate({'opacity':'1'},500);
+//             }
+//         });
+//     });
+// });
+//
+// $('body').ready(function () {
+//     $('div.hidden').fadeIn(1500).removeClass('hidden');
+// });
 
 </script>
 
@@ -97,7 +98,7 @@ $('body').ready(function () {
           <li><a data-page="contact" href="#contact"><h5>Contact</h5> </a></li>
         </ul>
         <div class=headerlogo>
-          <li id=headerlogo> <img class="headerlogo" src="Assets/ACLogoWhite.png" alt="Portfolio" /> </li>
+          <li id=headerlogo> <img class="headerlogo" src="Assets/aclogowhite.png" alt="Portfolio" /> </li>
         </div>
       </div>
       <hr id="headerline"/>
@@ -107,7 +108,7 @@ $('body').ready(function () {
 <main role="main">
 <!-- Main -->
 <div id="pages">
-      <div id="home" class="page hidden" data-page="home">
+      <div id="home" class="page" data-page="home">
           <div class="hero">
             <div class="hero-left">
               <h1>Greetings!</h1>
@@ -128,53 +129,53 @@ $('body').ready(function () {
           </div>
           <div class="workprojects">
             <div class="paycrave">
-              <div class="paycrave-left hideme">
+              <div class="paycrave-left">
                 <p id="paycravescreens">
-                  <img src="Assets/PayCrave.png" alt="Portfolio" />
+                  <img src="Assets/paycrave.png" alt="Portfolio" />
                 </p>
               </div>
               <div class="paycrave-right">
-                  <h3 class="hideme">PAYCRAVE</h3>
-                  <h4 class="hideme">Design, Development</h4>
-                  <p class="hideme">PayCrave is an app I developed during my time at Bloc. Its aim is to give users an easy way to find, pay and eat at food trucks. An easy to navigate map browsing system paired with a comprehensive food truck card with an order-ahead system makes finding and ordering food much easier, reducing the time needed to wait for food.</p>
-                <a href="paycrave.html" class="btn paycravebtn hideme">View Case Study</a>
-                <hr class="hideme" id="paycrave-button-line"/>
+                  <h3>PAYCRAVE</h3>
+                  <h4>Design, Development</h4>
+                  <p>PayCrave is an app I developed during my time at Bloc. Its aim is to give users an easy way to find, pay and eat at food trucks. An easy to navigate map browsing system paired with a comprehensive food truck card with an order-ahead system makes finding and ordering food much easier, reducing the time needed to wait for food.</p>
+                <a href="paycrave.html" class="btn paycravebtn">View Case Study</a>
+                <hr id="paycrave-button-line"/>
                 <br/>
                 <br/>
               </div>
             </div>
             <div class="blocbox">
-              <div class="blocbox-right1 hideme">
+              <div class="blocbox-right1">
                 <p id="blocboxhome">
-                  <img src="Assets/BlocBoxHome.png" alt="Portfolio" />
+                  <img src="Assets/blocboxhome.png" alt="Portfolio" />
                 </p>
               </div>
               <div class="blocbox-left">
-                <h3 class="hideme">BLOCBOX</h3>
-                <h4 class="hideme">Design, Development</h4>
-                <p class="hideme">Blocbox is a website I developed at Bloc that aims to give users the ability to store notes, images and links directly onto the web for easy access. Blocbox is a simple to use product that aims for collaborative storage and multiple projects with Boxes.</p>
-              <a href="blocbox.html" class="btn blocboxbtn hideme">View Case Study</a>
-              <hr class="hideme" id="blocbox-button-line"/>
+                <h3>BLOCBOX</h3>
+                <h4>Design, Development</h4>
+                <p>Blocbox is a website I developed at Bloc that aims to give users the ability to store notes, images and links directly onto the web for easy access. Blocbox is a simple to use product that aims for collaborative storage and multiple projects with Boxes.</p>
+              <a href="blocbox.html" class="btn blocboxbtn">View Case Study</a>
+              <hr id="blocbox-button-line"/>
               </div>
-              <div class="blocbox-right2 hideme">
+              <div class="blocbox-right2">
               <p id="blocboxhome">
-                <img src="Assets/BlocBoxHome.png" alt="Portfolio" />
+                <img src="Assets/blocboxhome.png" alt="Portfolio" />
               </p>
               </div>
               <br/>
               <br/>
             </div>
             <div class="knode">
-              <div class="knode-left hideme">
+              <div class="knode-left">
               <p id="knode2">
-                <img src="Assets/Knode2.png" alt="Portfolio" />
+                <img src="Assets/knode2.png" alt="Portfolio" />
               </p>
               </div>
               <div class="knode-right">
-                <h3 class="hideme">KNODE</h3>
-                <h4 class="hideme">User Research, Development</h4>
-                <p class="hideme">Knode is a website I helped develop during a UX Hackathon event, hosted by Jet. It provides the job seeker with an interactive experience to find companies that align with their personal values in order to build long-term employee engagement.</p>
-              <a href="knode.html" class="btn knodebtn hideme">View Case Study</a>
+                <h3>KNODE</h3>
+                <h4>User Research, Development</h4>
+                <p>Knode is a website I helped develop during a UX Hackathon event, hosted by Jet. It provides the job seeker with an interactive experience to find companies that align with their personal values in order to build long-term employee engagement.</p>
+              <a href="knode.html" class="btn knodebtn">View Case Study</a>
               <hr id="knode-button-line"/>
               <br/>
               <br/>
@@ -183,13 +184,13 @@ $('body').ready(function () {
             </div>
           </div>
           <hr/>
-          <div class="recommendation hideme">
+          <div class="recommendation">
               <p>line <br/>line <br/>line <br/>line <br/>line</p>
               <hr id="ZachLine"/>
               <h4>- Zach Lebar, Mentor for Designer Track at Bloc</h4>
           </div>
           <hr/>
-          <div class="closingstatement hideme">
+          <div class="closingstatement">
             <h3>Thanks for stopping by! <br/>Please feel free to send me a message anytime</h3>
             <a data-page="contact" href="mailto:contact.agchen@gmail.com" class="contactbtn btn">Contact Me!</a>
             <br/>
@@ -202,7 +203,7 @@ $('body').ready(function () {
     <div id="about" class="page hide" data-page="about">
           <div class="aboutme">
             <div class="about-left">
-              <p id="headshot"> <img src="Assets/Headshot - About.png" /> </p>
+              <p id="headshot"> <img src="Assets/headshot-about.png" /> </p>
               <hr id="headshotline"/>
             </div>
             <div class="about-right">
@@ -242,7 +243,7 @@ $('body').ready(function () {
           <br/>Shoot me a line if you ever want to discuss design, photography, art, Star Wars or how adorable sea otters are (or more importantly, how we can help their conservation status as a keystone species).<p>
         </div>
         <div class="personal-right">
-          <p id="personalimage"> <img src="Assets/About-Image2.jpg" /> </p>
+          <p id="personalimage"> <img src="Assets/about-image2.jpg" /> </p>
         </div>
         </div>
     </div>
@@ -273,9 +274,9 @@ $('body').ready(function () {
 
 <!-- Footer -->
 <hr/>
-<footer class="hideme">
+<footer>
     <div class="footer-nav-block">
-        <div class="footer-left"><a href="index.html"><img class="logo" src="Assets/ACLogoWhite-SM.png" alt="Portfolio" /></a></div>
+        <div class="footer-left"><a href="index.html"><img class="logo" src="Assets/aclogowhite-sm.png" alt="Portfolio" /></a></div>
         <div class="footer-mid">
         <div class="back"><a href='#top' class="back">back to top</a></div>
         </div>
