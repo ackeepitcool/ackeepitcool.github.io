@@ -33,21 +33,25 @@ h1
   {
     font-size:48px;
     font-weight:500;
+    text-align:center;
   }
 h2
   {
     font-size:36px;
     font-weight:500;
+    text-align:center;
   }
 h3
   {
     font-size:28px;
     font-weight:300;
+    text-align:center;
   }
 h4
   {
     font-size:22px;
     font-weight:300;
+    text-align:center;
   }
 h5
   {
@@ -77,66 +81,63 @@ hr
   {
     width:300px;
   }
+.designheading
+  {
+    display:flex;
+    justify-content:space-between;
+  }
 #problemline1
   {
     position:relative;
-    width:1000px;
-    top:1em;
-    margin-left:-4em;
+    width:10%;
+    top:2em;
     border-color:#10A39F;
   }
 #problemline2
   {
     position:relative;
-    width:1000px;
-    top:-1em;
-    margin-left:-4em;
+    width:10%;
+    top:2em;
     border-color:#10A39F;
   }
 #approachline1
   {
     position:relative;
-    width:1000px;
-    top:1em;
-    margin-left:-4em;
+    width:10%;
+    top:2em;
   }
 #approachline2
   {
     position:relative;
-    width:1000px;
-    top:-1em;
-    margin-left:-4em;
+    width:10%;
+    top:2em;
   }
 #designline1
   {
     position:relative;
-    width:1000px;
-    top:1em;
-    margin-left:-4em;
+    width:10%;
+    top:2em;
     border-color: #FFBB3B;
   }
 #designline2
   {
     position:relative;
-    width:1000px;
-    top:-1em;
-    margin-left:-4em;
+    width:10%;
+    top:2em;
     border-color: #FFBB3B;
   }
 #conclusionline1
   {
     position:relative;
-    width:1000px;
-    top:1em;
-    margin-left:-4em;
+    width:10%;
+    top:2em;
     border-color:#10A39F;
   }
 #conclusionline2
   {
     position:relative;
-    width:1000px;
-    top:-1em;
-    margin-left:-4em;
+    width:10%;
+    top:2em;
     border-color:#10A39F;
   }
 
@@ -320,6 +321,10 @@ ul.social_icons, li.social
     padding-top:2%;
     width:400px;
   }
+  .research-right
+  {
+    padding-top:20%;
+  }
   .approach
   {
     padding-top:1em;
@@ -348,51 +353,53 @@ ul.social_icons, li.social
   }
   #problemline1
   {
-    width:100px;
-    top:3.5em;
-    margin-left:-8em;
+    width:30%;
+    top:2em;
+    margin-left:-13%;
   }
   #problemline2
   {
-    width:2000px;
-    top:-3.2em;
-    margin-left:14.5em;
+    width:30%;
+    top:2em;
+    margin-right:-13%;
   }
   #approachline1
   {
-    width:100px;
-    top:3.5em;
-    margin-left:-8em;
+    width:30%;
+    top:2em;
+    margin-left:-13%;
   }
   #approachline2
   {
-    width:2000px;
-    top:-3.2em;
-    margin-left:16em;
+    width:30%;
+    top:2em;
+    margin-right:-13%;
   }
   #designline1
   {
-    width:100px;
-    top:3.5em;
-    margin-left:-8em;
+    width:25%;
+    top:2em;
+    padding-right:1em;
+    margin-left:-13%;
   }
   #designline2
   {
-    width:2000px;
-    top:-3.2em;
-    margin-left:18em;
+    width:25%;
+    top:2em;
+    padding-left:1em;
+    margin-right:-13%;
   }
   #conclusionline1
   {
-    width:100px;
-    top:3.5em;
-    margin-left:-8em;
+    width:40%;
+    top:2em;
+    margin-left:-13%;
   }
   #conclusionline2
   {
-    width:2000px;
-    top:-3.2em;
-    margin-left:13em;
+    width:40%;
+    top:2em;
+    margin-right:-13%;
   }
 
 /* Footer */
@@ -449,57 +456,61 @@ ul.social_icons, li.social
   {
     font-size:32px;
   }
-  h6
-  {
-    font-size:18px;
-  }
   p
   {
     font-size:24px;
   }
   #problemline1
   {
-    width:600px;
-    margin-left:-40em;
+    width:40%;
+    top:2.5em;
+    margin-left:-22%;
   }
   #problemline2
   {
-    width:2000px;
-    top:-4.2em;
-    margin-left:18em;
+    width:40%;
+    top:2.5em;
+    margin-right:-22%;
   }
   #approachline1
   {
-    width:600px;
-    margin-left:-40em;
+    width:45%;
+    top:2.5em;
+    margin-left:-22%;
   }
   #approachline2
   {
-    width:2000px;
-    top:-4.2em;
-    margin-left:20em;
+    width:45%;
+    top:2.5em;
+    margin-right:-22%;
   }
   #designline1
   {
-    width:600px;
-    margin-left:-40em;
+    width:40%;
+    top:2.5em;
+    margin-left:-22%;
   }
   #designline2
   {
-    width:2000px;
-    top:-4.2em;
-    margin-left:22em;
+    width:40%;
+    top:2.5em;
+    margin-right:-22%;
   }
   #conclusionline1
   {
-    width:600px;
-    margin-left:-40em;
+    width:45%;
+    top:2.5em;
+    margin-left:-22%;
   }
   #conclusionline2
   {
-    width:2000px;
-    top:-4.2em;
-    margin-left:16em;
+    width:45%;
+    top:2.5em;
+    margin-right:-22%;
+  }
+  .research-right
+  {
+    padding-top:10%;
   }
 
 /* Footer */
@@ -525,43 +536,43 @@ ul.social_icons, li.social
   }
   #problemline1
   {
-    width:400px;
-    margin-left:-28em;
+    width:50%;
+    margin-left:-35%;
   }
   #problemline2
   {
-    width:4000px;
-    margin-left:19em;
+    width:50%;
+    margin-right:-35%;
   }
   #approachline1
   {
-    width:400px;
-    margin-left:-28em;
+    width:60%;
+    margin-left:-35%;
   }
   #approachline2
   {
-    width:4000px;
-    margin-left:20em;
+    width:60%;
+    margin-right:-35%;
   }
   #designline1
   {
-    width:400px;
-    margin-left:-28em;
+    margin-right:3em;
+    margin-left:-35%;
   }
   #designline2
   {
-    width:4000px;
-    margin-left:22.5em;
+    margin-left:3em;
+    margin-right:-35%;
   }
   #conclusionline1
   {
-    width:400px;
-    margin-left:-28em;
+    width:60%;
+    margin-left:-35%;
   }
   #conclusionline2
   {
-    width:4000px;
-    margin-left:16.5em;
+    width:60%;
+    margin-right:-35%;
   }
 }
 
@@ -577,10 +588,45 @@ ul.social_icons, li.social
     padding-left: 25%;
     padding-right: 25%;
   }
+  #problemline1
+  {
+    width:60%;
+    margin-left:-50%;
+  }
+  #problemline2
+  {
+    width:60%;
+    margin-right:-50%;
+  }
+  #approachline1
+  {
+    width:70%;
+    margin-left:-50%;
+  }
   #approachline2
   {
-    width:4000px;
-    margin-left:22em;
+    width:70%;
+    margin-right:-50%;
+  }
+  #designline1
+  {
+    margin-right:6em;
+    margin-left:-50%;
+  }
+  #designline2
+  {
+    margin-left:6em;
+    margin-right:-50%;
+  }
+  #conclusionline1
+  {
+    width:70%;
+    margin-left:-50%;
+  }
+  #conclusionline2
+  {
+    width:70%;
+    margin-right:-50%;
   }
   .footer-right
   {

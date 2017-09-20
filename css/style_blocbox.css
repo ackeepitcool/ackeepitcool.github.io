@@ -33,21 +33,25 @@ h1
   {
     font-size:48px;
     font-weight:500;
+    text-align:center;
   }
 h2
   {
     font-size:36px;
     font-weight:500;
+    text-align:center;
   }
 h3
   {
     font-size:28px;
     font-weight:300;
+    text-align:center;
   }
 h4
   {
     font-size:22px;
     font-weight:300;
+    text-align:center;
   }
 h5
   {
@@ -329,43 +333,52 @@ ul.social_icons, li.social
   }
   #problemline1
   {
-    width:10%;
+    width:30%;
+    top:2.5em;
     margin-left:-13%;
   }
   #problemline2
   {
-    width:77%;
+    width:30%;
+    top:2.5em;
     margin-right:-13%;
   }
   #approachline1
   {
-    width:10%;
+    width:40%;
+    top:2.5em;
     margin-left:-13%;
   }
   #approachline2
   {
-    width:90%;
+    width:40%;
+    top:2.5em;
     margin-right:-13%;
   }
   #designline1
   {
     width:10%;
-    margin-right:2em;
+    top:2.5em;
+    padding-right:1em;
     margin-left:-13%;
   }
   #designline2
   {
-    width:60%;
+    width:10%;
+    top:2.5em;
+    padding-left:1em;
     margin-right:-13%;
   }
   #conclusionline1
   {
-    width:10%;
+    width:40%;
+    top:2.5em;
     margin-left:-13%;
   }
   #conclusionline2
   {
-    width:80%;
+    width:40%;
+    top:2.5em;
     margin-right:-13%;
   }
 
@@ -429,49 +442,49 @@ ul.social_icons, li.social
   }
   #problemline1
   {
-    width:15%;
+    width:40%;
     top:2.5em;
     margin-left:-22%;
   }
   #problemline2
   {
-    width:83%;
+    width:40%;
     top:2.5em;
     margin-right:-22%;
   }
   #approachline1
   {
-    width:15%;
+    width:45%;
     top:2.5em;
     margin-left:-22%;
   }
   #approachline2
   {
-    width:95%;
+    width:45%;
     top:2.5em;
     margin-right:-22%;
   }
   #designline1
   {
-    width:18%;
+    width:15%;
     top:2.5em;
     margin-left:-22%;
   }
   #designline2
   {
-    width:18%;
+    width:15%;
     top:2.5em;
     margin-right:-22%;
   }
   #conclusionline1
   {
-    width:15%;
+    width:45%;
     top:2.5em;
     margin-left:-22%;
   }
   #conclusionline2
   {
-    width:87%;
+    width:45%;
     top:2.5em;
     margin-right:-22%;
   }
@@ -495,44 +508,42 @@ ul.social_icons, li.social
   }
   #problemline1
   {
-    width:20%;
+    width:50%;
     margin-left:-35%;
   }
   #problemline2
   {
-    width:90%;
+    width:50%;
     margin-right:-35%;
   }
   #approachline1
   {
-    width:18%;
+    width:60%;
     margin-left:-35%;
   }
   #approachline2
   {
-    width:100%;
+    width:60%;
     margin-right:-35%;
   }
   #designline1
   {
-    width:32%;
     margin-right:3em;
     margin-left:-35%;
   }
   #designline2
   {
-    width:32%;
     margin-left:3em;
     margin-right:-35%;
   }
   #conclusionline1
   {
-    width:20%;
+    width:60%;
     margin-left:-35%;
   }
   #conclusionline2
   {
-    width:93%;
+    width:60%;
     margin-right:-35%;
   }
 
@@ -557,41 +568,42 @@ ul.social_icons, li.social
   }
   #problemline1
   {
-    width:25%;
+    width:60%;
     margin-left:-50%;
   }
   #problemline2
   {
-    width:93%;
+    width:60%;
     margin-right:-50%;
   }
   #approachline1
   {
-    width:20%;
+    width:70%;
     margin-left:-50%;
   }
   #approachline2
   {
-    width:100%;
+    width:70%;
     margin-right:-50%;
   }
   #designline1
   {
-    margin-right:8.5em;
+    margin-right:6em;
     margin-left:-50%;
   }
   #designline2
   {
+    margin-left:6em;
     margin-right:-50%;
   }
   #conclusionline1
   {
-    width:25%;
+    width:70%;
     margin-left:-50%;
   }
   #conclusionline2
   {
-    width:96%;
+    width:70%;
     margin-right:-50%;
   }
   .footer-right

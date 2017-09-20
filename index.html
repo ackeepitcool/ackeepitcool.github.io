@@ -17,7 +17,35 @@
 <!-- JQuery -->
 <script src="js/jquery-3.2.1.min.js"></script>
 <script>
+// $(document).ready(function() {
+//     $(".menu li a").on('click', function(e) {
+//         e.preventDefault();
+//         var page = $(this).data('page');
+//         console.log(page);
+//         $("#pages .page:not('.hide')").stop().fadeOut('fast', function() {
+//             $(this).addClass('hide');
+//             $('body').removeClass();
+//             var newpage = $('#pages .page[data-page="'+page+'"]')[0];
+//             $(newpage).fadeIn('slow').removeClass('hide');
+//             $('body').addClass(page + '-img');
+//         });
+//
+//     });
+// });
 $(document).ready(function() {
+  if(window.location.hash) {
+         var page = window.location.hash;
+         page = page.slice(1);
+         console.log(page);
+         $("#pages .page:not('.hide')").stop().fadeOut('fast', function() {
+             $(this).addClass('hide');
+             $('body').removeClass();
+             var newpage = $('#pages .page[data-page="'+page+'"]')[0];
+             $(newpage).fadeIn('slow').removeClass('hide');
+             $('body').addClass(page + '-img');
+          });
+    }
+
     $(".menu li a").on('click', function(e) {
         e.preventDefault();
         var page = $(this).data('page');
@@ -28,6 +56,7 @@ $(document).ready(function() {
             var newpage = $('#pages .page[data-page="'+page+'"]')[0];
             $(newpage).fadeIn('slow').removeClass('hide');
             $('body').addClass(page + '-img');
+            $(window).scrollTop('#top');
         });
     });
 });
@@ -68,7 +97,7 @@ $('body').ready(function () {
           <li><a data-page="contact" href="#contact"><h5>Contact</h5> </a></li>
         </ul>
         <div class=headerlogo>
-              <li id=headerlogo> <img class="headerlogo" src="Assets/ACLogoWhite.png" alt="Portfolio" /> </li>
+          <li id=headerlogo> <img class="headerlogo" src="Assets/ACLogoWhite.png" alt="Portfolio" /> </li>
         </div>
       </div>
       <hr id="headerline"/>
@@ -171,27 +200,26 @@ $('body').ready(function () {
 
 <!-- About -->
     <div id="about" class="page hide" data-page="about">
-            <div class="aboutme">
+          <div class="aboutme">
             <div class="about-left">
               <p id="headshot"> <img src="Assets/Headshot - About.png" /> </p>
               <hr id="headshotline"/>
             </div>
             <div class="about-right">
               <h2>Who is Aaron Chen?</h2>
-              <p>I am a Star Wars geek. Growing up, I read almost every single Expanded Universe novel in the Star Wars collection. I both hate and love Disney for making new Star Wars films and destroying my childhood by saying the EU isn’t canon anymore.
+              <p>I’ve always loved the visual aspect of life. Photos, film, theater, art, I was constantly drawn to these growing up.
               <br/>
-              <br/>I am slightly  obsessed with sea otters. I think this started when I saw a video of them holding hands at the Vancouver Aquarium back in high school.
+              <br/>I went to <a href="https://www.ncsu.edu">college</a> as a Communication Media major, with a heavy focus on video production. Afterwards, my location determined the freelance Production Assistant life was not for me, so I worked in <a href="https://www.urbanoutfitters.com">fashion retail</a> as a manager for 4 years.
               <br/>
-              <br/>I am a photographer. I am a videographer. I am a filmmaker. My camera has been my constant companion for over 8 years now. Recently I’ve been diving into old school film, and really enjoying it.
+              <br/>During my last year in retail, I decided I wanted to pursue something creative again full-time. That led me to applying for the Designer Track at <a href="https://bloc.io">Bloc</a>.
               <br/>
-              <br/>I am a dancer. I started taking community classes from my college’s hip-hop dance crew while I was in college. A year later, I joined the team. I’ve been dancing ever since.
-              <br/>
-              <br/>I am a lover of the arts. Going to museums and galleries is one of my favorite activities to do as an adult.</p>
+              <br/>I use both my visual and retail past to draw strength into creating user friendly, attractive and useful products that people can relate to and enjoy.</p>
+              <h3 id="tagline">Now a designer.  Always a creator.</h3>
             </div>
           </div>
         <hr/>
         <div class="projects">
-          <h3>Below you’ll find some personal projects that I’ve been proud to work on throughout the years</h3>
+          <h3>Below you'll find some personal video and photo projects that I've been proud to work on throughout the years.</h3>
           <div class="passionprojects">
           <a href="kcnc.html">
               <img src="Assets/PassionProjects/KCNCproject.png" alt="Portfolio" />
@@ -205,23 +233,17 @@ $('body').ready(function () {
           </div>
         </div>
         <hr/>
-        <div class="designjourney">
-          <div class="designheading">
-            <hr id="designline1"/>
-            <h3>My Design Journey</h3>
-            <hr id="designline2"/>
-          </div>
-          <div class="designblurb">
-            <p>I went to <a href="https://www.ncsu.edu">college</a> as a Communication Media major.
-            <br/>
-            <br/>I worked in <a href="https://www.urbanoutfitters.com">retail</a> as a manager for 4 years.
-            <br/>
-            <br/>After retail, I decided to pursue something creative again full-time. <br/>That led me to applying for the Designer Track at <a href="https://bloc.io">Bloc</a>.
-            <br/>
-            <br/>I use both my visual and retail past to draw strength into creating user friendly, attractive and useful products that people can relate to and enjoy.<p>
-            <h3 id="tagline">Now a designer.  Always a creator.</h3>
-            <hr id="tagline-line"/>
-          </div>
+        <div class="personal">
+        <div class="personal-left">
+          <p>In my free, time, I like to take photos, take dance classes and visit art galleries. I am a rabid Star Wars geek. Growing up, I read almost every single Expanded Universe novel in the Star Wars collection. I both hate and love Disney for making new Star Wars films and destroying my childhood by saying the EU isn’t canon anymore.
+          <br/>
+          <br/>I am also slightly obsessed with sea otters. Any chance to see one I will take almost immediately with no hesitation.
+          <br/>
+          <br/>Shoot me a line if you ever want to discuss design, photography, art, Star Wars or how adorable sea otters are (or more importantly, how we can help their conservation status as a keystone species).<p>
+        </div>
+        <div class="personal-right">
+          <p id="personalimage"> <img src="Assets/About-Image2.jpg" /> </p>
+        </div>
         </div>
     </div>
 
