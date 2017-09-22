@@ -282,10 +282,12 @@ ul.social_icons, li.social
   h3
   {
     font-size:24px;
+    text-align:left;
   }
   h4
   {
     font-size:22px;
+    text-align:left;
   }
   p
   {
@@ -299,12 +301,8 @@ ul.social_icons, li.social
   }
   .intro-right
   {
-    padding-left: 3em;
-    padding-top:5em;
-  }
-  .intro-right p
-  {
-    margin-top:-2em;
+    padding-left:3em;
+
   }
   .intro-left, .process
   {
@@ -312,7 +310,7 @@ ul.social_icons, li.social
   }
   #blurb
   {
-    padding-top:2em;
+    padding-bottom:2em;
   }
   #final-step
   {
@@ -366,51 +364,51 @@ ul.social_icons, li.social
   #problemline1
   {
     width:30%;
-    top:2.5em;
+    top:2em;
     margin-left:-13%;
   }
   #problemline2
   {
     width:30%;
-    top:2.5em;
+    top:2em;
     margin-right:-13%;
   }
   #approachline1
   {
     width:40%;
-    top:2.5em;
+    top:2em;
     margin-left:-13%;
   }
   #approachline2
   {
     width:40%;
-    top:2.5em;
+    top:2em;
     margin-right:-13%;
   }
   #designline1
   {
     width:10%;
-    top:2.5em;
+    top:2em;
     padding-right:1em;
     margin-left:-13%;
   }
   #designline2
   {
     width:10%;
-    top:2.5em;
+    top:2em;
     padding-left:1em;
     margin-right:-13%;
   }
   #conclusionline1
   {
     width:40%;
-    top:2.5em;
+    top:2em;
     margin-left:-13%;
   }
   #conclusionline2
   {
     width:40%;
-    top:2.5em;
+    top:2em;
     margin-right:-13%;
   }
 
