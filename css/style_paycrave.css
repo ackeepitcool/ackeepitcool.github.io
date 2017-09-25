@@ -102,6 +102,14 @@ h1, h2, h3, h4
     padding-bottom:1em;
     text-align:center;
   }
+.link
+  {
+    border-bottom:1em solid #ededed;
+  }
+.link a
+  {
+    text-decoration:none;
+  }
 
 /* HEADER */
 header nav ul > li
@@ -281,7 +289,7 @@ ul.social_icons, li.social
   }
   h3
   {
-    font-size:24px;
+    font-size:28px;
     text-align:left;
   }
   h4
@@ -351,7 +359,11 @@ ul.social_icons, li.social
   }
   .account img
   {
-    padding-top:1.5em;
+    margin-top:-5em;
+  }
+  #account-right
+  {
+    padding-top:3em;
   }
   .center-text img
   {
@@ -387,14 +399,14 @@ ul.social_icons, li.social
   }
   #designline1
   {
-    width:10%;
+    width:30%;
     top:2em;
     padding-right:1em;
     margin-left:-13%;
   }
   #designline2
   {
-    width:10%;
+    width:30%;
     top:2em;
     padding-left:1em;
     margin-right:-13%;
@@ -461,11 +473,11 @@ ul.social_icons, li.social
   }
   h3
   {
-    font-size:36px;
+    font-size:38px;
   }
   h4
   {
-    font-size:32px;
+    font-size:28px;
   }
   p
   {
@@ -479,10 +491,6 @@ ul.social_icons, li.social
   {
     margin-top:-.7em;
   }
-  #mockup-left
-  {
-    padding-top:4em;
-  }
   #discover-left
   {
     padding-top:3em;
@@ -494,49 +502,49 @@ ul.social_icons, li.social
   #problemline1
   {
     width:40%;
-    top:4em;
+    top:2.5em;
     margin-left:-22%;
   }
   #problemline2
   {
     width:40%;
-    top:4em;
+    top:2.5em;
     margin-right:-22%;
   }
   #approachline1
   {
     width:45%;
-    top:4em;
+    top:2.5em;
     margin-left:-22%;
   }
   #approachline2
   {
     width:45%;
-    top:4em;
+    top:2.5em;
     margin-right:-22%;
   }
   #designline1
   {
-    width:15%;
-    top:4em;
+    width:40%;
+    top:2.5em;
     margin-left:-22%;
   }
   #designline2
   {
-    width:15%;
-    top:4em;
+    width:40%;
+    top:2.5em;
     margin-right:-22%;
   }
   #conclusionline1
   {
     width:45%;
-    top:4em;
+    top:2.5em;
     margin-left:-22%;
   }
   #conclusionline2
   {
     width:45%;
-    top:4em;
+    top:2.5em;
     margin-right:-22%;
   }
 
@@ -587,12 +595,12 @@ ul.social_icons, li.social
   }
   #designline1
   {
-    margin-right:3em;
+    width:50%;
     margin-left:-35%;
   }
   #designline2
   {
-    margin-left:3em;
+    width:50%;
     margin-right:-35%;
   }
   #conclusionline1
@@ -624,10 +632,6 @@ ul.social_icons, li.social
     padding-left:25%;
     padding-right:25%;
   }
-  #mockup-left
-  {
-    padding-top:10em;
-  }
   #mockup-right_img
   {
     margin-top:2em;
@@ -654,12 +658,12 @@ ul.social_icons, li.social
   }
   #designline1
   {
-    margin-right:6em;
+    width:60%;
     margin-left:-50%;
   }
   #designline2
   {
-    margin-left:6em;
+    width:60%;
     margin-right:-50%;
   }
   #conclusionline1

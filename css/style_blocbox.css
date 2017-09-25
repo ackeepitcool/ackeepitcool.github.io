@@ -98,8 +98,16 @@ hr
 .prototype
   {
     padding-top:1em;
-    padding-bottom:1em;
+    padding-bottom:4em;
     text-align:center;
+  }
+.link
+  {
+    border-bottom:1em solid #ededed;
+  }
+.link a
+  {
+    text-decoration:none;
   }
 
 /* HEADER */
@@ -282,11 +290,13 @@ ul.social_icons, li.social
   }
   h3
   {
-    font-size:24px;
+    font-size:28px;
+    text-align:left;
   }
   h4
   {
     font-size:22px;
+    text-align:left;
   }
   p
   {
@@ -357,14 +367,14 @@ ul.social_icons, li.social
   }
   #designline1
   {
-    width:10%;
+    width:30%;
     top:2.5em;
     padding-right:1em;
     margin-left:-13%;
   }
   #designline2
   {
-    width:10%;
+    width:30%;
     top:2.5em;
     padding-left:1em;
     margin-right:-13%;
@@ -430,11 +440,11 @@ ul.social_icons, li.social
   }
   h3
   {
-    font-size:36px;
+    font-size:38px;
   }
   h4
   {
-    font-size:32px;
+    font-size:28px;
   }
   p
   {
@@ -466,13 +476,13 @@ ul.social_icons, li.social
   }
   #designline1
   {
-    width:15%;
+    width:40%;
     top:2.5em;
     margin-left:-22%;
   }
   #designline2
   {
-    width:15%;
+    width:40%;
     top:2.5em;
     margin-right:-22%;
   }
@@ -528,12 +538,12 @@ ul.social_icons, li.social
   }
   #designline1
   {
-    margin-right:3em;
+    width:50%;
     margin-left:-35%;
   }
   #designline2
   {
-    margin-left:3em;
+    width:50%;
     margin-right:-35%;
   }
   #conclusionline1
@@ -588,12 +598,12 @@ ul.social_icons, li.social
   }
   #designline1
   {
-    margin-right:6em;
+    width:60%;
     margin-left:-50%;
   }
   #designline2
   {
-    margin-left:6em;
+    width:60%;
     margin-right:-50%;
   }
   #conclusionline1

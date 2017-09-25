@@ -620,6 +620,7 @@ img.headerlogo
     padding-top:2em;
   }
 
+
 /* Closing Statement */
   .closingstatement
   {
@@ -688,10 +689,6 @@ img.headerlogo
   and (-webkit-min-device-pixel-ratio: 1)
 {
 /* Main Page */
-  h3
-  {
-    font-size:28px;
-  }
   img.headerlogo
   {
     padding-right:3.5%;
@@ -715,6 +712,14 @@ img.headerlogo
     display:block;
   }
 
+/* Hero */
+  .hero
+  {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+
 /* Lines */
   #paycrave-button-line
   {
@@ -737,7 +742,7 @@ img.headerlogo
   #ZachLine
   {
     width:20%;
-    margin-left:0;
+    margin-left:-5em;
     margin-bottom:-3.7em;
   }
   #ContactLine
@@ -767,21 +772,30 @@ img.headerlogo
   }
   .paycrave-right, .blocbox-left, .knode-right
   {
-    margin-top:-2em;
+    margin-top:-4em;
   }
   .paycrave p, .blocbox p, .knode p
   {
     margin-top:-2em;
     padding-left:2em;
+    padding-right:2em;
   }
-  .recommendation h4
+  .recommendation
   {
+    padding-top:1em;
     padding-bottom:1em;
   }
   .closingstatement
   {
     padding-top:1em;
     padding-bottom:1em;
+  }
+
+/* Recommendation */
+  .recommendation h4
+  {
+    padding-left:10%;
+    padding-right:10%;
   }
 
 /* About */
@@ -793,23 +807,41 @@ img.headerlogo
   {
     margin-top:1.5em;
   }
+  #headshotline
+  {
+    width:109%;
+    margin-left:-15%;
+  }
+  .aboutme
+  {
+    padding-left:5%;
+    padding-right:8%;
+  }
   .about-left
   {
     margin-top:-5em;
   }
   .about-right
   {
-    margin-right:-10%;
+    padding-left:4em;
   }
-  .projects h3
+  .projects h4
   {
     padding-left:10%;
     padding-right:10%;
   }
+  .personal
+  {
+    padding-left:8%;
+    padding-right:8%;
+  }
   .personal-right
   {
     margin-top:-1em;
-    margin-right:5%;
+  }
+  .personal-left
+  {
+    padding-right:4em;
   }
   #tagline
   {
@@ -894,6 +926,13 @@ img.headerlogo
     padding-bottom:3em;
   }
 
+/* Recommendation */
+  .recommendation p
+  {
+    padding-left:20%;
+    padding-right:20%;
+  }
+
 /* About */
   .about-heading, .contact-heading
   {
@@ -907,19 +946,23 @@ img.headerlogo
   {
     margin-top:-4em;
   }
-  #headshotline
+  .aboutme
   {
-    width:92%;
+    padding-right:11%;
   }
   .about-right
   {
     padding-top:1em;
     padding-bottom:3em;
-    margin-right:-5%;
   }
   .about-left
   {
     margin-top:-2em;
+  }
+  .projects h4
+  {
+    padding-left:9%;
+    padding-right:9%;
   }
   .passionprojects img
   {
@@ -928,11 +971,7 @@ img.headerlogo
   }
   .personal-right
   {
-    margin-top:-4em;
-  }
-  .personal-left
-  {
-    margin-left:5%;
+    margin-top:-1em;
   }
 
 /* Contact */
@@ -959,17 +998,36 @@ img.headerlogo
   {
     padding-right:2.5%;
   }
+  .aboutme
+  {
+    padding-left:10%;
+    padding-right:14%;
+  }
+  #headshotline
+  {
+    width:120%;
+    margin-left:-28%;
+  }
   .about-left
   {
-    margin-top:-8em;
+    margin-top:-2em;
   }
-  .about-right
+  .projects h4
   {
-    margin-right:0;
+    padding-left:13%;
+    padding-right:13%;
   }
-  .personal-right
+  .personal
   {
-    margin-right:10%;
+    padding-left:13%;
+    padding-right:13%;
+  }
+
+/* Recommendation */
+  .recommendation p
+  {
+    padding-left:20%;
+    padding-right:20%;
   }
 
 /* Footer */
