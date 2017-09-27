@@ -67,6 +67,7 @@ p
   {
     font-size:18px;
     font-weight:300;
+    line-height:30px;
   }
 hr
   {
@@ -291,7 +292,6 @@ ul.social_icons, li.social
   p
   {
     font-size:20px;
-    line-height:30px;
   }
   .footer-left, .footer-mid
   {
@@ -549,6 +549,10 @@ ul.social_icons, li.social
   {
     padding-left:20%;
     padding-right:20%;
+  }
+  p
+  {
+    line-height:35px;
   }
   .center-text img
   {
