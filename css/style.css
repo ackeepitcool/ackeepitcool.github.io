@@ -1073,21 +1073,33 @@ img.headerlogo
 /* Work */
   #paycrave-button-line
   {
-    width:300%;
-    margin-left:-2em;
+    width:600px;
+    margin-right:-20em;
     top:-2.5em;
+  }
+  .paycrave-right
+  {
+    width:25%;
   }
   #blocbox-button-line
   {
-    width:235%;
-    margin-left:-19em;
+    width:625px;
+    margin-left:-20em;
     top:-2.5em;
+  }
+  .blocbox-left
+  {
+    width:25%;
   }
   #knode-button-line
   {
-    width:300%;
-    margin-left:-2em;
+    width:600px;
+    margin-right:-20em;
     top:-2.5em;
+  }
+  .knode-right
+  {
+    width:25%;
   }
   .paycrave, .blocbox, .knode
   {
@@ -1256,6 +1268,10 @@ img.headerlogo
   {
     padding-left:13%;
     padding-right:13%;
+  }
+  #uxlabbtnline
+  {
+    margin-left:-10em;
   }
 
 /* Recommendation */

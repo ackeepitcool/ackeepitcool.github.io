@@ -88,6 +88,15 @@ hr
   {
     text-decoration:none;
   }
+.bullet
+  {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size:18px;
+    font-weight:300;
+    line-height:30px;
+    list-style-type:circle;
+    text-align:left;
+  }
 
 #headerline
   {
@@ -209,6 +218,10 @@ main
   {
     padding-top:1em;
     width:100%;
+  }
+#conclusion h3
+  {
+    text-align:left;
   }
 
 
