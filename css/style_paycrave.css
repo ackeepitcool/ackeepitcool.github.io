@@ -111,6 +111,14 @@ h1, h2, h3, h4
   {
     text-decoration:none;
   }
+.bullet, .flexbullet
+  {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size:18px;
+    font-weight:300;
+    line-height:30px;
+    list-style-type:circle;
+  }
 
 /* HEADER */
 header nav ul > li
@@ -302,19 +310,28 @@ ul.social_icons, li.social
   {
     font-size:20px;
   }
-  .intro, .process, .mockups, .discover, .account
+  .intro, .process, .mockups, .transactions, .bookmarks, .discover, .account
   {
     display:flex;
     justify-content: center;
   }
+  .flexbullet
+  {
+    padding-left:2em;
+  }
+  #title-img img
+  {
+    height:300px;
+    width:150px;
+  }
   .intro-right
   {
     padding-left:3em;
-
+    padding-top:6em;
   }
   .intro-left, .process
   {
-    padding-bottom:2em;
+    padding-bottom:1em;
   }
   #competitive-analysis
   {
@@ -323,6 +340,10 @@ ul.social_icons, li.social
   #blurb
   {
     padding-bottom:2em;
+  }
+  #mockup-left
+  {
+    padding-top:3em;
   }
   #final-step
   {
@@ -335,6 +356,24 @@ ul.social_icons, li.social
   #ft-right, #account-right
   {
     padding-left:2em;
+  }
+  #account-right p
+  {
+    padding-top:4em;
+  }
+  #transaction-left
+  {
+    padding-top:6em;
+    padding-right:2em;
+  }
+  #discover-right
+  {
+    padding-top:6em;
+  }
+  #bookmark-left
+  {
+    padding-top:12em;
+    padding-right:2em;
   }
   #process-right_img
   {

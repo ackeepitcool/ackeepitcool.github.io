@@ -64,6 +64,14 @@ p
     font-weight:300;
     line-height:30px;
   }
+table
+  {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    color:#333333;
+    font-size:18px;
+    font-weight:300;
+    line-height:30px;
+  }
 hr
   {
     display: block;
@@ -146,6 +154,14 @@ main
     padding-left:5%;
     padding-top:1em;
     list-style-type:none;
+  }
+td
+  {
+    width:10em;
+  }
+.table
+  {
+    padding-bottom:2em;
   }
 .center-text img
   {

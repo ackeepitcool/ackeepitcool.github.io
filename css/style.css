@@ -115,6 +115,12 @@ hr
     border: 2px solid #F15A57;
     box-shadow: 0px 2px 0px 0px #F15A57;
   }
+.uxlabbtn:hover
+  {
+    background:#F0674F;
+    border: 2px solid #F0674F;
+    box-shadow: 0px 2px 0px 0px #F0674F;
+  }
 header, .hero, .workprojects, .workheading, .recommendation, .closingstatement, .heading, .aboutme, .projects, #contact
   {
     list-style-type:none;
@@ -224,7 +230,7 @@ i
   }
 
 /* Lines */
-#headerline, #LogoLine, #top-halfline, #paycrave-button-line, #blocbox-button-line, #knode-button-line, #ZachLine, #ContactLine, #headshotline, #submitline
+#headerline, #LogoLine, #top-halfline, #paycrave-button-line, #blocbox-button-line, #knode-button-line, #ZachLine, #ContactLine, #headshotline, #uxlabbtnline, #submitline
   {
     position:relative;
     z-index:1;
@@ -236,19 +242,19 @@ i
 #paycrave-button-line
   {
     width:100%;
-    margin-left:6em;
+    margin-left:4em;
     top:-2.5em;
   }
 #blocbox-button-line
   {
-    width:75%;
-    margin-right:5em;
+    width:100%;
+    margin-left:-4em;
     top:-2.5em;
   }
 #knode-button-line
   {
     width:100%;
-    margin-left:6em;
+    margin-left:4em;
     top:-2.5em;
   }
 #ZachLine
@@ -259,7 +265,8 @@ i
   }
 #ContactLine
   {
-    width:75%;
+    width:100%;
+    margin-left:-4em;
     top:-2.5em;
   }
 #headshotline
@@ -267,6 +274,12 @@ i
     width:93%;
     top:-2.5em;
     margin-bottom:-3em;
+  }
+#uxlabbtnline
+  {
+    width:100%;
+    margin-left:-4em;
+    top:-1.5em;
   }
 #submitline
   {
@@ -326,6 +339,13 @@ img.headerlogo
     padding-top:2em;
     padding-left:10px;
   }
+#heroshot img
+  {
+    width:150px;
+    margin-bottom:-2.1em;
+  }
+
+/* Work */
 .workheading
   {
     padding-top:2em;
@@ -350,7 +370,7 @@ img.headerlogo
   {
     text-align:center;
   }
-.paycrave p, .blocbox p, .knode p
+.paycrave h4, .blockbox h4, .knode h4
   {
     padding-bottom:1em;
   }
@@ -371,13 +391,15 @@ img.headerlogo
 .about-right h2
   {
     padding-left:.5em;
+    margin-top:-1em;
+    margin-bottom:-.5em;
   }
 .about-left img
   {
     max-width:100%;
     margin-left:auto;
     margin-right:auto;
-    padding-left:2em;
+    margin-top:1em;
   }
 .about-right
   {
@@ -393,10 +415,31 @@ h3#tagline
     font-weight:600;
     padding-top:1.5em;
     padding-left:.5em;
+    margin-top:-2em;
+  }
+.uxlab, .uxlabblurb
+  {
+    text-align:center;
+  }
+.uxlab-right img
+  {
+    max-width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:-1em;
+  }
+.uxlabblurb a
+  {
+    text-decoration:none;
+  }
+.uxlabblurb
+  {
+    padding-bottom:1em;
   }
 .projects
   {
     text-align:center;
+    margin-top:-5em;
   }
 .passionprojects img
   {
@@ -406,13 +449,7 @@ h3#tagline
   {
     padding:1em;
   }
-.personal-right img
-  {
-    max-width:100%;
-    margin-left:auto;
-    margin-right:auto;
-    padding-right:2em;
-  }
+
 
 
 /* Contact */
@@ -529,6 +566,14 @@ img.headerlogo
   {
     display:none;
   }
+#personalimage
+  {
+    display:none;
+  }
+#heroshot
+  {
+    display:none;
+  }
 
 
 /* -------------       Media Queries       ------------- */
@@ -579,6 +624,32 @@ img.headerlogo
     display:block;
     padding-right:5%;
   }
+  #personalimage
+  {
+    display:flex;
+    justify-content:space-between;
+  }
+  #heroshot
+  {
+    display:block;
+  }
+  .heroshot
+  {
+    -webkit-animation: fadeinout 3s linear 1 forwards;
+    animation: fadeinout 3s linear 1 forwards;
+  }
+  @-webkit-keyframes fadeinout
+  {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  @keyframes fadeinout
+  {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
 
 
 /* Lines */
@@ -605,6 +676,10 @@ img.headerlogo
     width:97%;
     top:-1.5em;
   }
+  #uxlabbtnline
+  {
+    width:80%;
+  }
   #submitline
   {
     margin-left:20em;
@@ -614,6 +689,17 @@ img.headerlogo
   #headerline
   {
     top: 5px;
+  }
+
+/* Hero */
+  .hero h3
+  {
+    padding-left:10%;
+    padding-right:10%;
+  }
+  #heroshot img
+  {
+    margin-bottom:-2.2em;
   }
 
 /* Work */
@@ -641,30 +727,46 @@ img.headerlogo
     display:flex;
     justify-content:space-between;
   }
+  .about-right h2
+  {
+    margin-top:0;
+  }
   .about-right
   {
     margin-right:-20%;
   }
   .personal-right
   {
-    padding-right:2em;
-    margin-top:4em;
+    width:50%;
+    margin-top:10em;
+    margin-right:1em;
   }
   #headshot img
   {
     width:1600px;
-    padding-top:13em;
+    padding-top:11em;
     margin-bottom:-1em;
+    padding-left:1em;
   }
   #personalimage img
   {
-    padding-top:5em;
+    width:300px;
+    height:300px;
     margin-bottom:-1em;
   }
   #tagline
   {
     margin-top:-2em;
   }
+  .uxlabblurb p
+  {
+    text-align:left;
+  }
+  .uxlab-right img
+  {
+    width:30%;
+  }
+
 
 /* Footer */
   footer
@@ -728,26 +830,31 @@ img.headerlogo
   .hero-left h3
   {
     margin-top:-.5em;
+    margin-bottom:-2em;
+  }
+  #heroshot img
+  {
+    margin-bottom:-2.15em;
   }
 
 
 /* Lines */
   #paycrave-button-line
   {
-    width:100%;
-    margin-left:8em;
+    width:200%;
+    margin-left:-2em;
     top:-2.5em;
   }
   #blocbox-button-line
   {
-    width:100%;
-    margin-left:-6em;
+    width:200%;
+    margin-left:-14em;
     top:-2.5em;
   }
   #knode-button-line
   {
-    width:100%;
-    margin-left:6em;
+    width:200%;
+    margin-left:-2em;
     top:-2.5em;
   }
   #ZachLine
@@ -759,6 +866,10 @@ img.headerlogo
   #ContactLine
   {
     width:65%;
+  }
+  #uxlabbtnline
+  {
+    margin-left:-5em;
   }
   #submitline
   {
@@ -779,7 +890,7 @@ img.headerlogo
   }
   .blocbox-right2
   {
-    padding-top:4em;
+    padding-top:7em;
   }
   .paycrave-right, .blocbox-left, .knode-right
   {
@@ -788,8 +899,45 @@ img.headerlogo
   .paycrave p, .blocbox p, .knode p
   {
     margin-top:-2em;
-    padding-left:2em;
-    padding-right:2em;
+    margin-left:-30%;
+    margin-right:-30%;
+    margin-bottom:-2em;
+    padding-left:30%;
+    padding-right:30%;
+  }
+  .paycrave-right
+  {
+    padding-left:15%;
+    padding-right:15%;
+  }
+  .paycrave-right h4
+  {
+    margin-left:-40%;
+    margin-right:-40%;
+  }
+  .paycrave-left
+  {
+    padding-right:5%;
+  }
+  .blocbox-left
+  {
+    padding-left:15%;
+    padding-right:15%;
+  }
+  .blocbox-left h4
+  {
+    margin-left:-40%;
+    margin-right:-40%;
+  }
+  .knode-right
+  {
+    padding-left:15%;
+    padding-right:15%;
+  }
+  .knode-right h4
+  {
+    margin-left:-40%;
+    margin-right:-40%;
   }
   .recommendation
   {
@@ -846,9 +994,14 @@ img.headerlogo
     padding-left:8%;
     padding-right:8%;
   }
+  .uxlabblurb
+  {
+    padding-left:8%;
+    padding-right:8%;
+  }
   .personal-right
   {
-    margin-top:-1em;
+    margin-top:6em;
   }
   .personal-left
   {
@@ -912,8 +1065,30 @@ img.headerlogo
   {
     padding-right:3%;
   }
+  #heroshot img
+  {
+    margin-bottom:-2.4em;
+  }
 
 /* Work */
+  #paycrave-button-line
+  {
+    width:300%;
+    margin-left:-2em;
+    top:-2.5em;
+  }
+  #blocbox-button-line
+  {
+    width:235%;
+    margin-left:-19em;
+    top:-2.5em;
+  }
+  #knode-button-line
+  {
+    width:300%;
+    margin-left:-2em;
+    top:-2.5em;
+  }
   .paycrave, .blocbox, .knode
   {
     padding:4em 6em 4em 6em;
@@ -924,16 +1099,16 @@ img.headerlogo
   }
   .paycrave-right, .knode-right
   {
-    padding-top:3em;
+    padding-top:6em;
     padding-left:8em;
   }
   .paycrave-left, .blocbox-right2, .knode-left
   {
     margin-top:2em;
   }
-  .blocbox-left
+  .blocbox-right2
   {
-    padding-top:2em;
+    padding-top:4em;
   }
   .recommendation p
   {
@@ -967,6 +1142,7 @@ img.headerlogo
   #headshot img
   {
     margin-top:-4em;
+    margin-left:-.5em;
   }
   .aboutme
   {
@@ -980,6 +1156,31 @@ img.headerlogo
   .about-left
   {
     margin-top:-2em;
+    padding-left:3em;
+  }
+  #headshot img
+  {
+    width:1200px;
+  }
+  #uxlablogo img
+  {
+    padding-top:2em;
+    width:350px;
+  }
+  .uxlabblurb
+  {
+    padding-right:10%;
+    padding-left:10%;
+    padding-bottom:2em;
+  }
+  #uxlabbtnline
+  {
+    margin-left:-8em;
+  }
+  #personalimage img
+  {
+    width:350px;
+    height:350px;
   }
   .projects h4
   {
@@ -993,7 +1194,7 @@ img.headerlogo
   }
   .personal-right
   {
-    margin-top:-1em;
+    margin-top:2em;
   }
 
 /* Contact */
@@ -1020,6 +1221,15 @@ img.headerlogo
   {
     padding-right:2.5%;
   }
+  .hero
+  {
+    padding-top:7em;
+    padding-bottom:7em;
+  }
+  .hero-left h3
+  {
+    padding-top:3em;
+  }
   .paycrave-left, .blocbox-right2, .knode-left
   {
     margin-top:0;
@@ -1033,6 +1243,10 @@ img.headerlogo
   {
     width:120%;
     margin-left:-28%;
+  }
+  #headshot img
+  {
+    margin-left:-1em;
   }
   .about-left
   {

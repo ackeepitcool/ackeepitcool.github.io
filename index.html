@@ -17,21 +17,6 @@
 <!-- JQuery -->
 <script src="js/jquery-3.2.1.min.js"></script>
 <script>
-// $(document).ready(function() {
-//     $(".menu li a").on('click', function(e) {
-//         e.preventDefault();
-//         var page = $(this).data('page');
-//         console.log(page);
-//         $("#pages .page:not('.hide')").stop().fadeOut('fast', function() {
-//             $(this).addClass('hide');
-//             $('body').removeClass();
-//             var newpage = $('#pages .page[data-page="'+page+'"]')[0];
-//             $(newpage).fadeIn('slow').removeClass('hide');
-//             $('body').addClass(page + '-img');
-//         });
-//
-//     });
-// });
 $(document).ready(function() {
   if(window.location.hash) {
          var page = window.location.hash;
@@ -61,26 +46,6 @@ $(document).ready(function() {
         });
     });
 });
-
-// $('body').ready(function() {
-//     /* Every time the window is scrolled ... */
-//     $('body').scroll( function(){
-//         /* Check the location of each desired element */
-//         $('.hideme').each( function(i){
-//             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-//             var bottom_of_window = $('body').scrollTop() + $('body').height();
-//             /* If the object is completely visible in the window, fade it it */
-//             if( bottom_of_window > bottom_of_object ){
-//                 $(this).animate({'opacity':'1'},500);
-//             }
-//         });
-//     });
-// });
-//
-// $('body').ready(function () {
-//     $('div.hidden').fadeIn(1500).removeClass('hidden');
-// });
-
 </script>
 
 </head>
@@ -113,8 +78,7 @@ $(document).ready(function() {
             <div class="hero-left">
               <h1>Greetings!</h1>
               <h1>I'm Aaron Chen.</h1>
-              <h3>A digital UX/UI designer based in NYC </br>who loves photography, Star Wars and sea otters.
-                <br/>Please check out some of the things I’ve worked on below!</h3>
+              <h3>A former retail manager who became a UX/UI designer based in NYC. As a retail manager, I worked hard to ensure a delightful user experience in a physical space. Now, I do the same for customers in a digital space.</h3>
             </div>
           </div>
 
@@ -125,6 +89,7 @@ $(document).ready(function() {
 
 <!-- Work -->
           <div class="workheading">
+            <p class="heroshot" id="heroshot"> <img src="Assets/heroshot.png" /> </p>
             <hr class="full"/>
           </div>
           <div class="workprojects">
@@ -136,8 +101,14 @@ $(document).ready(function() {
               </div>
               <div class="paycrave-right">
                   <h3>PAYCRAVE</h3>
-                  <h4>Design, Development</h4>
-                  <p>PayCrave is an app I developed during my time at Bloc. Its aim is to give users an easy way to find, pay and eat at food trucks. An easy to navigate map browsing system paired with a comprehensive food truck card with an order-ahead system makes finding and ordering food much easier, reducing the time needed to wait for food.</p>
+                  <p>Ideation
+                  <br/>User Research
+                  <br/>Logo Design
+                  <br/>Style Guide
+                  <br/>Wireframing
+                  <br/>Hi-Fi Mockups
+                  <br/>Prototyping</p>
+                  <h4>Enhance the user experience for the food truck industry</h4>
                 <a href="paycrave.html" class="btn paycravebtn">View Case Study</a>
                 <hr id="paycrave-button-line"/>
                 <br/>
@@ -152,8 +123,16 @@ $(document).ready(function() {
               </div>
               <div class="blocbox-left">
                 <h3>BLOCBOX</h3>
-                <h4>Design, Development</h4>
-                <p>Blocbox is a website I developed at Bloc that aims to give users the ability to store notes, images and links directly onto the web for easy access. Blocbox is a simple to use product that aims for collaborative storage and multiple projects with Boxes.</p>
+                <p>Ideation
+                <br/>User Research
+                <br/>User Personas
+                <br/>Logo Design
+                <br/>Style Guide
+                <br/>Wireframing
+                <br/>Hi-Fi Mockups
+                <br/>Prototyping
+                <br/>Front End Development</p>
+                <h4>Design a cloud storage website where users can collaborate and store notes, images and links.</h4>
               <a href="blocbox.html" class="btn blocboxbtn">View Case Study</a>
               <hr id="blocbox-button-line"/>
               </div>
@@ -173,8 +152,10 @@ $(document).ready(function() {
               </div>
               <div class="knode-right">
                 <h3>KNODE</h3>
-                <h4>User Research, Development</h4>
-                <p>Knode is a website I helped develop during a UX Hackathon event, hosted by Jet. It provides the job seeker with an interactive experience to find companies that align with their personal values in order to build long-term employee engagement.</p>
+                <p>Ideation
+                <br/>User Research
+                <br/>Presentation</p>
+                <h4>Design a product that enhances the candidate experience.</h4>
               <a href="knode.html" class="btn knodebtn">View Case Study</a>
               <hr id="knode-button-line"/>
               <br/>
@@ -186,7 +167,7 @@ $(document).ready(function() {
           <hr class="full"/>
           <div class="recommendation">
               <h4>“Aaron takes his unique point of view and uses it to inform everything he does. He’s comfortable working across the entire design process and does a great job in a collaborative environment. He’s determined, dependable, and doesn’t let challenges or hurdles trip him up.”</h4>
-              <hr id="ZachLine"/>
+              <!--hr id="ZachLine"/-->
               <p>- Zach Lebar, Mentor for Designer Track at Bloc</p>
           </div>
           <hr class="full"/>
@@ -203,8 +184,8 @@ $(document).ready(function() {
     <div id="about" class="page hide" data-page="about">
           <div class="aboutme">
             <div class="about-left">
-              <p id="headshot"> <img src="Assets/Headshot - About.png" /> </p>
-              <hr id="headshotline"/>
+              <p id="headshot"> <img src="Assets/Headshot - About2.png" /> </p>
+              <!--hr id="headshotline"/-->
             </div>
             <div class="about-right">
               <h2>Who is Aaron Chen?</h2>
@@ -219,6 +200,35 @@ $(document).ready(function() {
             </div>
           </div>
         <hr class="full"/>
+        <div class="uxlab">
+          <!--div class="uxlab-left">
+            <h2>The UX Lab</h2>
+          </div-->
+          <div class="uxlab-right">
+            <p id="uxlablogo"> <a href="https://www.meetup.com/The-UX-Lab-NYC/"> <img src="Assets/theuxlab.png" /> </a> </p>
+          </div>
+        </div>
+        <div class=uxlabblurb>
+          <p>After finding my calling in user experience and translating my physical space knowledge into a digital one, I wanted to give back and connect to the community that I was a part of. This led me to co-hosting The UX Lab with my friend (and founder), Sean Echevarria.
+          <br/>
+          <br/>The UX Lab is a monthly meetup of UX designers, varying from those who want to know more about UX design to seasoned, experienced designers already in the industry. Our goal is to provide unique discussions and exercises in the best UX practices, and hightlight upcoming technologies.</p>
+          <a href="https://www.meetup.com/The-UX-Lab-NYC/" class="uxlabbtn btn">The UX Lab Meetup</a>
+          <hr id="uxlabbtnline"/>
+        </div>
+        <hr class="full"/>
+        <div class="personal">
+        <div class="personal-left">
+          <p>In my free, time, I like to take photos, go to dance classes and visit art galleries. I am a rabid Star Wars geek; growing up, I read almost every single Expanded Universe novel in the Star Wars collection. I both love and hate Disney for making new Star Wars films while destroying my childhood by saying the EU isn’t canon anymore.
+          <br/>
+          <br/>I am also slightly obsessed with sea otters. Any chance to see one I will take almost immediately with no hesitation.
+          <br/>
+          <br/>Shoot me a line if you ever want to discuss design, photography, art, Star Wars or how adorable sea otters are (or more importantly, how we can help their conservation status as a keystone species).<p>
+        </div>
+        <div class="personal-right">
+          <p id="personalimage"> <img src="Assets/About-Image2.png" /> </p>
+        </div>
+        </div>
+        <!--hr class="full"/-->
         <div class="projects">
           <h4>Below you'll find some personal video and photo projects that I've been proud to work on throughout the years.</h4>
           <div class="passionprojects">
@@ -233,19 +243,7 @@ $(document).ready(function() {
           </a>
           </div>
         </div>
-        <hr class="full"/>
-        <div class="personal">
-        <div class="personal-left">
-          <p>In my free, time, I like to take photos, take dance classes and visit art galleries. I am a rabid Star Wars geek. Growing up, I read almost every single Expanded Universe novel in the Star Wars collection. I both hate and love Disney for making new Star Wars films and destroying my childhood by saying the EU isn’t canon anymore.
-          <br/>
-          <br/>I am also slightly obsessed with sea otters. Any chance to see one I will take almost immediately with no hesitation.
-          <br/>
-          <br/>Shoot me a line if you ever want to discuss design, photography, art, Star Wars or how adorable sea otters are (or more importantly, how we can help their conservation status as a keystone species).<p>
-        </div>
-        <div class="personal-right">
-          <p id="personalimage"> <img src="Assets/About-Image2.JPG" /> </p>
-        </div>
-        </div>
+        <br/>
     </div>
 
 
