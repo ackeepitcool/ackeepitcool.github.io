@@ -237,7 +237,7 @@ i
   }
 #headerline
   {
-    width:300px;
+    width:400px;
   }
 #paycrave-button-line
   {
@@ -268,12 +268,6 @@ i
     width:100%;
     margin-left:-4em;
     top:-2.5em;
-  }
-#headshotline
-  {
-    width:93%;
-    top:-2.5em;
-    margin-bottom:-3em;
   }
 #uxlabbtnline
   {
@@ -450,7 +444,15 @@ h3#tagline
     padding:1em;
   }
 
-
+/* Resume */
+.resume
+  {
+    text-align:center;
+  }
+.resume img
+  {
+    width:100%;
+  }
 
 /* Contact */
 #contact h2
@@ -978,7 +980,7 @@ img.headerlogo
   }
   .about-left
   {
-    margin-top:-5em;
+    margin-top:-3em;
   }
   .about-right
   {
@@ -1167,8 +1169,12 @@ img.headerlogo
   }
   .about-left
   {
-    margin-top:-2em;
+    margin-top:2em;
     padding-left:3em;
+  }
+  #tagline
+  {
+    margin-bottom:-.5em;
   }
   #headshot img
   {
@@ -1254,10 +1260,15 @@ img.headerlogo
   #headshot img
   {
     margin-left:-1em;
+    width:1600px;
   }
   .about-left
   {
-    margin-top:-2em;
+    margin-top:0em;
+  }
+  #tagline
+  {
+    margin-bottom:0em;
   }
   .projects h4
   {
@@ -1271,7 +1282,13 @@ img.headerlogo
   }
   #uxlabbtnline
   {
-    margin-left:-10em;
+    margin-left:-14em;
+    width:90%;
+  }
+  .uxlabblurb
+  {
+    padding-right:14%;
+    padding-left:14%;
   }
 
 /* Recommendation */
