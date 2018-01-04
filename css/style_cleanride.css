@@ -1,0 +1,731 @@
+body
+  {
+    -webkit-font-smoothing: antialiased;
+  }
+body a
+  {
+    color: #333333;
+  }
+body a:hover
+  {
+    text-decoration: none;
+    color: #EEB757;
+  }
+html, body
+  {
+    overflow-x: hidden;
+  }
+body
+  {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    color:#333333;
+  }
+main
+  {
+    padding-right:5%;
+    padding-left:5%;
+    padding-top:1em;
+    list-style-type:none;
+  }
+h1, h2
+  {
+    font-family: "Avenir Next", Helvetica, Arial, sans-serif;
+  }
+h1
+  {
+    font-size:48px;
+    font-weight:500;
+    text-align:center;
+  }
+h2
+  {
+    font-size:36px;
+    font-weight:500;
+    text-align:center;
+  }
+h3
+  {
+    font-size:28px;
+    font-weight:300;
+    text-align:center;
+  }
+h4
+  {
+    font-size:22px;
+    font-weight:300;
+    text-align:center;
+  }
+p
+  {
+    font-size:18px;
+    font-weight:300;
+    line-height:30px;
+  }
+hr
+  {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 3px solid #AAAAAA;
+    margin: 1em 0;
+    padding: 0;
+  }
+h1, h2, h3, h4
+  {
+    text-align:center;
+  }
+#headerline
+  {
+    width:300px;
+  }
+.btn
+  {
+    border-radius: 4px;
+    color:#333333;
+    font-weight: 400;
+    text-decoration: none;
+    padding:10px;
+    margin-left:auto;
+    margin-right:auto;
+    background: #AED3D1;
+    border: 2px solid #AED3D1;
+    box-shadow: 0px 2px 0px 0px #AED3D1;
+    z-index:100;
+    position:relative;
+  }
+.btn:hover
+  {
+    color:#FFFFFF;
+  }
+.prototype
+  {
+    padding-top:1em;
+    padding-bottom:1em;
+    text-align:center;
+  }
+.link
+  {
+    border-bottom:1em solid #ededed;
+  }
+.link a
+  {
+    text-decoration:none;
+    font-weight:400;
+  }
+.bullet, .flexbullet
+  {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size:18px;
+    font-weight:300;
+    line-height:30px;
+    list-style-type:circle;
+  }
+
+/* HEADER */
+header nav ul > li
+  {
+    list-style-type: none;
+  }
+header nav ul > li > a
+  {
+    color:#333333;
+    text-decoration: none;
+  }
+#headers
+  {
+    display: flex;
+    flex-direction:row;
+  }
+h5
+  {
+    padding-right:5em;
+    margin-bottom:-1em;
+  }
+
+/* Main */
+main img
+  {
+    width:300px;
+    padding-top:1em;
+    padding-bottom:1em;
+  }
+.center-text img
+  {
+    width:100%;
+    margin-right:auto;
+    margin-left:auto;
+  }
+.conclusion
+  {
+    padding-bottom:2em;
+  }
+.designheading
+  {
+    text-align:center;
+    display:flex;
+    justify-content:space-between;
+  }
+.intro-left, #process-right_img, #mockup-right_img, #discover-right, #mockup-left_img
+  {
+    margin-left:7%;
+  }
+#problemline1
+  {
+    position:relative;
+    width:10%;
+    top:2em;
+    margin-left:-6%;
+    border-color:#8BC0E2;
+  }
+#problemline2
+  {
+    position:relative;
+    width:10%;
+    top:2em;
+    margin-right:-6%;
+    border-color:#8BC0E2;
+  }
+#approachline1
+  {
+    position:relative;
+    width:10%;
+    top:2em;
+    margin-left:-6%;
+  }
+#approachline2
+  {
+    position:relative;
+    width:10%;
+    top:2em;
+    margin-right:-6%;
+  }
+#designline1
+  {
+    position:relative;
+    width:10%;
+    top:2em;
+    margin-left:-6%;
+    border-color: #B8E986;
+  }
+#designline2
+  {
+    position:relative;
+    width:10%;
+    top:2em;
+    margin-right:-6%;
+    border-color: #B8E986;
+  }
+#conclusionline1
+  {
+    position:relative;
+    width:10%;
+    top:2em;
+    margin-left:-6%;
+    border-color:#8BC0E2;
+  }
+#conclusionline2
+  {
+    position:relative;
+    width:10%;
+    top:2em;
+    margin-right:-6%;
+    border-color:#8BC0E2;
+  }
+
+
+/* FOOTER */
+footer
+  {
+    margin:auto;
+    margin:1em;
+  }
+ul.social_icons, li.social
+  {
+    padding-left:5px;
+    padding-right:5px;
+    list-style: none;
+    display:inline-block;
+    position: relative;
+  }
+.footer-nav-block
+  {
+    display:flex;
+    justify-content:space-between;
+  }
+.footer-left
+  {
+    padding-left:.5em;
+    display:none;
+  }
+.footer-mid
+  {
+	  padding-top:1em;
+	  text-decoration: none;
+    text-align:center;
+    display:none;
+  }
+.footer-right
+  {
+    margin-left:auto;
+    margin-right:auto;
+  }
+.footer-right a, .footer-mid a
+  {
+    text-decoration:none;
+  }
+
+
+/* -------------       Media Queries       ------------- */
+
+
+
+/* iPad Portrait and Landscape */
+@media only screen
+  and (min-width: 768px)
+  and (-webkit-min-device-pixel-ratio: 1)
+{
+  main
+  {
+    padding-right:10%;
+    padding-left:10%;
+  }
+  h1
+  {
+    font-size:48px;
+  }
+  h2
+  {
+    font-size:36px;
+  }
+  h3
+  {
+    font-size:28px;
+    text-align:left;
+  }
+  h4
+  {
+    font-size:22px;
+    text-align:left;
+  }
+  p
+  {
+    font-size:20px;
+  }
+  .intro, .process, .mockups, .transactions, .bookmarks, .discover, .account
+  {
+    display:flex;
+    justify-content: center;
+  }
+  .flexbullet
+  {
+    padding-left:2em;
+  }
+  #title-img img
+  {
+    height:400px;
+    width:500px;
+  }
+  .intro-right
+  {
+    padding-right:8em;
+    padding-top:9em;
+  }
+  .intro-left
+  {
+    margin-right:-8em;
+  }
+  .intro-left, .process
+  {
+    padding-bottom:1em;
+  }
+  #competitive-analysis
+  {
+    margin-top:-4em;
+  }
+  #blurb
+  {
+    padding-bottom:2em;
+  }
+  #mockup-left
+  {
+    padding-top:3em;
+  }
+  #final-step
+  {
+    padding-top:0;
+  }
+  #process-left, #mockup-left, #discover-left, #order-left
+  {
+    padding-right:2em;
+  }
+  #ft-right, #account-right
+  {
+    padding-left:2em;
+  }
+  #account-right p
+  {
+    padding-top:4em;
+  }
+  #transaction-left
+  {
+    padding-top:6em;
+    padding-right:2em;
+  }
+  #discover-right
+  {
+    padding-top:6em;
+  }
+  #bookmark-left
+  {
+    padding-top:12em;
+    padding-right:2em;
+  }
+  #process-right_img
+  {
+    padding-top:6em;
+  }
+  #mockup-left_img
+  {
+    padding-top:5em;
+  }
+  #order-summary img
+  {
+    margin-bottom:2em;
+  }
+  .center-text
+  {
+    padding-top:1em;
+    padding-bottom:1em;
+  }
+  .mockups img
+  {
+    margin-top:1em;
+  }
+  .discover h3
+  {
+    padding-right:2em;
+  }
+  .account img
+  {
+    margin-top:-5em;
+  }
+  #account-right
+  {
+    padding-top:3em;
+  }
+  .center-text img
+  {
+    max-width:768px;
+  }
+  .intro-left, #process-right_img, #mockup-right_img, #discover-right, #mockup-left_img
+  {
+    margin-left:0%;
+  }
+  #problemline1
+  {
+    width:30%;
+    top:2em;
+    margin-left:-13%;
+  }
+  #problemline2
+  {
+    width:30%;
+    top:2em;
+    margin-right:-13%;
+  }
+  #approachline1
+  {
+    width:40%;
+    top:2em;
+    margin-left:-13%;
+  }
+  #approachline2
+  {
+    width:40%;
+    top:2em;
+    margin-right:-13%;
+  }
+  #designline1
+  {
+    width:30%;
+    top:2em;
+    padding-right:1em;
+    margin-left:-13%;
+  }
+  #designline2
+  {
+    width:30%;
+    top:2em;
+    padding-left:1em;
+    margin-right:-13%;
+  }
+  #conclusionline1
+  {
+    width:40%;
+    top:2em;
+    margin-left:-13%;
+  }
+  #conclusionline2
+  {
+    width:40%;
+    top:2em;
+    margin-right:-13%;
+  }
+
+/* Footer */
+  .footer-left, .footer-mid
+  {
+    display:flex;
+  }
+  footer
+  {
+    margin-top:-1em;
+  }
+  .footer-right
+  {
+    padding-top:.5em;
+    margin-left:0;
+    margin-right:-10em;
+  }
+  .footer-mid
+  {
+    margin-top:1em;
+    margin-left:2.5em;
+  }
+  .footer-left
+  {
+    margin-top:1em;
+    margin-left:0em;
+  }
+}
+
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+  and (min-width: 992px)
+  and (-webkit-min-device-pixel-ratio: 1)
+{
+/* Main Page */
+  main
+  {
+    padding-left:15%;
+    padding-right:15%;
+  }
+  h1
+  {
+    font-size:68px;
+  }
+  h2
+  {
+    font-size:42px;
+  }
+  h3
+  {
+    font-size:38px;
+  }
+  h4
+  {
+    font-size:28px;
+  }
+  p
+  {
+    font-size:24px;
+  }
+  #process-right_img
+  {
+    padding-top:3em;
+  }
+  #mockup-right_img
+  {
+    margin-top:-.7em;
+  }
+  #problemline1
+  {
+    width:40%;
+    top:2.5em;
+    margin-left:-22%;
+  }
+  #problemline2
+  {
+    width:40%;
+    top:2.5em;
+    margin-right:-22%;
+  }
+  #approachline1
+  {
+    width:45%;
+    top:2.5em;
+    margin-left:-22%;
+  }
+  #approachline2
+  {
+    width:45%;
+    top:2.5em;
+    margin-right:-22%;
+  }
+  #designline1
+  {
+    width:40%;
+    top:2.5em;
+    margin-left:-22%;
+  }
+  #designline2
+  {
+    width:40%;
+    top:2.5em;
+    margin-right:-22%;
+  }
+  #conclusionline1
+  {
+    width:45%;
+    top:2.5em;
+    margin-left:-22%;
+  }
+  #conclusionline2
+  {
+    width:45%;
+    top:2.5em;
+    margin-right:-22%;
+  }
+
+/* Footer */
+  .footer-right
+  {
+    margin-right:-19em;
+  }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen
+  and (min-width: 1200px)
+  and (-webkit-min-device-pixel-ratio: 1)
+{
+  p
+  {
+    line-height:35px;
+  }
+  main
+  {
+    padding-left:20%;
+    padding-right:20%;
+  }
+  #account-right
+  {
+    padding-top:3em;
+  }
+  .center-text img
+  {
+    max-width:1000px;
+  }
+  #problemline1
+  {
+    width:50%;
+    margin-left:-35%;
+  }
+  #problemline2
+  {
+    width:50%;
+    margin-right:-35%;
+  }
+  #approachline1
+  {
+    width:60%;
+    margin-left:-35%;
+  }
+  #approachline2
+  {
+    width:60%;
+    margin-right:-35%;
+  }
+  #designline1
+  {
+    width:50%;
+    margin-left:-35%;
+  }
+  #designline2
+  {
+    width:50%;
+    margin-right:-35%;
+  }
+  #conclusionline1
+  {
+    width:60%;
+    margin-left:-35%;
+  }
+  #conclusionline2
+  {
+    width:60%;
+    margin-right:-35%;
+  }
+
+/* Footer */
+  .footer-right
+  {
+    margin-right:-26em;
+  }
+
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen
+  and (min-width: 1300px)
+  and (-webkit-min-device-pixel-ratio: 2)
+{
+  main
+  {
+    padding-left:25%;
+    padding-right:25%;
+  }
+  #blurb
+  {
+    margin-top:-2em;
+  }
+  #mockup-right_img
+  {
+    margin-top:2em;
+  }
+  #problemline1
+  {
+    width:60%;
+    margin-left:-50%;
+  }
+  #problemline2
+  {
+    width:60%;
+    margin-right:-50%;
+  }
+  #approachline1
+  {
+    width:70%;
+    margin-left:-50%;
+  }
+  #approachline2
+  {
+    width:70%;
+    margin-right:-50%;
+  }
+  #designline1
+  {
+    width:60%;
+    margin-left:-50%;
+  }
+  #designline2
+  {
+    width:60%;
+    margin-right:-50%;
+  }
+  #conclusionline1
+  {
+    width:70%;
+    margin-left:-50%;
+  }
+  #conclusionline2
+  {
+    width:70%;
+    margin-right:-50%;
+  }
+  .footer-right
+  {
+    margin-right:-31em;
+  }
+}
